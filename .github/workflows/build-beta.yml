@@ -1,0 +1,111 @@
+name: build beta
+
+on:
+  workflow_dispatch:
+    
+env:
+  TZ: Asia/Shanghai 
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: write
+
+    steps:
+      - name: set timezone
+        run: |
+          sudo timedatectl set-timezone Asia/Shanghai
+          date +"%Y-%m-%d %H:%M:%S %Z"
+        env:
+          TZ: Asia/Shanghai
+                    
+      - name: system info
+        run: |
+          date +"%Y-%m-%d %H:%M:%S %Z"
+          lscpu | grep -E '^Architecture|^CPU\(s\):|^Model name'
+          uname -sr
+          lsb_release -a
+          free -h
+          df -Th
+
+      - name: free disk space
+        uses: endersonmenezes/free-disk-space@v2
+        with:
+          remove_android: true
+          remove_dotnet: true
+          remove_haskell: true
+          remove_tool_cache: true
+          remove_swap: false
+          remove_packages: "azure-cli google-cloud-cli microsoft-edge-stable google-chrome-stable firefox postgresql* temurin-* *llvm* mysql* dotnet-sdk-*"
+          remove_packages_one_command: true
+          remove_folders: "/usr/share/swift /usr/share/miniconda /usr/share/az* /usr/local/share/chromium /usr/local/share/powershell /usr/local/aws-cli /usr/local/aws-sam-cli /usr/share/gradle"      
+          testing: false
+
+      - name: checkout
+        uses: actions/checkout@v6
+
+      - name: build
+        uses: apoiston/actions@image
+        with:
+          config_buildinfo: builder/config.buildinfo
+          private_key: ${{ secrets.PRIVATE_KEY }}
+          public_key: ${{ secrets.PUBLIC_KEY }}
+          prepare_compile: ${{ secrets.PREPARE_COMPILE }}
+          prepare_configure: ${{ secrets.PREPARE_CONFIGURE }}
+          prepare_image: ${{ secrets.PREPARE_IMAGE }}
+          gh_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: prepare
+        continue-on-error: true
+        run: |
+          date +"%Y-%m-%d %H:%M:%S %Z"
+          git clone --depth=1 --quiet --branch packages https://github.com/apoiston/index.git
+          sed -i "s/N\/A/$(date +"%Y-%m-%d %H:%M:%S %Z")/g" index/index.html
+          rsync -a --quiet --include="*.html" --include="*.css" --include="*.js" --exclude="*" index/ public/
+          rsync -a --quiet openwrt/snapshots public/
+          rsync -a --quiet --include='*.buildinfo' --exclude='*' openwrt/builder/ bin/
+          printf '%s\n' "${{ secrets.PUBLIC_KEY }}" > public/public-key.pem
+
+      - name: commit
+        continue-on-error: true
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add bin/
+          git commit -m "build: $(date +"%Y-%m-%d %H:%M:%S %Z") [RC]"
+          git push origin main --force
+
+      - name: deploy pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          command: pages deploy public --project-name=infinitypackages --branch=packages
+          
+      - name: add tag
+        id: add_tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          TAG="$(date '+%y.%m.%d')-RC"
+          if git ls-remote --tags origin "$TAG" | grep -q "$TAG"; then
+            git push origin --delete "$TAG" || true
+          fi
+          git tag -d "$TAG" 2>/dev/null || true
+          git tag "$TAG"
+          git push origin "$TAG"
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+
+      - name: release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: openwrt/builder/*.{gz,zst,txt}
+          tag_name: ${{ steps.add_tag.outputs.tag }}
+          name: OpenWrt SNAPSHOT ${{ steps.add_tag.outputs.tag }}
+          body_path: openwrt/version.md
+          draft: false
+          prerelease: true
+          token: ${{ secrets.GITHUB_TOKEN }}

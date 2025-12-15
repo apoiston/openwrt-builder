@@ -1,0 +1,67 @@
+name: build dev
+
+on:
+  workflow_dispatch:
+
+env:
+  TZ: Asia/Shanghai 
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: write
+
+    steps:
+      - name: set timezone
+        run: |
+          sudo timedatectl set-timezone Asia/Shanghai
+          date +"%Y-%m-%d %H:%M:%S %Z"
+        env:
+          TZ: Asia/Shanghai
+                    
+      - name: system info
+        run: |
+          date +"%Y-%m-%d %H:%M:%S %Z"
+          lscpu | grep -E '^Architecture|^CPU\(s\):|^Model name'
+          uname -sr
+          lsb_release -a
+          free -h
+          df -Th
+
+      - name: free disk space
+        uses: endersonmenezes/free-disk-space@v2
+        with:
+          remove_android: true
+          remove_dotnet: true
+          remove_haskell: true
+          remove_tool_cache: true
+          remove_swap: false
+          remove_packages: "azure-cli google-cloud-cli microsoft-edge-stable google-chrome-stable firefox postgresql* temurin-* *llvm* mysql* dotnet-sdk-*"
+          remove_packages_one_command: true
+          remove_folders: "/usr/share/swift /usr/share/miniconda /usr/share/az* /usr/local/share/chromium /usr/local/share/powershell /usr/local/aws-cli /usr/local/aws-sam-cli /usr/share/gradle"      
+          testing: false
+
+      - name: checkout
+        uses: actions/checkout@v6
+
+      - name: build
+        uses: apoiston/actions@image
+        with:
+          config_buildinfo: builder/config.buildinfo
+          private_key: ${{ secrets.PRIVATE_KEY }}
+          public_key: ${{ secrets.PUBLIC_KEY }}
+          prepare_compile: ${{ secrets.PREPARE_COMPILE }}
+          prepare_configure: ${{ secrets.PREPARE_CONFIGURE }}
+          prepare_image: ${{ secrets.PREPARE_IMAGE }}
+          gh_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: upload
+        uses: actions/upload-artifact@v6
+        with:
+          name: image
+          path: |
+            openwrt/builder/*.gz
+            openwrt/builder/*.txt
