@@ -40,7 +40,7 @@ jobs:
           config_buildinfo: builder/config.buildinfo
           private_key: ${{ secrets.PRIVATE_KEY }}
           public_key: ${{ secrets.PUBLIC_KEY }}
-          prepare_sdk: ${{ secrets.PREPARE_SDK }}          
+          setup_sdk: ${{ secrets.SETUP_SDK }}        
           build_apps: ${{ secrets.BUILD_APPS }}
           gh_token: ${{ secrets.GITHUB_TOKEN }}
 
