@@ -59,7 +59,7 @@ jobs:
           sed -i "s/N\/A/$(date +"%Y-%m-%d %H:%M:%S %Z")/g" index/index.html
           rsync -a --quiet --include="*.html" --include="*.css" --include="*.js" --exclude="*" index/ public/
           rsync -a --quiet openwrt/snapshots public/
-          printf '%s\n' "${{ secrets.PUBLIC_KEY }}" > public/public-key.pem
+          printf '%s' "${{ secrets.PUBLIC_KEY }}" > public/public-key.pem
 
       - name: deploy pages
         uses: cloudflare/wrangler-action@v3
