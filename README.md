@@ -66,3 +66,7 @@ sysupgrade -n /tmp/openwrt-x86-64-generic-erofs-combined-efi.img.gz
 - [OpenWrt LuCI](https://github.com/openwrt/luci)
 
 - [OpenWrt Packages](https://github.com/openwrt/packages)
+
+- [GitHub](https://github.com)
+
+- [GitHub Actions](https://github.com/features/actions)
