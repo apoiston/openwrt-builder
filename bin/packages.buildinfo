@@ -1,6 +1,6 @@
 apk-mbedtls - 3.0.2-r1
 attendedsysupgrade-common - 9
-base-files - 1677~41a1874c70
+base-files - 1677~caef0a839a
 bash - 5.2.37-r1
 block-mount - 2025.10.03~12858e28-r1
 bnx2-firmware - 20251125-r1
@@ -219,8 +219,8 @@ nginx-mod-ubus - 1.29.4-r1
 nginx-ssl - 1.29.4-r1
 nginx-ssl-util - 1.7-r2
 nikki - 2025.12.18~17966b5-r1
-odhcp6c - 2025.12.17~02e783c2-r1
-odhcpd-ipv6only - 2025.12.14~1450e1e2-r1
+odhcp6c - 2025.12.18~9a4d6fe8-r1
+odhcpd-ipv6only - 2025.12.18~3fda5f8b-r1
 open-vm-tools - 13.0.0-r1
 openssh-sftp-server - 10.2_p1-r1
 openwrt-keyring - 2025.12.10~f0670054-r1
