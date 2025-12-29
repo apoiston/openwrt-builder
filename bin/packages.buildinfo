@@ -1,6 +1,6 @@
 apk-mbedtls - 3.0.2-r1
 attendedsysupgrade-common - 9
-base-files - 1678~7f3537ee2c
+base-files - 1678~d9b1c74780
 bash - 5.2.37-r1
 block-mount - 2025.10.03~12858e28-r1
 bnx2-firmware - 20251125-r1
@@ -25,13 +25,14 @@ ip-full - 6.18.0-r1
 jansson4 - 2.14.1-r1
 jshn - 2025.12.08~7928f171-r1
 jsonfilter - 2025.10.04~f4fe702d-r1
-kernel - 6.18.2~459acbc753121ab70f6833e06108c780-r1
+kernel - 6.18.2~9e5f85928cee63dd375b3a59c2fb0d8b-r1
 kmod-acpi-video - 6.18.2-r1
 kmod-amazon-ena - 6.18.2-r1
 kmod-amd-xgbe - 6.18.2-r1
 kmod-backlight - 6.18.2-r1
 kmod-bnx2 - 6.18.2-r1
 kmod-button-hotplug - 6.18.2-r3
+kmod-cec-core - 6.18.2-r1
 kmod-crypto-aead - 6.18.2-r1
 kmod-crypto-arc4 - 6.18.2-r1
 kmod-crypto-cbc - 6.18.2-r1
@@ -208,7 +209,7 @@ luci-base - 25.361.25701~26ec03c
 luci-i18n-attendedsysupgrade-zh-cn - 25.361.25701~26ec03c
 luci-i18n-base-zh-cn - 25.361.25701~26ec03c
 luci-i18n-firewall-zh-cn - 25.361.25701~26ec03c
-luci-i18n-nikki-zh-cn - 25.360.06472~8ea63e5
+luci-i18n-nikki-zh-cn - 25.363.27101~952ab1e
 luci-i18n-package-manager-zh-cn - 25.361.25701~26ec03c
 luci-lib-uqr - 25.361.25701~26ec03c
 luci-mod-admin-full - 25.361.25701~26ec03c
@@ -229,7 +230,7 @@ nginx-mod-luci - 1.29.4-r1
 nginx-mod-ubus - 1.29.4-r1
 nginx-ssl - 1.29.4-r1
 nginx-ssl-util - 1.7-r2
-nikki - 2025.12.27~c393e91-r1
+nikki - 2025.12.29~06387d5-r1
 odhcp6c - 2025.12.18~9a4d6fe8-r1
 odhcpd-ipv6only - 2025.12.18~3fda5f8b-r1
 open-vm-tools - 13.0.0-r1
