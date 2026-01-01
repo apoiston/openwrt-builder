@@ -65,32 +65,29 @@ jobs:
           date +"%Y-%m-%d %H:%M:%S %Z"
           git clone --depth=1 --quiet --branch packages https://github.com/apoiston/index.git
           sed -i "s/N\/A/$(date +"%Y-%m-%d %H:%M:%S %Z")/g" index/index.html
-          rsync -a --quiet --include='*.html' --include='*.css' --include='*.js' --exclude='*' index/ dist/
-          rsync -a --quiet openwrt/snapshots dist/
           rsync -a --quiet --include='*.buildinfo' --exclude='*' openwrt/builder/ bin/
-          printf '%s' "${{ secrets.PUBLIC_KEY }}" > dist/public-key.pem
+          rsync -a --quiet --include='*.html' --include='*.css' --include='*.js' --exclude='*' index/ packages/
+          rsync -a --quiet --include='*.html' --include='*.css' --include='*.js' --exclude='*' index/ kmods/
+          rsync -a --quiet openwrt/pkgs/snapshots packages/
+          rsync -a --quiet openwrt/kmods/snapshots kmods/
+          printf '%s' "${{ secrets.PUBLIC_KEY }}" > packages/public-key.pem
+          printf '%s' "${{ secrets.PUBLIC_KEY }}" > kmods/public-key.pem
 
-      - name: Commit
-        continue-on-error: true
+      - name: Setup git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+      - name: Commit
+        continue-on-error: true
+        run: |
           git add bin/
           git commit -m "build: $(date +"%Y-%m-%d %H:%M:%S %Z") [rc]"
           git push origin main --force
 
-      - name: Deploy pages
-        uses: cloudflare/wrangler-action@v3
-        with:
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          command: pages deploy dist --project-name=infinitypackages --branch=packages
-          
       - name: Create tag
         id: create_tag
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
           TAG="$(date '+%y.%m.%d')-rc"
           if git ls-remote --tags origin "$TAG" | grep -q "$TAG"; then
             git push origin --delete "$TAG" || true
@@ -110,3 +107,19 @@ jobs:
           make_latest: false
           draft: false
           prerelease: true
+
+      - name: Deploy packages
+        continue-on-error: true
+        uses: cloudflare/wrangler-action@v3
+        with:
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          command: pages deploy packages --project-name=infinitypackages --branch=packages
+
+      - name: Deploy kmods
+        continue-on-error: true
+        uses: cloudflare/wrangler-action@v3
+        with:
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          command: pages deploy kmods --project-name=infinitykmods --branch=kmods
