@@ -14,6 +14,8 @@
 
 - [infinityapps](https://infinityapps.pages.dev/)
 
+- [infinitykmods](https://infinitykmods.pages.dev/)
+
 - [infinitypackages](https://infinitypackages.pages.dev/)
 
 ### Firmware Download
