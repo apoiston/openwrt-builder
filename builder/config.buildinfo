@@ -1,9 +1,6 @@
 CONFIG_TARGET_x86=y
 CONFIG_TARGET_x86_64=y
 CONFIG_TARGET_x86_64_DEVICE_generic=y
-# CONFIG_TARGET_ROOTFS_EXT4FS is not set
-# CONFIG_TARGET_ROOTFS_SQUASHFS is not set
-CONFIG_TARGET_ROOTFS_PARTSIZE=984
 CONFIG_HTOP_LMSENSORS=y
 CONFIG_KERNEL_BUILD_DOMAIN="actions"
 CONFIG_KERNEL_BUILD_USER="apois"
@@ -65,6 +62,7 @@ CONFIG_OPENSSL_WITH_SRP=y
 CONFIG_OPENSSL_WITH_TLS13=y
 CONFIG_OPENSSL_WITH_WHIRLPOOL=y
 CONFIG_PACKAGE_attendedsysupgrade-common=y
+CONFIG_PACKAGE_bandix=y
 CONFIG_PACKAGE_bash=y
 CONFIG_PACKAGE_block-mount=y
 CONFIG_PACKAGE_cgi-io=y
@@ -158,15 +156,18 @@ CONFIG_PACKAGE_libwrap=y
 CONFIG_PACKAGE_libxml2=y
 CONFIG_PACKAGE_lsqlite3=y
 CONFIG_PACKAGE_luci-app-attendedsysupgrade=y
+CONFIG_PACKAGE_luci-app-bandix=y
 CONFIG_PACKAGE_luci-app-firewall=y
 CONFIG_PACKAGE_luci-app-nikki=y
 CONFIG_PACKAGE_luci-app-package-manager=y
 CONFIG_PACKAGE_luci-base=y
 CONFIG_PACKAGE_luci-i18n-attendedsysupgrade-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-bandix-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-base-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-firewall-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-nikki-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-package-manager-zh-cn=y
+CONFIG_PACKAGE_luci-lib-jsonc=y
 CONFIG_PACKAGE_luci-lib-uqr=y
 CONFIG_PACKAGE_luci-mod-admin-full=y
 CONFIG_PACKAGE_luci-mod-network=y
