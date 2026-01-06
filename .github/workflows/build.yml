@@ -1,0 +1,164 @@
+name: Build
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "00 21 * * *"
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: write
+
+    steps:
+      - name: Set timezone
+        run: |
+          sudo timedatectl set-timezone Asia/Shanghai
+          date +"%Y-%m-%d %H:%M:%S %Z"
+                    
+      - name: Display system information
+        run: |
+          date +"%Y-%m-%d %H:%M:%S %Z"
+          lscpu | grep -E '^Architecture|^CPU\(s\):|^Model name'
+          uname -sr
+          lsb_release -a
+          free -h
+          df -Th
+
+      - name: Free disk space
+        uses: endersonmenezes/free-disk-space@v3
+        with:
+          remove_android: true
+          remove_dotnet: true
+          remove_haskell: true
+          remove_tool_cache: true
+          remove_swap: false
+          remove_packages: "azure-cli google-cloud-cli microsoft-edge-stable google-chrome-stable firefox postgresql* temurin-* *llvm* mysql* dotnet-sdk-*"
+          remove_packages_one_command: true
+          remove_folders: "/usr/share/swift /usr/share/miniconda /usr/share/az* /usr/local/share/chromium /usr/local/share/powershell /usr/local/julia /usr/local/aws-cli /usr/local/aws-sam-cli /usr/share/gradle"
+          rm_cmd: "rmz"
+          rmz_version: "3.1.1"
+          testing: false
+
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Build
+        uses: apoiston/actions@image
+        with:
+          private_key: ${{ secrets.PRIVATE_KEY }}
+          public_key: ${{ secrets.PUBLIC_KEY }}
+          prepare_compile: ${{ secrets.PREPARE_COMPILE }}
+          prepare_configure: ${{ secrets.PREPARE_CONFIGURE }}
+          prepare_image: ${{ secrets.PREPARE_IMAGE }}
+          config_buildinfo: builder/config.buildinfo
+          enable_prebuilt_tools: true
+          enable_build_toolchain: true
+          enable_build_kernel: true
+          enable_build_everything: true
+          enable_prepare_image: true
+
+      - name: Prepare
+        continue-on-error: true
+        run: |
+          rsync -a --quiet --include='*.buildinfo' --exclude='*' openwrt/builder/ bin/
+
+      - name: Commit
+        continue-on-error: true
+        run: |
+          git add bin/
+          git commit -m "build: $(date +"%Y-%m-%d %H:%M:%S %Z")"
+          git push origin main --force
+
+      - name: Create tag
+        id: create_tag
+        run: |
+          TAG="$(date '+%y.%m.%d')"
+          if git ls-remote --tags origin "$TAG" | grep -q "$TAG"; then
+            git push origin --delete "$TAG" || true
+          fi
+          git tag -d "$TAG" 2>/dev/null || true
+          git tag "$TAG"
+          git push origin "$TAG"
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: OpenWrt SNAPSHOT ${{ steps.create_tag.outputs.tag }}
+          tag_name: ${{ steps.create_tag.outputs.tag }}
+          body_path: openwrt/CHANGELOG.md
+          files: |
+            openwrt/builder/*.gz
+            openwrt/builder/*.zst
+            openwrt/builder/*.txt
+          make_latest: true
+          draft: false
+          prerelease: false
+
+      - name: Upload
+        uses: actions/upload-artifact@v6
+        with:
+          name: packages
+          path: |
+            openwrt/builder-apps/
+            openwrt/builder-kmods/
+            openwrt/builder-packages/
+
+  deploy:
+    needs: build
+    name: Deploy ${{ matrix.branch }}
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        include:
+          - directory: builder-apps
+            project_name: infinityapps
+            branch: apps
+          - directory: builder-kmods
+            project_name: infinitykmods
+            branch: kmods
+          - directory: builder-packages
+            project_name: infinitypackages
+            branch: packages
+
+    steps:
+      - name: Set timezone
+        run: |
+          sudo timedatectl set-timezone Asia/Shanghai
+          date +"%Y-%m-%d %H:%M:%S %Z"
+
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Download
+        uses: actions/download-artifact@v7
+        with:
+          name: packages
+          path: .
+
+      - name: Prepare
+        continue-on-error: true
+        run: |
+          date +"%Y-%m-%d %H:%M:%S %Z"
+          git clone --depth=1 --quiet --branch packages https://github.com/apoiston/index.git
+          sed -i "s/N\/A/$(date +"%Y-%m-%d %H:%M:%S %Z")/g" index/index.html
+          rsync -a --quiet --include='*.html' --include='*.css' --include='*.js' --exclude='*' index/ ${{ matrix.directory }}/
+          printf '%s' "${{ secrets.PUBLIC_KEY }}" > ${{ matrix.directory }}/public-key.pem
+
+      - name: Deploy
+        continue-on-error: true
+        uses: cloudflare/wrangler-action@v3
+        with:
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          command: pages deploy ${{ matrix.directory }} --project-name=${{ matrix.project_name }} --branch=${{ matrix.branch }}

@@ -1,0 +1,32 @@
+name: Clean
+
+on:
+  workflow_dispatch:
+    inputs:
+      clean_releases_days:
+        description: ''
+        type: string
+        required: false
+        default: '90'
+
+  schedule:
+    - cron: "0 3 * * 0"
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Clean releases
+        uses: apoiston/actions@clean
+        with:
+          clean_releases_days: ${{ inputs.clean_releases_days }}
+          enable_clean_releases: true
