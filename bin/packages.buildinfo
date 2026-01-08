@@ -1,7 +1,7 @@
 apk-mbedtls - 3.0.2-r1
 attendedsysupgrade-common - 9
 bandix - 0.11.0-r1
-base-files - 1679~0ff1553bd7
+base-files - 1679~e1a9636959
 bash - 5.3-r1
 block-mount - 2025.10.03~12858e28-r1
 bnx2-firmware - 20251125-r1
@@ -26,7 +26,7 @@ ip-full - 6.18.0-r1
 jansson4 - 2.14.1-r1
 jshn - 2025.12.08~7928f171-r1
 jsonfilter - 2025.10.04~f4fe702d-r1
-kernel - 6.18.4~3769b5595887bb2d3d14844ffb5d9804-r1
+kernel - 6.18.4~43db39f8417b6c37b796c46ad80a92da-r1
 kmod-acpi-video - 6.18.4-r1
 kmod-amazon-ena - 6.18.4-r1
 kmod-amd-xgbe - 6.18.4-r1
@@ -234,7 +234,7 @@ nginx-mod-luci - 1.29.4-r1
 nginx-mod-ubus - 1.29.4-r1
 nginx-ssl - 1.29.4-r1
 nginx-ssl-util - 1.7-r2
-nikki - 2026.01.07~0f2baca-r1
+nikki - 2026.01.08~94c8d60-r1
 odhcp6c - 2025.12.29~8abb4506-r1
 odhcpd-ipv6only - 2025.12.18~3fda5f8b-r1
 open-vm-tools - 13.0.0-r1
