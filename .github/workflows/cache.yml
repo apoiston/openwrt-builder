@@ -1,7 +1,12 @@
-name: Build toolchain
+name: Cache
 
 on:
   workflow_dispatch:
+  workflow_run:
+      workflows: ["Build toolchain"]
+      types:
+        - completed
+      branches: ["main"]
 
 jobs:
   build:
@@ -10,6 +15,7 @@ jobs:
     permissions:
       actions: write
       contents: write
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
 
     steps:
       - name: Set timezone
@@ -36,6 +42,14 @@ jobs:
           public_key: ${{ secrets.PUBLIC_KEY }}
           prepare_compile: ${{ secrets.PREPARE_COMPILE }}
           prepare_configure: ${{ secrets.PREPARE_CONFIGURE }}
+          prepare_toolchain: ${{ secrets.PREPARE_TOOLCHAIN }}
           config_buildinfo: builder/config.buildinfo
-          enable_build_tools: true
-          enable_build_toolchain: true
+          enable_prepare_toolchain: true
+
+      - name: Upload
+        uses: actions/upload-artifact@v6
+        with:
+          name: toolchain
+          path: |
+            openwrt/builder/*.zst
+            openwrt/builder/*.txt
