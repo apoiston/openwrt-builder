@@ -44,6 +44,8 @@ jobs:
           prepare_configure: ${{ secrets.PREPARE_CONFIGURE }}
           prepare_toolchain: ${{ secrets.PREPARE_TOOLCHAIN }}
           config_buildinfo: builder/config.buildinfo
+          enable_prebuilt_tools: true
+          enable_build_toolchain: true
           enable_prepare_toolchain: true
 
       - name: Upload

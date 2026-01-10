@@ -61,6 +61,8 @@ jobs:
           prepare_image: ${{ secrets.PREPARE_IMAGE }}
           config_buildinfo: builder/config.buildinfo
           enable_prebuilt_tools: true
+          enable_build_toolchain: true
+          enable_build_kernel: true          
           enable_build_everything: true
           enable_prepare_image: true
 
