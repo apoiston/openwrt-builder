@@ -1,7 +1,7 @@
 apk-mbedtls - 3.0.2-r2
 attendedsysupgrade-common - 9
 bandix - 0.12.0-r1
-base-files - 1680~31cdd13d22
+base-files - 1681~e1c125c167
 bash - 5.3-r1
 block-mount - 2025.10.03~12858e28-r1
 bnx2-firmware - 20251125-r1
@@ -156,8 +156,8 @@ libf2fs6 - 1.16.0-r4
 libffi - 3.4.7-r1
 libgcc1 - 15.2.0-r5
 libgmp10 - 6.3.0-r2
-libiwinfo-data - 2025.11.29~2ebef3da-r1
-libiwinfo20230701 - 2025.11.29~2ebef3da-r1
+libiwinfo-data - 2026.01.14~f5dd57a8-r1
+libiwinfo20230701 - 2026.01.14~f5dd57a8-r1
 libjson-c5 - 0.18-r1
 libjson-script20251208 - 2025.12.08~7928f171-r1
 libkeyutils1 - 1.6.3-r2
@@ -226,7 +226,7 @@ luci-proto-ppp - 26.012.79498~2eb0501
 luci-theme-bootstrap - 26.012.79498~2eb0501
 mkf2fs - 1.16.0-r4
 mtd - 27
-netifd - 2025.10.20~777f5942-r2
+netifd - 2025.10.20~777f5942-r3
 nfs-kernel-server - 2.8.4-r3
 nfs-utils - 2.8.4-r3
 nftables-json - 1.1.6-r1
@@ -234,7 +234,7 @@ nginx-mod-luci - 1.29.4-r1
 nginx-mod-ubus - 1.29.4-r1
 nginx-ssl - 1.29.4-r1
 nginx-ssl-util - 1.7-r2
-nikki - 2026.01.12~c5b0f00-r2
+nikki - 2026.01.14~06f5fba-r1
 odhcp6c - 2025.12.29~8abb4506-r1
 odhcpd-ipv6only - 2025.12.18~3fda5f8b-r1
 open-vm-tools - 13.0.0-r1
