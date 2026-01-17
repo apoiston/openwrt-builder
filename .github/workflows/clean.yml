@@ -2,12 +2,12 @@ name: Clean
 
 on:
   workflow_dispatch:
-
   schedule:
     - cron: "0 12 * * 0"
 
 jobs:
   clean:
+    name: Clean
     runs-on: ubuntu-latest
     permissions:
       actions: read
