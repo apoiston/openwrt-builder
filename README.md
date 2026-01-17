@@ -25,37 +25,37 @@
 ### Common Commands
 
 ```shell
-# Update Package list
+# update index
 apk update
 ```
 
 ```shell
-# Upgrade All Packages
+# upgrade all
 apk upgrade
 ```
 
 ```shell
-# System Version
+# upgrade nikki
+apk add -U nikki
+```
+
+```shell
+# openwrt version
 cat /etc/openwrt_version
 ```
 
 ```shell
-# Build Information
+# build details
 cat /proc/version
 ```
 
 ```shell
-# Restart Network Service
-service network restart
-```
-
-```shell
-# Flash Firmware
+# flash firmware
 sysupgrade /tmp/openwrt-x86-64-generic-erofs-combined-efi.img.gz
 ```
 
 ```shell
-# Flash Firmware (Clean Install)
+# flash firmware (clean install)
 sysupgrade -n /tmp/openwrt-x86-64-generic-erofs-combined-efi.img.gz
 ```
 
