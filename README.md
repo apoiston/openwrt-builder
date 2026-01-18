@@ -4,23 +4,23 @@
 
 ### Basic Information
 
-- **LAN Address**: `10.0.0.1`
+- **LAN Address**: [10.0.0.1](http://10.0.0.1/)
 - **Target Platform**: `x86/64`
 - **Firmware Version**: `OpenWrt SNAPSHOT`
 - **Username**: `root`
 - **Password**: `NONE`
 
-### Package Repositories
-
-- [infinityapps](https://infinityapps.pages.dev/)
-
-- [infinitykmods](https://infinitykmods.pages.dev/)
-
-- [infinitypackages](https://infinitypackages.pages.dev/)
-
 ### Firmware Download
 
 - [Releases](https://github.com/apoiston/openwrt-builder/releases)
+
+### Package Repositories
+
+- [apps](https://infinityapps.pages.dev/)
+
+- [kmods](https://infinitykmods.pages.dev/)
+
+- [packages](https://infinitypackages.pages.dev/)
 
 ### Common Commands
 
@@ -36,7 +36,7 @@ apk upgrade
 
 ```shell
 # upgrade nikki
-apk add -U nikki
+apk add --update --upgrade nikki
 ```
 
 ```shell
