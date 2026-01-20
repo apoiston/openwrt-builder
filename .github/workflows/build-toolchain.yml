@@ -37,5 +37,5 @@ jobs:
           prepare_compile: ${{ secrets.PREPARE_COMPILE }}
           prepare_configure: ${{ secrets.PREPARE_CONFIGURE }}
           config_buildinfo: builder/config.buildinfo
-          enable_build_tools: true
+          # enable_build_tools: true
           enable_build_toolchain: true
