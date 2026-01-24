@@ -75,7 +75,7 @@ jobs:
         continue-on-error: true
         run: |
           git add bin/
-          git commit -m "build: $(date +"%Y-%m-%d %H:%M:%S %Z")"
+          git commit -m "build: $(date +"%Y-%m-%d %H:%M:%S %Z") [IMAGE]"
           git push origin main --force
 
       - name: Create tag
@@ -137,14 +137,10 @@ jobs:
           sudo timedatectl set-timezone Asia/Shanghai
           date +"%Y-%m-%d %H:%M:%S %Z"
 
-      - name: Checkout
-        uses: actions/checkout@v6
-
       - name: Download
         uses: actions/download-artifact@v7
         with:
           name: packages
-          path: .
 
       - name: Prepare
         continue-on-error: true
