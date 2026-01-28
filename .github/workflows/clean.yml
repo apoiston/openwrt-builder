@@ -6,8 +6,28 @@ on:
     - cron: "0 10 * * 0"
 
 jobs:
-  clean:
-    name: Clean
+  clean-pages:
+    name: Clean pages
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        project_name:
+          - infinityapps
+          - infinitykmods
+          - infinitypackages
+         
+    steps:
+      - name: Clean
+        uses: apoiston/actions@clean
+        with:
+          cloudflare_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          cloudflare_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          project_name: ${{ matrix.project_name }}
+          enable_clean_pages: true 
+
+  clean-releases:
+    name: Clean releases
     runs-on: ubuntu-latest
     permissions:
       actions: read
@@ -19,7 +39,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Clean releases
+      - name: Clean
         uses: apoiston/actions@clean
         with:
           enable_clean_releases: true
