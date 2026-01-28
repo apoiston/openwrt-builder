@@ -1,0 +1,126 @@
+name: Build packages
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 5 * * *"
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: write
+
+    steps:
+      - name: Set timezone
+        run: |
+          sudo timedatectl set-timezone Asia/Shanghai
+          date +"%Y-%m-%d %H:%M:%S %Z"
+                    
+      - name: Display system information
+        run: |
+          lscpu | grep -E '^Architecture|^CPU\(s\):|^Model name'
+          uname -sr
+          lsb_release -a
+          free -h
+          df -Th
+
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Build
+        uses: apoiston/actions@packages
+        with:
+          private_key: ${{ secrets.PRIVATE_KEY }}
+          public_key: ${{ secrets.PUBLIC_KEY }}
+          setup_sdk: ${{ secrets.SETUP_SDK }}
+          build_packages: ${{ secrets.BUILD_PACKAGES }}
+          config_buildinfo: builder/config.buildinfo
+          enable_build_packages: true
+
+      - name: Prepare
+        continue-on-error: true
+        run: |
+          rsync -a --quiet --include='*.buildinfo' --exclude='*' openwrt/builder/ bin/
+
+      - name: Commit
+        continue-on-error: true
+        run: |
+          git add bin/
+          git commit -m "build: $(date +"%Y-%m-%d %H:%M:%S %Z") [SDK]"
+          git push origin main --force
+
+      - name: Upload
+        uses: actions/upload-artifact@v5
+        with:
+          name: packages
+          path: |
+            openwrt/builder-apps/
+            openwrt/builder-kmods/
+            openwrt/builder-packages/
+
+  deploy:
+    needs: build
+    name: Deploy ${{ matrix.branch }}
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        include:
+          - directory: builder-apps
+            project_name: infinityapps
+            branch: apps
+            tag: APPS
+          - directory: builder-kmods
+            project_name: infinitykmods
+            branch: kmods
+            tag: KMODS
+          - directory: builder-packages
+            project_name: infinitypackages
+            branch: packages
+            tag: PACKAGES
+
+    steps:
+      - name: Set timezone
+        id: timezone
+        run: |
+          sudo timedatectl set-timezone Asia/Shanghai
+          date +"%Y-%m-%d %H:%M:%S %Z"
+          echo "time=$(date +"%Y-%m-%d %H:%M:%S %Z")" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Download
+        uses: actions/download-artifact@v7
+        with:
+          name: packages
+
+      - name: Prepare
+        continue-on-error: true
+        run: |
+          date +"%Y-%m-%d %H:%M:%S %Z"
+          git clone --depth=1 --quiet --branch packages https://github.com/apoiston/index.git
+          sed -i "s/N\/A/$(date +"%Y-%m-%d %H:%M:%S %Z")/g" index/index.html
+          rsync -a --quiet --include='*.html' --include='*.css' --include='*.js' --exclude='*' index/ ${{ matrix.directory }}/
+          printf '%s' "${{ secrets.PUBLIC_KEY }}" > ${{ matrix.directory }}/public-key.pem
+
+      - name: Commit
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ${{ matrix.directory }}
+          publish_branch: ${{ matrix.branch }}
+          full_commit_message: "build: ${{ steps.timezone.outputs.time }} [${{ matrix.tag }}]"
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          force_orphan: true
+          keep_files: false
+          disable_nojekyll: true
