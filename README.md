@@ -25,6 +25,11 @@
 ### Common Commands
 
 ```shell
+# add key
+wget -O /etc/apk/keys/extra.pem https://infinitypackages.pages.dev/public-key.pem
+```
+
+```shell
 # update index
 apk update
 ```
@@ -35,8 +40,13 @@ apk upgrade
 ```
 
 ```shell
-# upgrade nikki
-apk add --update --upgrade nikki
+# install packages
+apk add --update luci-i18n-nikki-zh-cn luci-app-nikki nikki
+```
+
+```shell
+# upgrade packages
+apk add --update --upgrade nikki luci-app-nikki luci-i18n-nikki-zh-cn
 ```
 
 ```shell
@@ -59,7 +69,7 @@ sysupgrade /tmp/openwrt-x86-64-generic-erofs-combined-efi.img.gz
 sysupgrade -n /tmp/openwrt-x86-64-generic-erofs-combined-efi.img.gz
 ```
 
-### Special Thanks
+### Credits
 
 - [Joseph Mory](http://github.com/morytyann)
 
@@ -72,3 +82,7 @@ sysupgrade -n /tmp/openwrt-x86-64-generic-erofs-combined-efi.img.gz
 - [GitHub](https://github.com)
 
 - [GitHub Actions](https://github.com/features/actions)
+
+- [MetaCubeX/mihomo](https://github.com/MetaCubeX/mihomo)
+
+- [timsaya/bandix](https://github.com/timsaya/luci-app-bandix)
