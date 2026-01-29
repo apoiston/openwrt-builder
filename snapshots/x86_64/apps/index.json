@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "architecture": "x86_64",
+  "packages": {
+    "bandix": "0.12.3-r1",
+    "luci-app-bandix": "0.12.2-r1",
+    "luci-app-nikki": "1.25.0-r1",
+    "luci-i18n-bandix-zh-cn": "26.028.13287~ef44d8c",
+    "luci-i18n-nikki-zh-cn": "26.019.25085~4fb4df4",
+    "nikki": "2026.01.29~f52c935-r1"
+  }
+}
