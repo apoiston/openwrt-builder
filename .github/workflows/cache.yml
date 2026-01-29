@@ -1,0 +1,57 @@
+name: Cache
+
+on:
+  workflow_dispatch:
+  workflow_run:
+      workflows: ["Build toolchain"]
+      types:
+        - completed
+      branches: ["main"]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: write
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+
+    steps:
+      - name: Set timezone
+        run: |
+          sudo timedatectl set-timezone Asia/Shanghai
+          date +"%Y-%m-%d %H:%M:%S %Z"
+
+      - name: Display system info
+        run: |
+          date +"%Y-%m-%d %H:%M:%S %Z"
+          lscpu | grep -E '^Architecture|^CPU\(s\):|^Model name'
+          uname -sr
+          lsb_release -a
+          free -h
+          df -Th
+
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Build
+        uses: apoiston/actions@image
+        with:
+          private_key: ${{ secrets.PRIVATE_KEY }}
+          public_key: ${{ secrets.PUBLIC_KEY }}
+          prepare_compile: ${{ secrets.PREPARE_COMPILE }}
+          prepare_configure: ${{ secrets.PREPARE_CONFIGURE }}
+          prepare_toolchain: ${{ secrets.PREPARE_TOOLCHAIN }}
+          config_buildinfo: builder/config.buildinfo
+          enable_prebuilt_tools: true
+          enable_build_toolchain: true
+          enable_prepare_toolchain: true
+
+      - name: Upload
+        uses: actions/upload-artifact@v6
+        with:
+          name: toolchain
+          path: |
+            openwrt/builder/*.zst
+            openwrt/builder/*.txt
