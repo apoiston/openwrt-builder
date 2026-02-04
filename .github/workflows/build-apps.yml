@@ -1,0 +1,78 @@
+name: Build apps
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: write
+
+    steps:
+      - name: Set timezone
+        id: timezone
+        run: |
+          sudo timedatectl set-timezone Asia/Shanghai
+          date +"%Y-%m-%d %H:%M:%S %Z"
+          echo "time=$(date +"%Y-%m-%d %H:%M:%S %Z")" >> "$GITHUB_OUTPUT"
+
+      - name: Display system info
+        run: |
+          date +"%Y-%m-%d %H:%M:%S %Z"
+          lscpu | grep -E '^Architecture|^CPU\(s\):|^Model name'
+          uname -sr
+          lsb_release -a
+          free -h
+          df -Th
+
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Build
+        uses: apoiston/actions@package
+        with:
+          private_key: ${{ secrets.PRIVATE_KEY }}
+          public_key: ${{ secrets.PUBLIC_KEY }}
+          setup_sdk: ${{ secrets.SETUP_SDK }}
+          build_apps: ${{ secrets.BUILD_APPS }}
+          config_buildinfo: builder/config.buildinfo
+          enable_build_apps: true
+
+      - name: Prepare
+        continue-on-error: true
+        run: |
+          date +"%Y-%m-%d %H:%M:%S %Z"
+          git clone --depth=1 --quiet --branch packages https://github.com/apoiston/index.git
+          sed -i "s/N\/A/$(date +"%Y-%m-%d %H:%M:%S %Z")/g" index/index.html
+          rsync -a --quiet --include='*.buildinfo' --exclude='*' openwrt/builder/ bin/
+          rsync -a --quiet --include="*.html" --include="*.css" --include="*.js" --exclude="*" index/ apps/
+          rsync -a --quiet openwrt/builder-apps/snapshots apps/
+          printf '%s' "${{ secrets.PUBLIC_KEY }}" > apps/public-key.pem
+
+      - name: Commit
+        continue-on-error: true
+        run: |
+          git add bin/
+          git commit -m "build: $(date +"%Y-%m-%d %H:%M:%S %Z") [APPS]"
+          git push origin main --force
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./apps
+          publish_branch: apps
+          full_commit_message: "build: ${{ steps.timezone.outputs.time }} [APPS]"
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          force_orphan: true
+          keep_files: false
+          disable_nojekyll: true
