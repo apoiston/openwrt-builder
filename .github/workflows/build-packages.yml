@@ -125,26 +125,40 @@ jobs:
           keep_files: false
           disable_nojekyll: true
 
+  # clean:
+  #   needs: deploy
+  #   name: Clean ${{ matrix.branch }}
+  #   runs-on: ubuntu-latest
+
+  #   strategy:
+  #     matrix:
+  #       include:
+  #         - project_name: infinityapps
+  #           branch: apps
+  #         - project_name: infinitykmods
+  #           branch: kmods
+  #         - project_name: infinitypackages
+  #           branch: packages
+          
+  #   steps:
+  #     - name: Clean pages
+  #       uses: apoiston/actions@clean
+  #       with:
+  #         cloudflare_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+  #         cloudflare_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+  #         project_name: ${{ matrix.project_name }}
+  #         enable_clean_preview: true
+
   clean:
     needs: deploy
-    name: Clean ${{ matrix.branch }}
+    name: Clean pages
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        include:
-          - project_name: infinityapps
-            branch: apps
-          - project_name: infinitykmods
-            branch: kmods
-          - project_name: infinitypackages
-            branch: packages
-          
     steps:
       - name: Clean pages
         uses: apoiston/actions@clean
         with:
           cloudflare_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           cloudflare_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          project_name: ${{ matrix.project_name }}
+          project_name: infinityapps infinitykmods infinitypackages
           enable_clean_preview: true
