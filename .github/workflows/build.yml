@@ -171,3 +171,17 @@ jobs:
           force_orphan: true
           keep_files: false
           disable_nojekyll: true
+
+  clean:
+    needs: deploy
+    name: Clean pages
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clean pages
+        uses: apoiston/actions@clean
+        with:
+          cloudflare_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          cloudflare_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          project_name: infinityapps infinitykmods infinitypackages
+          enable_clean_preview: true
