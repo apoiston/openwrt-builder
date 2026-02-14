@@ -1,5 +1,5 @@
 apk-mbedtls - 3.0.2-r5
-base-files - 1683~db91c68233
+base-files - 1683~20644af030
 bash - 5.3-r2
 block-mount - 2025.10.03~12858e28-r1
 bnx2-firmware - 20260110-r1
@@ -237,9 +237,9 @@ openwrt-keyring - 2025.12.10~f0670054-r1
 partx-utils - 2.41.3-r1
 ppp - 2.5.2-r2
 ppp-mod-pppoe - 2.5.2-r2
-procd - 2025.10.04~3b3501ab-r1
-procd-seccomp - 2025.10.04~3b3501ab-r1
-procd-ujail - 2025.10.04~3b3501ab-r1
+procd - 2026.02.09~7e5b324c-r1
+procd-seccomp - 2026.02.09~7e5b324c-r1
+procd-ujail - 2026.02.09~7e5b324c-r1
 r8169-firmware - 20260110-r1
 rpcbind - 1.2.6-r2
 rpcd - 2025.12.03~ffb9961c-r1
