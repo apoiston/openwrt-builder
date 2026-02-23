@@ -1,5 +1,5 @@
 apk-mbedtls - 3.0.2-r5
-base-files - 1683~85250b94f6
+base-files - 1683~cf4cd07777
 bash - 5.3-r2
 block-mount - 2026.02.15~8d377aa6-r1
 bnx2-firmware - 20260110-r1
@@ -220,7 +220,7 @@ luci-proto-ppp - 26.053.60539~d2b850b
 luci-theme-bootstrap - 26.053.60539~d2b850b
 mkf2fs - 1.16.0-r4
 mtd - 27
-netifd - 2026.02.15~c6122254-r1
+netifd - 2026.02.23~299a51f0-r1
 nfs-kernel-server - 2.8.5-r1
 nfs-utils - 2.8.5-r1
 nftables-json - 1.1.6-r1
@@ -228,7 +228,7 @@ nginx-mod-luci - 1.29.5-r1
 nginx-mod-ubus - 1.29.5-r1
 nginx-ssl - 1.29.5-r1
 nginx-ssl-util - 1.7-r2
-nikki - 2026.02.21~3752cb0-r2
+nikki - 2026.02.23~836c972-r1
 odhcp6c - 2026.01.25~24485bb4-r1
 odhcpd-ipv6only - 2026.01.19~13ef4837-r1
 open-vm-tools - 13.0.0-r1
