@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "architecture": "x86_64",
+  "packages": {
+    "luci-app-nikki": "1.25.2-r1",
+    "luci-i18n-nikki-zh-cn": "26.061.12721~980cc7d",
+    "nikki": "2026.03.01~9033717-r1"
+  }
+}
