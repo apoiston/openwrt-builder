@@ -31,10 +31,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Configure git
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+      # - name: Configure git
+      #   run: |
+      #     git config user.name "github-actions[bot]"
+      #     git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Build
         uses: apoiston/actions@package
@@ -52,17 +52,17 @@ jobs:
           date +"%Y-%m-%d %H:%M:%S %Z"
           git clone --depth=1 --quiet --branch packages https://github.com/apoiston/index.git
           sed -i "s/N\/A/$(date +"%Y-%m-%d %H:%M:%S %Z")/g" index/index.html
-          rsync -a --quiet --include='*.buildinfo' --exclude='*' openwrt/builder/ bin/
+          # rsync -a --quiet --include='*.buildinfo' --exclude='*' openwrt/builder/ bin/
           rsync -a --quiet --include="*.html" --include="*.css" --include="*.js" --exclude="*" index/ kmods/
           rsync -a --quiet openwrt/builder-kmods/snapshots kmods/
           printf '%s' "${{ secrets.PUBLIC_KEY }}" > kmods/public-key.pem
 
-      - name: Commit
-        continue-on-error: true
-        run: |
-          git add bin/
-          git commit -m "build: $(date +"%Y-%m-%d %H:%M:%S %Z") [KMODS]"
-          git push origin main --force
+      # - name: Commit
+      #   continue-on-error: true
+      #   run: |
+      #     git add bin/
+      #     git commit -m "build: $(date +"%Y-%m-%d %H:%M:%S %Z") [KMODS]"
+      #     git push origin main --force
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4

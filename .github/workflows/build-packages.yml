@@ -30,10 +30,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Configure git
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+      # - name: Configure git
+      #   run: |
+      #     git config user.name "github-actions[bot]"
+      #     git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Build
         uses: apoiston/actions@package
@@ -45,17 +45,17 @@ jobs:
           config_buildinfo: builder/config.buildinfo
           enable_build_packages: true
 
-      - name: Prepare
-        continue-on-error: true
-        run: |
-          rsync -a --quiet --include='*.buildinfo' --exclude='*' openwrt/builder/ bin/
+      # - name: Prepare
+      #   continue-on-error: true
+      #   run: |
+      #     rsync -a --quiet --include='*.buildinfo' --exclude='*' openwrt/builder/ bin/
 
-      - name: Commit
-        continue-on-error: true
-        run: |
-          git add bin/
-          git commit -m "build: $(date +"%Y-%m-%d %H:%M:%S %Z") [PACKAGE]"
-          git push origin main --force
+      # - name: Commit
+      #   continue-on-error: true
+      #   run: |
+      #     git add bin/
+      #     git commit -m "build: $(date +"%Y-%m-%d %H:%M:%S %Z") [PACKAGE]"
+      #     git push origin main --force
 
       - name: Upload
         uses: actions/upload-artifact@v7
