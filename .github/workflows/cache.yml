@@ -3,7 +3,7 @@ name: Cache
 on:
   workflow_dispatch:
   workflow_run:
-      workflows: ["Build toolchain"]
+      workflows: ["Toolchain"]
       types:
         - completed
       branches: ["main"]

@@ -1,4 +1,4 @@
-name: Build packages
+name: Packages
 
 on:
   workflow_dispatch:
@@ -30,11 +30,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      # - name: Configure git
-      #   run: |
-      #     git config user.name "github-actions[bot]"
-      #     git config user.email "github-actions[bot]@users.noreply.github.com"
-
       - name: Build
         uses: apoiston/actions@package
         with:
@@ -44,18 +39,6 @@ jobs:
           build_packages: ${{ secrets.BUILD_PACKAGES }}
           config_buildinfo: builder/config.buildinfo
           enable_build_packages: true
-
-      # - name: Prepare
-      #   continue-on-error: true
-      #   run: |
-      #     rsync -a --quiet --include='*.buildinfo' --exclude='*' openwrt/builder/ bin/
-
-      # - name: Commit
-      #   continue-on-error: true
-      #   run: |
-      #     git add bin/
-      #     git commit -m "build: $(date +"%Y-%m-%d %H:%M:%S %Z") [PACKAGE]"
-      #     git push origin main --force
 
       - name: Upload
         uses: actions/upload-artifact@v7
@@ -124,30 +107,6 @@ jobs:
           force_orphan: true
           keep_files: false
           disable_nojekyll: true
-
-  # clean:
-  #   needs: deploy
-  #   name: Clean ${{ matrix.branch }}
-  #   runs-on: ubuntu-latest
-
-  #   strategy:
-  #     matrix:
-  #       include:
-  #         - project_name: infinityapps
-  #           branch: apps
-  #         - project_name: infinitykmods
-  #           branch: kmods
-  #         - project_name: infinitypackages
-  #           branch: packages
-          
-  #   steps:
-  #     - name: Clean pages
-  #       uses: apoiston/actions@clean
-  #       with:
-  #         cloudflare_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-  #         cloudflare_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-  #         project_name: ${{ matrix.project_name }}
-  #         enable_clean_preview: true
 
   clean:
     needs: deploy

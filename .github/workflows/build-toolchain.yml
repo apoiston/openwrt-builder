@@ -1,4 +1,4 @@
-name: Build toolchain
+name: Toolchain
 
 on:
   workflow_dispatch:
