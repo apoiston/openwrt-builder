@@ -1,9 +1,9 @@
-# 2026-03-11 06:35:24 CST
+# 2026-03-12 06:36:17 CST
 apk-mbedtls - 3.0.5-r2
-base-files - 1685~5f983981db
+base-files - 1685~48b8ff890b
 bash - 5.3-r2
 block-mount - 2026.02.15~8d377aa6-r1
-bnx2-firmware - 20260221-r1
+bnx2-firmware - 20260309-r1
 busybox - 1.37.0-r6
 ca-bundle - 20250419-r2
 cgi-io - 2025.12.11~658b14bd-r1
@@ -20,7 +20,7 @@ grub2 - 2.12-r1
 grub2-bios-setup - 2.12-r1
 grub2-efi - 2.12-r1
 htop - 3.4.1-r1
-i915-firmware-dmc - 20260221-r1
+i915-firmware-dmc - 20260309-r1
 ip-full - 6.18.0-r2
 jansson4 - 2.15.0-r1
 jshn - 2026.02.13~1aa36ee7-r1
@@ -222,14 +222,14 @@ luci-theme-bootstrap - 26.069.64352~8e3bc67
 mkf2fs - 1.16.0-r4
 mtd - 27
 netifd - 2026.02.26~69a5afc9-r1
-nfs-kernel-server - 2.8.5-r1
-nfs-utils - 2.8.5-r1
+nfs-kernel-server - 2.8.6-r1
+nfs-utils - 2.8.6-r1
 nftables-json - 1.1.6-r1
 nginx-mod-luci - 1.29.6-r1
 nginx-mod-ubus - 1.29.6-r1
 nginx-ssl - 1.29.6-r1
 nginx-ssl-util - 1.7-r2
-nikki - 2026.03.11~61c1358-r1
+nikki - 2026.03.11~0317d9f-r1
 odhcp6c - 2026.01.25~24485bb4-r1
 odhcpd-ipv6only - 2026.01.19~13ef4837-r1
 open-vm-tools - 13.0.0-r1
@@ -238,10 +238,10 @@ openwrt-keyring - 2025.12.10~f0670054-r1
 partx-utils - 2.41.3-r1
 ppp - 2.5.2-r3
 ppp-mod-pppoe - 2.5.2-r3
-procd - 2026.02.20~2881a59f-r1
-procd-seccomp - 2026.02.20~2881a59f-r1
-procd-ujail - 2026.02.20~2881a59f-r1
-r8169-firmware - 20260221-r1
+procd - 2026.03.11~129b729f-r1
+procd-seccomp - 2026.03.11~129b729f-r1
+procd-ujail - 2026.03.11~129b729f-r1
+r8169-firmware - 20260309-r1
 rpcbind - 1.2.6-r2
 rpcd - 2025.12.03~ffb9961c-r1
 rpcd-mod-file - 2025.12.03~ffb9961c-r1
