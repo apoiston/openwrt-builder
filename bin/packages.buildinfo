@@ -1,6 +1,6 @@
-# 2026-03-14 06:36:42 CST
+# 2026-03-15 01:24:43 CST
 apk-mbedtls - 3.0.5-r2
-base-files - 1685~626c67caca
+base-files - 1685~0d04e03385
 bash - 5.3-r2
 block-mount - 2026.02.15~8d377aa6-r1
 bnx2-firmware - 20260309-r1
@@ -229,7 +229,7 @@ nginx-mod-luci - 1.29.6-r1
 nginx-mod-ubus - 1.29.6-r1
 nginx-ssl - 1.29.6-r1
 nginx-ssl-util - 1.7-r2
-nikki - 2026.03.13~0a05ef8-r1
+nikki - 2026.03.14~dd4eb63-r1
 odhcp6c - 2026.01.25~24485bb4-r1
 odhcpd-ipv6only - 2026.01.19~13ef4837-r1
 open-vm-tools - 13.0.0-r1
@@ -238,9 +238,9 @@ openwrt-keyring - 2025.12.10~f0670054-r1
 partx-utils - 2.41.3-r1
 ppp - 2.5.2-r3
 ppp-mod-pppoe - 2.5.2-r3
-procd - 2026.03.11~129b729f-r1
-procd-seccomp - 2026.03.11~129b729f-r1
-procd-ujail - 2026.03.11~129b729f-r1
+procd - 2026.03.13~58eb263d-r1
+procd-seccomp - 2026.03.13~58eb263d-r1
+procd-ujail - 2026.03.13~58eb263d-r1
 r8169-firmware - 20260309-r1
 rpcbind - 1.2.6-r2
 rpcd - 2025.12.03~ffb9961c-r1
