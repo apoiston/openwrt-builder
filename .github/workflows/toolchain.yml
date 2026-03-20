@@ -1,12 +1,7 @@
-name: Cache
+name: Toolchain
 
 on:
   workflow_dispatch:
-  workflow_run:
-      workflows: ["Toolchain"]
-      types:
-        - completed
-      branches: ["main"]
 
 jobs:
   build:
@@ -15,7 +10,6 @@ jobs:
     permissions:
       actions: write
       contents: write
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
 
     steps:
       - name: Set timezone
