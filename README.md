@@ -22,6 +22,16 @@
 
 - [packages](https://infinitypackages.pages.dev/)
 
+```shell
+# add key
+wget -O /etc/apk/keys/infinity.pem https://infinityapps.pages.dev/public-key.pem
+```
+
+```shell
+# add feed
+echo https://infinityapps.pages.dev/snapshots/x86_64/apps/packages.adb >> /etc/apk/repositories.d/customfeeds.list
+```
+
 ### Common Commands
 
 ```shell
