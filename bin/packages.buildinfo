@@ -1,6 +1,6 @@
-# 2026-03-26 06:50:27 CST
+# 2026-03-27 06:32:22 CST
 apk-mbedtls - 3.0.5-r3
-base-files - 1686~52063ff831
+base-files - 1686~7fac892948
 bash - 5.3-r2
 block-mount - 2026.02.15~8d377aa6-r1
 bnx2-firmware - 20260309-r1
@@ -229,7 +229,7 @@ nginx-mod-luci - 1.29.7-r1
 nginx-mod-ubus - 1.29.7-r1
 nginx-ssl - 1.29.7-r1
 nginx-ssl-util - 1.7-r2
-nikki - 2026.03.23~d0f3312-r3
+nikki - 2026.03.26~b48f566-r1
 odhcp6c - 2026.01.25~24485bb4-r1
 odhcpd-ipv6only - 2026.03.16~160e5fa3-r1
 open-vm-tools - 13.0.0-r1
@@ -272,7 +272,7 @@ uwsgi-cgi-plugin - 2.0.30-r1
 uwsgi-luci-support - 2.0.30-r1
 uwsgi-syslog-plugin - 2.0.30-r1
 wget-ssl - 1.25.0-r4
-yq - 4.52.4-r1
+yq - 4.52.5-r1
 zlib - 1.3.2-r1
 zoneinfo-asia - 2026a-r1
 zoneinfo-core - 2026a-r1
