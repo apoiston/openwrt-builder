@@ -1,6 +1,6 @@
-# 2026-04-07 17:14:21 +0800 CST
+# 2026-04-07 21:33:00 +0800 CST
 apk-mbedtls - 3.0.5-r3
-base-files - 1687~a031f16348
+base-files - 1687~7ea95a988e
 bash - 5.3-r2
 block-mount - 2026.02.15~8d377aa6-r1
 bnx2-firmware - 20260309-r1
@@ -225,11 +225,11 @@ netifd - 2026.02.26~69a5afc9-r1
 nfs-kernel-server - 2.8.7-r1
 nfs-utils - 2.8.7-r1
 nftables-json - 1.1.6-r1
-nginx-mod-luci - 1.29.7-r1
-nginx-mod-ubus - 1.29.7-r1
-nginx-ssl - 1.29.7-r1
+nginx-mod-luci - 1.29.8-r1
+nginx-mod-ubus - 1.29.8-r1
+nginx-ssl - 1.29.8-r1
 nginx-ssl-util - 1.7-r2
-nikki - 2026.04.06~4730f67-r1
+nikki - 2026.04.07~5e8bd85-r1
 odhcp6c - 2026.01.25~24485bb4-r1
 odhcpd-ipv6only - 2026.03.16~160e5fa3-r1
 open-vm-tools - 13.0.0-r1
