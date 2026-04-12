@@ -1,9 +1,9 @@
-# 2026-04-12 15:21:26 +0800 CST
+# 2026-04-12 18:32:32 +0800 CST
 apk-mbedtls - 3.0.5-r3
-base-files - 1687~15374ca2e7
+base-files - 1687~75f2f960ca
 bash - 5.3-r2
 block-mount - 2026.02.15~8d377aa6-r1
-bnx2-firmware - 20260309-r1
+bnx2-firmware - 20260410-r1
 busybox - 1.37.0-r6
 ca-bundle - 20250419-r2
 cgi-io - 2025.12.11~658b14bd-r1
@@ -20,7 +20,7 @@ grub2 - 2.12-r1
 grub2-bios-setup - 2.12-r1
 grub2-efi - 2.12-r1
 htop - 3.5.0-r1
-i915-firmware-dmc - 20260309-r1
+i915-firmware-dmc - 20260410-r1
 ip-full - 6.18.0-r2
 jansson4 - 2.15.0-r1
 jshn - 2026.03.13~81563384-r1
@@ -242,7 +242,7 @@ ppp-mod-pppoe - 2.5.2-r3
 procd - 2026.03.13~58eb263d-r1
 procd-seccomp - 2026.03.13~58eb263d-r1
 procd-ujail - 2026.03.13~58eb263d-r1
-r8169-firmware - 20260309-r1
+r8169-firmware - 20260410-r1
 rpcbind - 1.2.6-r2
 rpcd - 2025.12.03~ffb9961c-r1
 rpcd-mod-file - 2025.12.03~ffb9961c-r1
