@@ -1,6 +1,6 @@
-# 2026-04-12 20:49:25 +0800 CST
+# 2026-04-13 06:45:15 +0800 CST
 apk-mbedtls - 3.0.5-r3
-base-files - 1687~75f2f960ca
+base-files - 1687~6a8f9fa54d
 bash - 5.3-r2
 block-mount - 2026.02.15~8d377aa6-r1
 bnx2-firmware - 20260410-r1
@@ -185,7 +185,7 @@ libpthread - 1.2.5-r5
 libreadline8 - 8.3-r1
 librt - 1.2.5-r5
 libsmartcols1 - 2.41.3-r1
-libsqlite3-0 - 3.52.0-r1
+libsqlite3-0 - 3.53.0-r1
 libss2 - 1.47.4-r1
 libstdcpp6 - 15.2.0-r5
 libtirpc - 1.3.7-r2
@@ -219,7 +219,7 @@ luci-nginx - 26.101.23701~6006b34
 luci-proto-ipv6 - 26.101.23701~6006b34
 luci-proto-ppp - 26.101.23701~6006b34
 luci-theme-bootstrap - 26.101.23701~6006b34
-mihomo-alpha - 2026.04.12~2fbed16
+mihomo-alpha - 2026.04.13~0495d29
 mkf2fs - 1.16.0-r4
 mtd - 27
 netifd - 2026.02.26~69a5afc9-r1
