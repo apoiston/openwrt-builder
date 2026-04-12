@@ -1,4 +1,4 @@
-# 2026-04-12 18:32:32 +0800 CST
+# 2026-04-12 20:49:25 +0800 CST
 apk-mbedtls - 3.0.5-r3
 base-files - 1687~75f2f960ca
 bash - 5.3-r2
@@ -207,7 +207,7 @@ luci-app-package-manager - 26.101.23701~6006b34
 luci-base - 26.101.23701~6006b34
 luci-i18n-base-zh-cn - 26.101.23701~6006b34
 luci-i18n-firewall-zh-cn - 26.101.23701~6006b34
-luci-i18n-nikki-zh-cn - 26.102.02948~e2c9c0f
+luci-i18n-nikki-zh-cn - 26.102.41866~1c1f683
 luci-i18n-package-manager-zh-cn - 26.101.23701~6006b34
 luci-lib-jsonc - 26.101.23701~6006b34
 luci-lib-uqr - 26.101.23701~6006b34
@@ -219,7 +219,7 @@ luci-nginx - 26.101.23701~6006b34
 luci-proto-ipv6 - 26.101.23701~6006b34
 luci-proto-ppp - 26.101.23701~6006b34
 luci-theme-bootstrap - 26.101.23701~6006b34
-mihomo-meta - 1.19.23
+mihomo-alpha - 2026.04.12~2fbed16
 mkf2fs - 1.16.0-r4
 mtd - 27
 netifd - 2026.02.26~69a5afc9-r1
