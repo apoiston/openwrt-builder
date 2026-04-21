@@ -1,6 +1,6 @@
-# 2026-04-21 06:51:47 +0800 CST
+# 2026-04-22 06:35:04 +0800 CST
 apk-mbedtls - 3.0.5-r3
-base-files - 1691~39f528e440
+base-files - 1691~a404a787c2
 bash - 5.3-r2
 block-mount - 2026.02.15~8d377aa6-r1
 bnx2-firmware - 20260410-r1
@@ -25,7 +25,7 @@ ip-full - 6.18.0-r2
 jansson4 - 2.15.0-r1
 jshn - 2026.03.13~81563384-r1
 jsonfilter - 2026.03.16~b9034210-r1
-kernel - 6.18.23~dae78dc7550527c7ec8586f831131cce-r1
+kernel - 6.18.23~326c99f43dd02206982a36cdf96d0649-r1
 kmod-acpi-video - 6.18.23-r1
 kmod-amazon-ena - 6.18.23-r1
 kmod-amd-xgbe - 6.18.23-r1
@@ -209,7 +209,7 @@ luci-base - 26.110.48200~accb559
 luci-i18n-base-zh-cn - 26.110.48200~accb559
 luci-i18n-firewall-zh-cn - 26.110.48200~accb559
 luci-i18n-momo-zh-cn - 26.103.03479~c190c39
-luci-i18n-nikki-zh-cn - 26.110.03993~7bcc77e
+luci-i18n-nikki-zh-cn - 26.111.03175~bc63e81
 luci-i18n-package-manager-zh-cn - 26.110.48200~accb559
 luci-lib-jsonc - 26.110.48200~accb559
 luci-lib-uqr - 26.110.48200~accb559
