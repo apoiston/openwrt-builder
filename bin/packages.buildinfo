@@ -1,6 +1,6 @@
-# 2026-04-23 06:53:41 +0800 CST
+# 2026-04-24 06:45:54 +0800 CST
 apk-mbedtls - 3.0.5-r3
-base-files - 1691~1bc03924db
+base-files - 1691~51de644a26
 bash - 5.3-r2
 block-mount - 2026.02.15~8d377aa6-r1
 bnx2-firmware - 20260410-r1
@@ -25,7 +25,7 @@ ip-full - 6.18.0-r2
 jansson4 - 2.15.0-r1
 jshn - 2026.03.13~81563384-r1
 jsonfilter - 2026.03.16~b9034210-r1
-kernel - 6.18.24~326c99f43dd02206982a36cdf96d0649-r1
+kernel - 6.18.24~192b281d4865417aed7611d940b678a2-r1
 kmod-acpi-video - 6.18.24-r1
 kmod-amazon-ena - 6.18.24-r1
 kmod-amd-xgbe - 6.18.24-r1
@@ -93,6 +93,7 @@ kmod-ixgbe - 6.18.24-r1
 kmod-keys-encrypted - 6.18.24-r1
 kmod-keys-trusted - 6.18.24-r1
 kmod-lib-crc-ccitt - 6.18.24-r1
+kmod-lib-textsearch - 6.18.24-r1
 kmod-libeth - 6.18.24-r1
 kmod-libie - 6.18.24-r1
 kmod-libie-fwlog - 6.18.24-r1
@@ -132,14 +133,18 @@ kmod-pps - 6.18.24-r1
 kmod-ptp - 6.18.24-r1
 kmod-r8169 - 6.18.24-r1
 kmod-random-core - 6.18.24-r1
+kmod-sched - 6.18.24-r1
+kmod-sched-cake - 6.18.24-r1
+kmod-sched-core - 6.18.24-r1
 kmod-slhc - 6.18.24-r1
 kmod-stmmac-core - 6.18.24-r1
+kmod-tcp-bbr - 6.18.24-r1
 kmod-tg3 - 6.18.24-r1
 kmod-tpm - 6.18.24-r1
 kmod-tun - 6.18.24-r1
 kmod-vmxnet3 - 6.18.24-r1
 libattr - 2.5.2-r3
-libblkid1 - 2.41.3-r1
+libblkid1 - 2.42-r1
 libblobmsg-json20260313 - 2026.03.13~81563384-r1
 libbpf1 - 1.7.0-r1
 libc - 1.2.5-r5
@@ -184,7 +189,7 @@ libpcre2 - 10.47-r1
 libpthread - 1.2.5-r5
 libreadline8 - 8.3-r1
 librt - 1.2.5-r5
-libsmartcols1 - 2.41.3-r1
+libsmartcols1 - 2.42-r1
 libsqlite3-0 - 3.53.0-r1
 libss2 - 1.47.4-r1
 libstdcpp6 - 15.2.0-r5
@@ -196,7 +201,7 @@ libuclient20201210 - 2026.02.20~7a0aa2e4-r1
 libucode20230711 - 2026.02.27~934bb593-r1
 libudebug - 2026.01.16~875e1a7a
 libustream-mbedtls20201210 - 2026.03.01~99f1c0db-r1
-libuuid1 - 2.41.3-r1
+libuuid1 - 2.42-r1
 libwrap - 7.6-r4
 libxml2-16 - 2.15.1-r1
 logd - 2025.10.30~6f78fa49-r1
@@ -239,7 +244,7 @@ odhcpd-ipv6only - 2026.03.16~160e5fa3-r1
 open-vm-tools - 13.0.0-r1
 openssh-sftp-server - 10.3_p1-r2
 openwrt-keyring - 2025.12.10~f0670054-r1
-partx-utils - 2.41.3-r1
+partx-utils - 2.42-r1
 ppp - 2.5.2-r3
 ppp-mod-pppoe - 2.5.2-r3
 procd - 2026.03.25~cd7a4e5f-r1
