@@ -1,6 +1,6 @@
-# 2026-05-08 16:39:09 +0800
+# 2026-05-09 06:37:58 +0800
 apk-mbedtls - 3.0.5-r3
-base-files - 1693~472c325fb8
+base-files - 1693~8b393f99fd
 bash - 5.3-r2
 block-mount - 2026.02.15~8d377aa6-r1
 bnx2-firmware - 20260410-r1
@@ -174,7 +174,7 @@ liblua5.1.5 - 5.1.5-r11
 liblucihttp-ucode - 2023.03.15~9b5b683f-r1
 liblucihttp0 - 2023.03.15~9b5b683f-r1
 libmbedtls21 - 3.6.6-r2
-libmnl0 - 1.0.5-r1
+libmnl0 - 1.0.5-r2
 libmspack - 0.11_alpha-r1
 libncurses6 - 6.4-r3
 libnetfilter-conntrack3 - 1.1.0-r1
@@ -231,7 +231,7 @@ luci-nginx - 26.127.29573~cc69f29
 luci-proto-ipv6 - 26.127.29573~cc69f29
 luci-proto-ppp - 26.127.29573~cc69f29
 luci-theme-bootstrap - 26.127.29573~cc69f29
-mihomo-alpha - 2026.05.08~35d5d4e
+mihomo-alpha - 2026.05.08~c98e67a
 mkf2fs - 1.16.0-r4
 momo - 2026.04.09-r1
 mtd - 27
