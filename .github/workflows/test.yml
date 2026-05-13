@@ -45,8 +45,8 @@ jobs:
           config_buildinfo: builder/config.buildinfo
           enable_prebuilt_tools: true
           enable_build_toolchain: true
-          enable_build_kernel: true          
-          enable_build_everything: true
+          enable_build_kernel: true
+          enable_build_full: true
           enable_prepare_image: true
 
       - name: Prepare
