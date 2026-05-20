@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "architecture": "x86_64",
+  "packages": {
+    "luci-app-momo": "1.2.0-r1",
+    "luci-app-nikki": "1.26.0-r1",
+    "luci-i18n-momo-zh-cn": "26.103.03479~c190c39",
+    "luci-i18n-nikki-zh-cn": "26.139.03634~9b103fc",
+    "mihomo-alpha": "2026.05.20~0ddf4bb",
+    "momo": "2026.04.09-r1",
+    "nikki": "2026.04.08-r1",
+    "sing-box": "1.12.22-r1"
+  }
+}
