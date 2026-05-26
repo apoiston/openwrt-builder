@@ -16,20 +16,20 @@
 
 ### Package Repositories
 
-- [apps](https://infinityapps.pages.dev/)
+- [extra](https://initextra.pages.dev/)
 
-- [kmods](https://infinitykmods.pages.dev/)
+- [kmods](https://initkmods.pages.dev/)
 
-- [packages](https://infinitypackages.pages.dev/)
+- [packages](https://initpackages.pages.dev/)
 
 ```shell
 # add key
-wget -O /etc/apk/keys/infinity.pem https://infinityapps.pages.dev/public-key.pem
+wget -O /etc/apk/keys/init.pem https://initextra.pages.dev/public-key.pem
 ```
 
 ```shell
 # add feed
-echo https://infinityapps.pages.dev/snapshots/x86_64/apps/packages.adb >> /etc/apk/repositories.d/customfeeds.list
+echo https://initextra.pages.dev/snapshots/x86_64/apps/packages.adb >> /etc/apk/repositories.d/customfeeds.list
 ```
 
 ### Common Commands
@@ -40,18 +40,18 @@ apk update
 ```
 
 ```shell
-# upgrade all
-apk upgrade
+# upgrade mihomo core
+apk add -U -u mihomo-alpha
 ```
 
 ```shell
 # install packages
-apk add --update luci-i18n-nikki-zh-cn luci-app-nikki nikki
+apk add --update luci-i18n-nikki-zh-cn luci-app-nikki nikki mihomo-alpha
 ```
 
 ```shell
 # upgrade packages
-apk add --update --upgrade nikki luci-app-nikki luci-i18n-nikki-zh-cn
+apk add --update --upgrade mihomo-alpha nikki luci-app-nikki luci-i18n-nikki-zh-cn
 ```
 
 ```shell
@@ -76,7 +76,7 @@ sysupgrade -n /tmp/openwrt-x86-64-generic-erofs-combined-efi.img.gz
 
 ### Credits
 
-- [Joseph Mory](http://github.com/morytyann)
+- [Joseph Mory](https://github.com/nikkinikki-org/OpenWrt-nikki)
 
 - [OpenWrt](https://github.com/openwrt/openwrt)
 
