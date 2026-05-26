@@ -93,7 +93,7 @@ jobs:
         with:
           name: packages
           path: |
-            openwrt/builder-apps/
+            openwrt/builder-extra/
             openwrt/builder-kmods/
             openwrt/builder-packages/
 
@@ -105,16 +105,16 @@ jobs:
     strategy:
       matrix:
         include:
-          - directory: builder-apps
-            project_name: infinityapps
-            branch: apps
-            tag: APPS
+          - directory: builder-extra
+            project_name: initextra
+            branch: extra
+            tag: EXTRA
           - directory: builder-kmods
-            project_name: infinitykmods
+            project_name: initkmods
             branch: kmods
             tag: KMODS
           - directory: builder-packages
-            project_name: infinitypackages
+            project_name: initpackages
             branch: packages
             tag: PACKAGES
 
@@ -167,5 +167,5 @@ jobs:
         with:
           cloudflare_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           cloudflare_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          project_name: infinityapps infinitykmods infinitypackages
+          project_name: initextra initkmods initpackages
           enable_clean_preview: true
