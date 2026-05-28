@@ -14,23 +14,13 @@
 
 - [Releases](https://github.com/apoiston/openwrt-builder/releases)
 
-### Package Repositories
+### Package Download
 
 - [extra](https://initextra.pages.dev/)
 
 - [kmods](https://initkmods.pages.dev/)
 
 - [packages](https://initpackages.pages.dev/)
-
-```shell
-# add key
-wget -O /etc/apk/keys/init.pem https://initextra.pages.dev/public-key.pem
-```
-
-```shell
-# add feed
-echo https://initextra.pages.dev/snapshots/x86_64/apps/packages.adb >> /etc/apk/repositories.d/customfeeds.list
-```
 
 ### Common Commands
 
@@ -72,6 +62,18 @@ sysupgrade /tmp/openwrt-x86-64-generic-erofs-combined-efi.img.gz
 ```shell
 # flash firmware (clean install)
 sysupgrade -n /tmp/openwrt-x86-64-generic-erofs-combined-efi.img.gz
+```
+
+### Add Feed
+
+```shell
+# add key
+wget -O /etc/apk/keys/initextra.pem https://initextra.pages.dev/public-key.pem
+```
+
+```shell
+# add feed
+echo https://initextra.pages.dev/snapshots/x86_64/extra/packages.adb >> /etc/apk/repositories.d/customfeeds.list
 ```
 
 ### Credits
