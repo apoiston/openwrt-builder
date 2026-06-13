@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-26.04
+    runs-on: ubuntu-latest
     permissions:
       actions: write
       contents: write
@@ -100,7 +100,7 @@ jobs:
   deploy:
     needs: build
     name: Deploy ${{ matrix.branch }}
-    runs-on: ubuntu-26.04
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
@@ -159,7 +159,7 @@ jobs:
   clean:
     needs: deploy
     name: Clean pages
-    runs-on: ubuntu-26.04
+    runs-on: ubuntu-latest
 
     steps:
       - name: Clean pages

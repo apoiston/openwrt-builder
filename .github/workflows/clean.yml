@@ -8,7 +8,7 @@ on:
 jobs:
   clean-pages:
     name: Clean pages
-    runs-on: ubuntu-26.04
+    runs-on: ubuntu-latest
           
     steps:
       - name: Clean pages
@@ -21,7 +21,7 @@ jobs:
 
   clean-releases:
     name: Clean releases
-    runs-on: ubuntu-26.04
+    runs-on: ubuntu-latest
     permissions:
       contents: write
 
