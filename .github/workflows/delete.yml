@@ -8,7 +8,7 @@ on:
 jobs:
   delete:
     name: Delete
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     permissions:
       actions: write
       contents: read
