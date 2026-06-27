@@ -2,6 +2,18 @@ name: Clean
 
 on:
   workflow_dispatch:
+    inputs:
+      delete_deployments_days:
+        description: 'Deployment retention days'
+        required: false
+        type: string
+        default: '30'
+      delete_releases_days:
+        description: 'Release retention days'
+        required: false
+        type: string
+        default: '30'
+
   schedule:
     - cron: "0 4 * * 0"
 
@@ -18,6 +30,7 @@ jobs:
           cloudflare_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           project_name: initextra initkmods initpackages
           enable_delete_deployments: true 
+          delete_deployments_days: ${{ inputs.delete_deployments_days || '30' }}
 
   delete-releases:
     name: Delete releases
@@ -35,3 +48,4 @@ jobs:
         uses: apoiston/actions@cleaner
         with:
           enable_delete_releases: true
+          delete_releases_days: ${{ inputs.delete_releases_days || '30' }}
