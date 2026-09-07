@@ -1,0 +1,2038 @@
+{
+  "packages": [
+    {
+      "name": "attr",
+      "version": "2.5.2-r3",
+      "hashes": "de3401cecdb96cec36727f34ef4abe151a295d49d88ec3f21366904017d03861",
+      "description": "Extended attributes support This package provides xattr manipulation utilities - attr - getfattr - setfattr",
+      "arch": "x86_64",
+      "license": "GPL-2.0-or-later",
+      "origin": "feeds/packages/feeds/packages/utils/attr",
+      "maintainer": "Maxim Storchak <m.storchak@gmail.com>",
+      "url": "https://savannah.nongnu.org/projects/attr",
+      "installed-size": 36283,
+      "file-size": 15039,
+      "depends": [
+        "libattr",
+        "libc"
+      ],
+      "provides": [
+        "attr-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:attr_project:attr"
+      ]
+    }, {
+      "name": "bash",
+      "version": "5.3-r4",
+      "hashes": "30de7c8e4d3bc00d3bcee2053f7be32fc32d596497901175a50d5d6089c2a629",
+      "description": "Bash is an sh-compatible command language interpreter that executes commands read from the standard input or from a file. Bash also incorporates useful features from the Korn and C shells (ksh and csh).",
+      "arch": "x86_64",
+      "license": "GPL-3.0-or-later",
+      "origin": "feeds/packages/feeds/packages/utils/bash",
+      "maintainer": "Wei-Ting Yang <williamatcg@gmail.com>",
+      "url": "https://www.gnu.org/software/bash/",
+      "installed-size": 1346630,
+      "file-size": 663342,
+      "depends": [
+        "libc",
+        "libncurses6",
+        "libreadline8"
+      ],
+      "provides": [
+        "bash-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:gnu:bash"
+      ]
+    }, {
+      "name": "cgi-io",
+      "version": "2026.07.21~31cb3c89-r1",
+      "hashes": "4daee4e00fc1452fd232cf5154e8372e9dcf9d35655964326d2b98e7e562ba2d",
+      "description": "This package contains an cgi utility that is useful for up/downloading files",
+      "arch": "x86_64",
+      "license": "GPL-2.0-or-later",
+      "origin": "feeds/packages/feeds/packages/net/cgi-io",
+      "maintainer": "John Crispin <blogic@openwrt.org>",
+      "installed-size": 18652,
+      "file-size": 9875,
+      "depends": [
+        "libc",
+        "libubox20260721",
+        "libubus20260628"
+      ],
+      "provides": [
+        "cgi-io-any"
+      ],
+      "tags": [
+        "openwrt:section=net"
+      ]
+    }, {
+      "name": "curl",
+      "version": "8.21.0-r2",
+      "hashes": "ed053ab5e74ffa0b636378027ad0c8e3f6c97500a88ec70d141c5ba6c87886cc",
+      "description": "A client-side URL transfer utility",
+      "arch": "x86_64",
+      "license": "MIT",
+      "origin": "feeds/packages/feeds/packages/net/curl",
+      "url": "https://curl.se/",
+      "installed-size": 193562,
+      "file-size": 91342,
+      "depends": [
+        "libc",
+        "libcurl4"
+      ],
+      "provides": [
+        "curl-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:haxx:libcurl"
+      ]
+    }, {
+      "name": "glib2-core",
+      "version": "2.88.1-r1",
+      "hashes": "867255e5b22ef50d620d402ca8fce9d7aa2d31dffcc64f2eb62ee09414a5cc8a",
+      "description": "Common code and core library for GLib library of C routines",
+      "arch": "x86_64",
+      "license": "LGPL-2.1-or-later",
+      "origin": "feeds/packages/feeds/packages/libs/glib2",
+      "maintainer": "Peter Wagner <tripolar@gmx.at>",
+      "url": "https://www.gtk.org/",
+      "installed-size": 1393667,
+      "file-size": 563321,
+      "depends": [
+        "libattr",
+        "libc",
+        "libpcre2"
+      ],
+      "provides": [
+        "glib2-core-any"
+      ],
+      "tags": [
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:gnome:glib"
+      ]
+    }, {
+      "name": "glib2-gmodule",
+      "version": "2.88.1-r1",
+      "hashes": "84392e5c07df245e931b6a715860fb8b96a7d2f64df6fd6890edf90c9b543cd8",
+      "description": "GLib library module functions",
+      "arch": "x86_64",
+      "license": "LGPL-2.1-or-later",
+      "origin": "feeds/packages/feeds/packages/libs/glib2",
+      "maintainer": "Peter Wagner <tripolar@gmx.at>",
+      "url": "https://www.gtk.org/",
+      "installed-size": 11100,
+      "file-size": 5662,
+      "depends": [
+        "glib2-core",
+        "libc"
+      ],
+      "provides": [
+        "glib2-gmodule-any"
+      ],
+      "tags": [
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:gnome:glib"
+      ]
+    }, {
+      "name": "glib2-gobject",
+      "version": "2.88.1-r1",
+      "hashes": "a2d3b198529ec752c7fc826ac018ca3ea8bbbff2e5285de5edc569819809a923",
+      "description": "GLib library object functions",
+      "arch": "x86_64",
+      "license": "LGPL-2.1-or-later",
+      "origin": "feeds/packages/feeds/packages/libs/glib2",
+      "maintainer": "Peter Wagner <tripolar@gmx.at>",
+      "url": "https://www.gtk.org/",
+      "installed-size": 372828,
+      "file-size": 158597,
+      "depends": [
+        "glib2-core",
+        "libc",
+        "libffi"
+      ],
+      "provides": [
+        "glib2-gobject-any"
+      ],
+      "tags": [
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:gnome:glib"
+      ]
+    }, {
+      "name": "glib2-gthread",
+      "version": "2.88.1-r1",
+      "hashes": "55cf3925c6b4e491b7b27376df3e2a60c8b12caee560d47710a676d7cefbd396",
+      "description": "GLib library thread functions",
+      "arch": "x86_64",
+      "license": "LGPL-2.1-or-later",
+      "origin": "feeds/packages/feeds/packages/libs/glib2",
+      "maintainer": "Peter Wagner <tripolar@gmx.at>",
+      "url": "https://www.gtk.org/",
+      "installed-size": 2644,
+      "file-size": 1803,
+      "depends": [
+        "glib2-core",
+        "libc"
+      ],
+      "provides": [
+        "glib2-gthread-any"
+      ],
+      "tags": [
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:gnome:glib"
+      ]
+    }, {
+      "name": "htop",
+      "version": "3.5.1-r1",
+      "hashes": "1f4289c086e5f7b7dee6dacb134a7459d4c8e0efd446670505a5e42811287d19",
+      "description": "Htop is an ncursed-based process viewer similar to top, but it allows to scroll the list vertically and horizontally to see all processes and their full command lines.",
+      "arch": "x86_64",
+      "license": "GPL-2.0-or-later",
+      "origin": "feeds/packages/feeds/packages/admin/htop",
+      "maintainer": "Etienne CHAMPETIER <champetier.etienne@gmail.com>",
+      "url": "https://hisham.hm/htop/",
+      "installed-size": 344694,
+      "file-size": 157476,
+      "depends": [
+        "libc",
+        "libncurses6"
+      ],
+      "provides": [
+        "htop-any"
+      ],
+      "tags": [
+        "openwrt:section=admin",
+        "openwrt:cpe=cpe:/a:htop:htop"
+      ]
+    }, {
+      "name": "libacl",
+      "version": "2.3.2-r2",
+      "hashes": "39ab8b2fcd7ba3edc402e923ec9ca0e34e00637bc2dd8c95031901b8b098e9b9",
+      "description": "Access control list support This package provides libacl",
+      "arch": "x86_64",
+      "license": "LGPL-2.1 GPL-2.0",
+      "origin": "feeds/packages/feeds/packages/utils/acl",
+      "maintainer": "Maxim Storchak <m.storchak@gmail.com>",
+      "url": "https://savannah.nongnu.org/projects/acl",
+      "installed-size": 30260,
+      "file-size": 15744,
+      "depends": [
+        "libattr",
+        "libc"
+      ],
+      "provides": [
+        "libacl-any"
+      ],
+      "tags": [
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:acl_project:acl"
+      ]
+    }, {
+      "name": "libattr",
+      "version": "2.5.2-r3",
+      "hashes": "c661d293f9bfc168fde58b091603cac79070ca413caed88fc84df5f53ef619a1",
+      "description": "Extended attributes support This package provides libattr",
+      "arch": "x86_64",
+      "license": "LGPL-2.1-or-later",
+      "origin": "feeds/packages/feeds/packages/utils/attr",
+      "maintainer": "Maxim Storchak <m.storchak@gmail.com>",
+      "url": "https://savannah.nongnu.org/projects/attr",
+      "installed-size": 16816,
+      "file-size": 8036,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libattr-any"
+      ],
+      "tags": [
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:attr_project:attr"
+      ]
+    }, {
+      "name": "libcurl4",
+      "version": "8.21.0-r2",
+      "hashes": "cdee1b83bb18aa0dc61ab066ffb3438045cfb5aeaa8fd1852a16b616deee1ae1",
+      "description": "A client-side URL transfer library",
+      "arch": "x86_64",
+      "license": "MIT",
+      "origin": "feeds/packages/feeds/packages/net/curl",
+      "url": "https://curl.se/",
+      "installed-size": 638552,
+      "file-size": 316032,
+      "provider-priority": 10,
+      "depends": [
+        "ca-bundle",
+        "libc",
+        "libmbedtls21",
+        "libnghttp2-14",
+        "zlib"
+      ],
+      "provides": [
+        "libcurl",
+        "libcurl-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=4",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:haxx:libcurl"
+      ]
+    }, {
+      "name": "libdevmapper",
+      "version": "1.02.216",
+      "hashes": "9fe220587a9d580c4a70a405227a733df604091c2f98a9cc159f97224d8cbede",
+      "description": "The device-mapper is a component of the 2.6 linux kernel that supports logical volume management. It is required by LVM2 and EVMS.",
+      "arch": "x86_64",
+      "license": "GPL-2.0 LGPL-2.1",
+      "origin": "feeds/packages/feeds/packages/utils/lvm2",
+      "maintainer": "Daniel Golle <daniel@makrotopia.org>",
+      "url": "https://sourceware.org/dm/",
+      "installed-size": 459742,
+      "file-size": 202929,
+      "depends": [
+        "kmod-dm",
+        "libblkid1",
+        "libc",
+        "libpthread",
+        "librt",
+        "libuuid1"
+      ],
+      "provides": [
+        "libdevmapper-any"
+      ],
+      "tags": [
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:heinz_mauelshagen:lvm2"
+      ]
+    }, {
+      "name": "libdnet",
+      "version": "1.16.1-r1",
+      "hashes": "51bdfe56b0f217adbce8156273fbe84d385084f97f1ae7be038c93fe4f88d263",
+      "description": "libdnet is a library of simplified, portable interface to several low-level networking routines.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/libs/libdnet",
+      "maintainer": "Luka Perkov <luka@openwrt.org>",
+      "url": "https://github.com/ofalk/libdnet",
+      "installed-size": 62600,
+      "file-size": 27686,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libdnet-any"
+      ],
+      "tags": [
+        "openwrt:section=libs"
+      ]
+    }, {
+      "name": "libffi",
+      "version": "3.4.7-r1",
+      "hashes": "d5101bc6665bef4aabe194c8c0d07f419639cedd9f9087e8c3a10cdb60225633",
+      "description": "The libffi library provides a portable, high level programming interface to various calling conventions. This allows a programmer to call any function specified by a call interface description at run-time. FFI stands for Foreign Function Interface. A foreign function interface is the popular name for the interface that allows code written in one language to call code written in another language. The libffi library really only provides the lowest, machine dependent layer of a fully featured foreign function interface. A layer must exist above libffi that handles type conversions for values passed between the two languages.",
+      "arch": "x86_64",
+      "license": "MIT",
+      "origin": "feeds/packages/feeds/packages/libs/libffi",
+      "maintainer": "Peter Wagner <tripolar@gmx.at>",
+      "url": "https://sourceware.org/libffi/",
+      "installed-size": 48618,
+      "file-size": 21816,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libffi-any"
+      ],
+      "tags": [
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:libffi_project:libffi"
+      ]
+    }, {
+      "name": "libgnutls",
+      "version": "3.8.10-r1",
+      "hashes": "ff240a9e0ec373d6b48aaf57f4952d37748d307eb91498be0fb28109b9536002",
+      "description": "GnuTLS is a secure communications library implementing the SSL, TLS and DTLS protocols and technologies around them. It provides a simple C language application programming interface (API) to access the secure communications protocols as well as APIs to parse and write X.509, PKCS12, OpenPGP and other required structures. It is aimed to be portable and efficient with focus on security and interoperability. This package contains the GnuTLS shared library, needed by other programs.",
+      "arch": "x86_64",
+      "license": "LGPL-2.1-or-later",
+      "origin": "feeds/packages/feeds/packages/libs/gnutls",
+      "maintainer": "Nikos Mavrogiannopoulos <nmav@gnutls.org>",
+      "url": "https://gnutls.org/",
+      "installed-size": 2426935,
+      "file-size": 1140778,
+      "depends": [
+        "libatomic1",
+        "libc",
+        "libgmp10",
+        "libnettle8"
+      ],
+      "provides": [
+        "libgnutls-any"
+      ],
+      "tags": [
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:gnu:gnutls"
+      ]
+    }, {
+      "name": "libkeyutils1",
+      "version": "1.6.3-r2",
+      "hashes": "ebcaead43b6f620541e360995fa65db1f2d701ebad335bdbc585bd7acc0c5f32",
+      "description": "Key utilities library",
+      "arch": "x86_64",
+      "license": "LGPL-2.1-or-later",
+      "origin": "feeds/packages/feeds/packages/libs/keyutils",
+      "url": "https://people.redhat.com/dhowells/keyutils/",
+      "installed-size": 13663,
+      "file-size": 6565,
+      "provider-priority": 10,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libkeyutils",
+        "libkeyutils-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=1",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:keyutils_project:keyutils"
+      ]
+    }, {
+      "name": "libmspack",
+      "version": "0.11_alpha-r1",
+      "hashes": "66afd61853701033938f6ade91e92ff34b3a7aebc4a968c98e138b1d927534e1",
+      "description": "The purpose of libmspack is to provide compressors and decompressors, archivers and dearchivers for Microsoft compression formats: CAB, CHM, WIM, LIT, HLP, KWAJ and SZDD. It is also designed to be easily embeddable, stable, robust and resource-efficient.",
+      "arch": "x86_64",
+      "license": "LGPL-2.1-or-later",
+      "origin": "feeds/packages/feeds/packages/libs/libmspack",
+      "maintainer": "Florian Eckert <fe@dev.tdt.de>",
+      "url": "https://github.com/kyz/libmspack",
+      "installed-size": 77570,
+      "file-size": 42264,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libmspack-any"
+      ],
+      "tags": [
+        "openwrt:section=libs"
+      ]
+    }, {
+      "name": "libnghttp2-14",
+      "version": "1.70.0-r1",
+      "hashes": "f85c6a03d61b705bff6de42a064906dd5e1dd9f8f76f65ca8de355ba18ee3dcc",
+      "description": "HTTP/2 C Library",
+      "arch": "x86_64",
+      "license": "MIT",
+      "origin": "feeds/packages/feeds/packages/libs/nghttp2",
+      "maintainer": "Hans Dedecker <dedeckeh@gmail.com>",
+      "installed-size": 178273,
+      "file-size": 82792,
+      "provider-priority": 10,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libnghttp2",
+        "libnghttp2-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=-14",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:nghttp2:nghttp2"
+      ]
+    }, {
+      "name": "libsqlite3-0",
+      "version": "3.53.4-r1",
+      "hashes": "24873f93817a7b6cacdd1860e038923689dabde8ce71c73e6b1064d3579d0b4a",
+      "description": "SQLite is a small C library that implements a self-contained, embeddable, zero-configuration SQL database engine. This package contains the SQLite (v3.x) shared library, used by other programs.",
+      "arch": "x86_64",
+      "license": "blessing",
+      "origin": "feeds/packages/feeds/packages/libs/sqlite3",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://www.sqlite.org/",
+      "installed-size": 1544879,
+      "file-size": 830262,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libpthread",
+        "zlib"
+      ],
+      "provides": [
+        "libsqlite3",
+        "libsqlite3-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=-0",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:sqlite:sqlite"
+      ]
+    }, {
+      "name": "libtasn1",
+      "version": "4.19.0-r2",
+      "hashes": "97aed084ad27cd95bc8ca96d9887729e12a8164b44705aa1e922a05d402d1f26",
+      "description": "This is a library for Abstract Syntax Notation One (ASN.1) and Distinguish Encoding Rules (DER) manipulation.",
+      "arch": "x86_64",
+      "license": "LGPL-2.1-or-later",
+      "origin": "feeds/packages/feeds/packages/libs/libtasn1",
+      "maintainer": "Nikos Mavrogiannopoulos <n.mavrogiannopoulos@gmail.com>",
+      "url": "https://www.gnu.org/software/libtasn1/",
+      "installed-size": 77870,
+      "file-size": 40599,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libtasn1-any"
+      ],
+      "tags": [
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:gnu:libtasn1"
+      ]
+    }, {
+      "name": "libtirpc",
+      "version": "1.3.7-r2",
+      "hashes": "69ccbd45109c44dd43be53969288cc93405b8050f255306d2e49a8b0e303fe61",
+      "description": "Library TI RPC for RPC bindings",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/libs/libtirpc",
+      "url": "http://libtirpc.sourceforge.net/",
+      "installed-size": 160897,
+      "file-size": 76774,
+      "depends": [
+        "libc",
+        "libpthread"
+      ],
+      "provides": [
+        "libtirpc-any"
+      ],
+      "tags": [
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:libtirpc_project:libtirpc"
+      ]
+    }, {
+      "name": "liburing",
+      "version": "2.14-r1",
+      "hashes": "75ebd66b78e2778eade1f7cf8a048c84070b1d1f272c4a68296f42d0b6855611",
+      "description": "liburing provides helpers to setup and teardown io_uring instances, and also a simplified interface for applications that don't need (or want) to deal with the full kernel side implementation. For more info on io_uring, please see: https://kernel.dk/io_uring.pdf",
+      "arch": "x86_64",
+      "license": "MIT",
+      "origin": "feeds/packages/feeds/packages/libs/liburing",
+      "maintainer": "Christian Lachner <gladiac@gmail.com>",
+      "url": "https://git.kernel.dk/cgit/liburing",
+      "installed-size": 21830,
+      "file-size": 10558,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "liburing-any"
+      ],
+      "tags": [
+        "openwrt:section=libs"
+      ]
+    }, {
+      "name": "libwrap",
+      "version": "7.6-r4",
+      "hashes": "4ae9dd1f6d909685c4eb96e09148e2cda2fc8a45ecf500dbf9f3fb181dcbf75e",
+      "description": "Security wrapper library for TCP services",
+      "arch": "x86_64",
+      "license": "TCP-wrappers",
+      "origin": "feeds/packages/feeds/packages/libs/tcp_wrappers",
+      "maintainer": "Peter Wagner <tripolar@gmx.at>",
+      "url": "http://ftp.porcupine.org/pub/security/index.html",
+      "installed-size": 38041,
+      "file-size": 14226,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libwrap-any"
+      ],
+      "tags": [
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:libwrap_project:libwrap"
+      ]
+    }, {
+      "name": "libxxhash",
+      "version": "0.8.3-r1",
+      "hashes": "e4749fa040a20111b251fdc55720090fe74a4a25afd6a1dfd6f4507ab7d42aee",
+      "description": "xxHash is an Extremely fast Hash algorithm, running at RAM speed limits. It successfully completes the SMHasher test suite which evaluates collision, dispersion and randomness qualities of hash functions. Code is highly portable, and hashes are identical on all platforms (little / big endian). This package contains the shared library.",
+      "arch": "x86_64",
+      "license": "BSD-2-Clause GPL-2.0-or-later",
+      "origin": "feeds/packages/feeds/packages/utils/xxhash",
+      "maintainer": "Julien Malik <julien.malik@paraiso.me>",
+      "url": "https://xxhash.com/",
+      "installed-size": 33660,
+      "file-size": 15529,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libxxhash-any"
+      ],
+      "tags": [
+        "openwrt:section=libs"
+      ]
+    }, {
+      "name": "lsqlite3",
+      "version": "0.9.5-r1",
+      "hashes": "d11d317c21957c7389cb726182e167b9803dd6d3dc0d4dd1e9ebf320d749bde2",
+      "description": "LuaSQLite3 is a thin wrapper around the public domain SQLite3 database engine.",
+      "arch": "x86_64",
+      "license": "MIT",
+      "origin": "feeds/packages/feeds/packages/lang/lua/lua-lsqlite3",
+      "maintainer": "Oskari Rauta <oskari.rauta@gmail.com>",
+      "url": "https://lua.sqlite.org/home/home",
+      "installed-size": 40473,
+      "file-size": 15792,
+      "depends": [
+        "libc",
+        "liblua5.1.5",
+        "libsqlite3-0"
+      ],
+      "provides": [
+        "lsqlite3-any"
+      ],
+      "tags": [
+        "openwrt:section=lang"
+      ]
+    }, {
+      "name": "nfs-kernel-server-utils",
+      "version": "2.9.1-r1",
+      "hashes": "6f89f42c2e21ec68821e8936adfba2f9f9ba09ed4f4fff99db875959a7ea89d9",
+      "description": "NFS server utils including showmount and nfsstat",
+      "arch": "x86_64",
+      "license": "GPL-2.0-or-later",
+      "origin": "feeds/packages/feeds/packages/net/nfs-kernel-server",
+      "url": "https://nfs.sourceforge.net/",
+      "installed-size": 39482,
+      "file-size": 16549,
+      "depends": [
+        "libc",
+        "libtirpc",
+        "nfs-kernel-server"
+      ],
+      "provides": [
+        "nfs-kernel-server-utils-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:linux-nfs:nfs-utils"
+      ]
+    }, {
+      "name": "nfs-kernel-server-v4",
+      "version": "2.9.1-r1",
+      "hashes": "0b3b2d139c7a2637b464fc6c60512c54e74468e87792745b54cdb1a5929ecb4d",
+      "description": "Kernel NFS server with NFSv4.x support",
+      "arch": "x86_64",
+      "license": "GPL-2.0-or-later",
+      "origin": "feeds/packages/feeds/packages/net/nfs-kernel-server",
+      "url": "https://nfs.sourceforge.net/",
+      "installed-size": 672118,
+      "file-size": 303325,
+      "depends": [
+        "kmod-fs-nfs",
+        "kmod-fs-nfs-v4",
+        "kmod-fs-nfsd",
+        "libblkid1",
+        "libc",
+        "libdevmapper",
+        "libevent2-core7",
+        "libkeyutils1",
+        "libnl200",
+        "libreadline8",
+        "libtirpc",
+        "libuuid1",
+        "libxml2-16",
+        "lsqlite3",
+        "rpcbind"
+      ],
+      "provides": [
+        "nfs-kernel-server=2.9.1-r1",
+        "nfs-kernel-server-v4-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:linux-nfs:nfs-utils"
+      ]
+    }, {
+      "name": "nfs-utils-v4",
+      "version": "2.9.1-r1",
+      "hashes": "3ec492d02922e742c0654976bca0ae69a32afed791d1cc291461c753d1b6b7da",
+      "description": "Mount/umount utilities for NFSv4.x",
+      "arch": "x86_64",
+      "license": "GPL-2.0-or-later",
+      "origin": "feeds/packages/feeds/packages/net/nfs-kernel-server",
+      "url": "https://nfs.sourceforge.net/",
+      "installed-size": 152680,
+      "file-size": 73336,
+      "depends": [
+        "libc",
+        "libdevmapper",
+        "libkeyutils1",
+        "libtirpc",
+        "libuuid1"
+      ],
+      "provides": [
+        "nfs-utils=2.9.1-r1",
+        "nfs-utils-v4-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:linux-nfs:nfs-utils"
+      ]
+    }, {
+      "name": "nginx-full",
+      "version": "1.31.5-r1",
+      "hashes": "cb6890e3229f5123d6155abaaf62519753656a2f00ba2e3afd445898999c20d9",
+      "description": "nginx is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev. This variant is compiled with ALL config selected.",
+      "arch": "x86_64",
+      "license": "BSD-2-Clause",
+      "origin": "feeds/packages/feeds/packages/net/nginx",
+      "maintainer": "Thomas Heil <heil@terminal-consulting.de> Christian Marangi <ansuelsmth@gmail.com>",
+      "url": "https://nginx.org/",
+      "installed-size": 1441996,
+      "file-size": 665228,
+      "depends": [
+        "libc",
+        "libopenssl3",
+        "libpcre2",
+        "libpthread",
+        "libxml2-16",
+        "nginx-ssl-util>=1.5-r1",
+        "zlib"
+      ],
+      "provides": [
+        "nginx=1.31.5-r1",
+        "nginx-full-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:f5:nginx_open_source"
+      ]
+    }, {
+      "name": "nginx-mod-brotli",
+      "version": "1.31.5-r1",
+      "hashes": "2ccf5fe3b6a1f78dc9a7b4a9317637761743b7c5d4a30b1305eb9e277aae7ffd",
+      "description": "Add support for brotli compression module.",
+      "arch": "x86_64",
+      "license": "BSD-2-Clause",
+      "origin": "feeds/packages/feeds/packages/net/nginx",
+      "maintainer": "Thomas Heil <heil@terminal-consulting.de> Christian Marangi <ansuelsmth@gmail.com>",
+      "url": "https://nginx.org/",
+      "installed-size": 691158,
+      "file-size": 318708,
+      "depends": [
+        "libc",
+        "nginx"
+      ],
+      "provides": [
+        "nginx-mod-brotli-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:f5:nginx_open_source"
+      ]
+    }, {
+      "name": "nginx-mod-dav-ext",
+      "version": "1.31.5-r1",
+      "hashes": "75d2d0e90d0e3b7e73b26841ea0fc321a7cd9a534332481f8c0f6e9903b54f38",
+      "description": "Enable the WebDAV methods PROPFIND OPTIONS LOCK UNLOCK.",
+      "arch": "x86_64",
+      "license": "BSD-2-Clause",
+      "origin": "feeds/packages/feeds/packages/net/nginx",
+      "maintainer": "Thomas Heil <heil@terminal-consulting.de> Christian Marangi <ansuelsmth@gmail.com>",
+      "url": "https://nginx.org/",
+      "installed-size": 22813,
+      "file-size": 12041,
+      "depends": [
+        "libc",
+        "libxml2-16",
+        "nginx"
+      ],
+      "provides": [
+        "nginx-mod-dav-ext-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:f5:nginx_open_source"
+      ]
+    }, {
+      "name": "nginx-mod-headers-more",
+      "version": "1.31.5-r1",
+      "hashes": "9f1fda613f0aa5375fb1043afaa1a01dd0e0408a83b9b2fe7f952ea8492fcafc",
+      "description": "Set and clear input and output headers...more than \"add\"!",
+      "arch": "x86_64",
+      "license": "BSD-2-Clause",
+      "origin": "feeds/packages/feeds/packages/net/nginx",
+      "maintainer": "Thomas Heil <heil@terminal-consulting.de> Christian Marangi <ansuelsmth@gmail.com>",
+      "url": "https://nginx.org/",
+      "installed-size": 21017,
+      "file-size": 10545,
+      "depends": [
+        "libc",
+        "nginx"
+      ],
+      "provides": [
+        "nginx-mod-headers-more-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:f5:nginx_open_source"
+      ]
+    }, {
+      "name": "nginx-mod-luci",
+      "version": "1.31.5-r1",
+      "hashes": "6b5c4c078cf7cb89e1e07d302b0ccd2ff9e7aef5f532bef3525c38d3de0731f2",
+      "description": "Support file for LuCI in nginx. Include custom nginx configuration, autostart script for uwsgi.",
+      "arch": "x86_64",
+      "license": "BSD-2-Clause",
+      "origin": "feeds/packages/feeds/packages/net/nginx",
+      "maintainer": "Thomas Heil <heil@terminal-consulting.de> Christian Marangi <ansuelsmth@gmail.com>",
+      "url": "https://nginx.org/",
+      "installed-size": 1632,
+      "file-size": 1782,
+      "depends": [
+        "libc",
+        "nginx",
+        "nginx-mod-ubus",
+        "uwsgi",
+        "uwsgi-luci-support"
+      ],
+      "provides": [
+        "nginx-mod-luci-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:f5:nginx_open_source"
+      ]
+    }, {
+      "name": "nginx-mod-stream",
+      "version": "1.31.5-r1",
+      "hashes": "7243aadc08d10b7dd5255760c600e4906fcada967270885ae5eaab8004aa474e",
+      "description": "Add support for NGINX request streaming.",
+      "arch": "x86_64",
+      "license": "BSD-2-Clause",
+      "origin": "feeds/packages/feeds/packages/net/nginx",
+      "maintainer": "Thomas Heil <heil@terminal-consulting.de> Christian Marangi <ansuelsmth@gmail.com>",
+      "url": "https://nginx.org/",
+      "installed-size": 203067,
+      "file-size": 88339,
+      "depends": [
+        "libc",
+        "nginx"
+      ],
+      "provides": [
+        "nginx-mod-stream-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:f5:nginx_open_source"
+      ]
+    }, {
+      "name": "nginx-mod-ubus",
+      "version": "1.31.5-r1",
+      "hashes": "89765fd44fc228c47ee2867ef06f46884935e1e2f938608cb343ed61a1551479",
+      "description": "Enable UBUS api support directly from the server.",
+      "arch": "x86_64",
+      "license": "BSD-2-Clause",
+      "origin": "feeds/packages/feeds/packages/net/nginx",
+      "maintainer": "Thomas Heil <heil@terminal-consulting.de> Christian Marangi <ansuelsmth@gmail.com>",
+      "url": "https://nginx.org/",
+      "installed-size": 19516,
+      "file-size": 9789,
+      "depends": [
+        "libblobmsg-json20260721",
+        "libc",
+        "libjson-c5",
+        "libubus20260628",
+        "nginx"
+      ],
+      "provides": [
+        "nginx-mod-ubus-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:f5:nginx_open_source"
+      ]
+    }, {
+      "name": "nginx-ssl-util",
+      "version": "1.7-r2",
+      "hashes": "cbad48588a795cf0e6b748ddd8f6384bc4b6045fffbac3c4da7dc50eb51a49ce",
+      "description": "Utility that builds dynamically LAN listen directives for Nginx. Furthermore, it manages SSL directives for its server parts and can create corresponding (self-signed) certificates. It uses the PCRE library for performance.",
+      "arch": "x86_64",
+      "origin": "feeds/packages/feeds/packages/net/nginx-util",
+      "maintainer": "Peter Stadler <peter.stadler@student.uibk.ac.at>",
+      "installed-size": 137089,
+      "file-size": 55863,
+      "depends": [
+        "libc",
+        "libopenssl3",
+        "libpcre2",
+        "libpthread",
+        "libstdcpp6",
+        "libubox20260721",
+        "libubus20260628",
+        "libuci20250120"
+      ],
+      "provides": [
+        "nginx-ssl-util-any"
+      ],
+      "tags": [
+        "openwrt:section=net"
+      ]
+    }, {
+      "name": "ntfs-3g",
+      "version": "2022.10.3-r1",
+      "hashes": "e5e9e20a55c27305ce2d16d16f605288c6ea5058384e2f55a6348497ecfed8d8",
+      "description": "Ntfs-3g is a NTFS driver, which can create, remove, rename, move files, directories, hard links, and streams. It can read and write files, including streams and sparse files. It can handle special files like symbolic links, devices, and FIFOs. Moreover it can also read transparently compressed files. Contains: - ntfs-3g - ntfs-3g.probe - mount.ntfs-3g (symlink to ntfs-3g)",
+      "arch": "x86_64",
+      "license": "GPL-2.0-only LGPL-2.1-or-later",
+      "origin": "feeds/packages/feeds/packages/utils/ntfs-3g",
+      "url": "https://www.tuxera.com",
+      "installed-size": 488972,
+      "file-size": 239200,
+      "depends": [
+        "kmod-fuse",
+        "libc",
+        "libpthread"
+      ],
+      "provides": [
+        "ntfs-3g-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:tuxera:ntfs-3g"
+      ]
+    }, {
+      "name": "open-vm-tools",
+      "version": "13.1.0-r1",
+      "hashes": "ccb5580de3fcfc398d12bb09762724d6e36566890daef7b7838c8cc01968d025",
+      "description": "Open Virtual Machine Tools for VMware guest OS",
+      "arch": "x86_64",
+      "license": "LGPL-2.1-or-later",
+      "origin": "feeds/packages/feeds/packages/utils/open-vm-tools",
+      "maintainer": "Yuhei OKAWA <tochiro.srchack@gmail.com>",
+      "url": "https://github.com/vmware/open-vm-tools",
+      "installed-size": 1790740,
+      "file-size": 701626,
+      "depends": [
+        "glib2-core",
+        "glib2-gmodule",
+        "glib2-gobject",
+        "glib2-gthread",
+        "libc",
+        "libdnet",
+        "libmspack",
+        "libpthread",
+        "libtirpc"
+      ],
+      "provides": [
+        "open-vm-tools-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:vmware:open-vm-tools"
+      ]
+    }, {
+      "name": "openssh-sftp-server",
+      "version": "10.5_p1-r1",
+      "hashes": "fcd7296398354cc084f718461ae9ae4142c11a3f5b1b5b3b5249e0dfc6313298",
+      "description": "OpenSSH SFTP server.",
+      "arch": "x86_64",
+      "license": "BSD-2-Clause BSD-3-Clause ISC",
+      "origin": "feeds/packages/feeds/packages/net/openssh",
+      "maintainer": "Peter Wagner <tripolar@gmx.at>",
+      "url": "https://www.openssh.com/",
+      "installed-size": 156630,
+      "file-size": 74937,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "openssh-sftp-server-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:openbsd:openssh"
+      ]
+    }, {
+      "name": "rpcbind",
+      "version": "1.2.6-r2",
+      "hashes": "14e0d3975682a4f366bd1ad524c6497aeeca00d7e6448a0a3699e26a4e86b57c",
+      "description": "The rpcbind utility is a server that converts RPC program numbers into universal addresses. It must be running on the host to be able to make RPC calls on a server on that machine. Rpcbind replaces portmap for NFS v2/v3. It has more features, like ipv6 support. Note: Nfs4 only configurations can run without it.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/net/rpcbind",
+      "url": "https://sourceforge.net/projects/rpcbind/",
+      "installed-size": 71583,
+      "file-size": 33376,
+      "depends": [
+        "libc",
+        "libtirpc",
+        "libwrap"
+      ],
+      "provides": [
+        "rpcbind-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:rpcbind_project:rpcbind"
+      ]
+    }, {
+      "name": "rsync",
+      "version": "3.5.0-r1",
+      "hashes": "7d64eaf943fbc58fc4f8fdd5460be4a4c1406ea959166e754b9951f28a60aac3",
+      "description": "rsync is a program that allows files to be copied to and from remote machines in much the same way as rcp. It has many more options than rcp, and uses the rsync remote-update protocol to greatly speed up file transfers when the destination file already exists. The rsync remote-update protocol allows rsync to transfer just the differences between two sets of files across the network link.",
+      "arch": "x86_64",
+      "license": "GPL-3.0-or-later",
+      "origin": "feeds/packages/feeds/packages/net/rsync",
+      "maintainer": "Maxim Storchak <m.storchak@gmail.com>",
+      "url": "https://rsync.samba.org/",
+      "installed-size": 592091,
+      "file-size": 300591,
+      "depends": [
+        "libacl",
+        "libattr",
+        "libc",
+        "libpopt0",
+        "libxxhash",
+        "zlib"
+      ],
+      "provides": [
+        "rsync-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:samba:rsync"
+      ]
+    }, {
+      "name": "rsyncd",
+      "version": "3.5.0-r1",
+      "hashes": "6120f7027416fe8f34e758995f924e779b651252ac8803c8c31bfdc81f75eb1a",
+      "description": "rsyncd is a configuration file and initscript to utilize rsync as a daemon. It uses the same binary as rsync.",
+      "arch": "x86_64",
+      "license": "GPL-3.0-or-later",
+      "origin": "feeds/packages/feeds/packages/net/rsync",
+      "maintainer": "Maxim Storchak <m.storchak@gmail.com>",
+      "url": "https://rsync.samba.org/",
+      "installed-size": 1635,
+      "file-size": 1901,
+      "depends": [
+        "libc",
+        "rsync"
+      ],
+      "provides": [
+        "rsyncd-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:samba:rsync"
+      ]
+    }, {
+      "name": "samba4-libs",
+      "version": "4.24.5-r1",
+      "hashes": "a8b7feacf67fb20265a7207f513216f894f774d3d5c950fc7592ecd296797be7",
+      "description": "Samba 4.24.5 libs",
+      "arch": "x86_64",
+      "license": "GPL-3.0-only",
+      "origin": "feeds/packages/feeds/packages/net/samba4",
+      "url": "https://www.samba.org/",
+      "installed-size": 29594929,
+      "file-size": 10419097,
+      "depends": [
+        "attr",
+        "libc",
+        "libcap",
+        "libgnutls",
+        "libopenssl3",
+        "libpopt0",
+        "libreadline8",
+        "libtasn1",
+        "libtirpc",
+        "liburing",
+        "libuuid1",
+        "zlib"
+      ],
+      "provides": [
+        "samba4-libs-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:samba:samba"
+      ]
+    }, {
+      "name": "samba4-server",
+      "version": "4.24.5-r1",
+      "hashes": "e76e3a1a42a8d8751aabd05c4ab6430a99f00e71018a5175119460d37bb2fc4e",
+      "description": "installs: smbd (nmbd) smbpasswd pdbedit testparm (nmblookup) (smbcacls sharesec) (samba samba-tool ntlm_auth samba-gpupdate samba_dnsupdate samba_kcc samba_spnupdate samba_upgradedns samba_downgrade_db) This provides the basic fileserver service and is the minimum needed to serve file shares. HINT: https://fitzcarraldoblog.wordpress.com/2016/10/17/a-correct-method-of-configuring-samba-for-browsing-smb-shares-in-a-home-network/",
+      "arch": "x86_64",
+      "license": "GPL-3.0-only",
+      "origin": "feeds/packages/feeds/packages/net/samba4",
+      "url": "https://www.samba.org/",
+      "installed-size": 206021,
+      "file-size": 77147,
+      "depends": [
+        "libc",
+        "samba4-libs"
+      ],
+      "provides": [
+        "samba4-server-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:samba:samba"
+      ]
+    }, {
+      "name": "samba4-utils",
+      "version": "4.24.5-r1",
+      "hashes": "d74573d9b82901c1db6a9081939a6ce1ace2d3d8df93da16df58e1ef51835336",
+      "description": "installs: smbstatus smbtree mvxattr smbtar (smbcquotas) Utilities collection",
+      "arch": "x86_64",
+      "license": "GPL-3.0-only",
+      "origin": "feeds/packages/feeds/packages/net/samba4",
+      "url": "https://www.samba.org/",
+      "installed-size": 64236,
+      "file-size": 25040,
+      "depends": [
+        "libc",
+        "samba4-libs"
+      ],
+      "provides": [
+        "samba4-utils-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:samba:samba"
+      ]
+    }, {
+      "name": "shadow",
+      "version": "4.20.2-r1",
+      "hashes": "5d5a7fccb12881886fea4445f78e3879fe77bf0504962a042823d334eb080cf7",
+      "description": "Full versions of standard shadow utilities. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient and much smaller.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 1,
+      "file-size": 1179,
+      "depends": [
+        "libc",
+        "shadow-chage",
+        "shadow-chfn",
+        "shadow-chgpasswd",
+        "shadow-chpasswd",
+        "shadow-chsh",
+        "shadow-faillog",
+        "shadow-gpasswd",
+        "shadow-groupadd",
+        "shadow-groupdel",
+        "shadow-groupmod",
+        "shadow-grpck",
+        "shadow-grpconv",
+        "shadow-grpunconv",
+        "shadow-login",
+        "shadow-newgidmap",
+        "shadow-newgrp",
+        "shadow-newuidmap",
+        "shadow-newusers",
+        "shadow-nologin",
+        "shadow-passwd",
+        "shadow-pwck",
+        "shadow-pwconv",
+        "shadow-pwunconv",
+        "shadow-su",
+        "shadow-useradd",
+        "shadow-userdel",
+        "shadow-usermod",
+        "shadow-vipw"
+      ],
+      "provides": [
+        "shadow-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-chage",
+      "version": "4.20.2-r1",
+      "hashes": "8ac76ce5869820ac78011f88f66dfc10a7b1c3ab8204bbb4703b75991b977dce",
+      "description": "Full version of standard chage utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 83815,
+      "file-size": 35315,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-chage-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-chfn",
+      "version": "4.20.2-r1",
+      "hashes": "cea5c613ac6f501af78f5c986e2c925a57b2896348e84249d964b3d9cdcb6085",
+      "description": "Full version of standard chfn utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 176302,
+      "file-size": 64218,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-chfn-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-chgpasswd",
+      "version": "4.20.2-r1",
+      "hashes": "777d9fc203108349bcfd2c04333d2382770d2a599cf3d13df8b85c5fc8d52c23",
+      "description": "Full version of standard chgpasswd utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 174356,
+      "file-size": 63292,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-chgpasswd-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-chpasswd",
+      "version": "4.20.2-r1",
+      "hashes": "7911076e7f501617716d4a583b7c992dd064eded66edb5508cea416735624277",
+      "description": "Full version of standard chpasswd utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 205803,
+      "file-size": 74607,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-chpasswd-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-chsh",
+      "version": "4.20.2-r1",
+      "hashes": "5aff86f5bddb3234e19faafde6320cc86d4def73bb6e2e3bf27b3ed4f8b84046",
+      "description": "Full version of standard chsh utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 173454,
+      "file-size": 63036,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-chsh-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-common",
+      "version": "4.20.2-r1",
+      "hashes": "ed09b0b095f1ba543c0633a0351041763e10e0defa4f725530a93c9831c8cf8b",
+      "description": "Shared definitions for the PLD Linux shadow utilities",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 14776,
+      "file-size": 6578,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "shadow-common-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-faillog",
+      "version": "4.20.2-r1",
+      "hashes": "76bbf1c5343208dd88e7b6b5d61fd42314cecfd76971913737f4a6ddcaf624a7",
+      "description": "Full version of standard faillog utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 14873,
+      "file-size": 7445,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-faillog-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-gpasswd",
+      "version": "4.20.2-r1",
+      "hashes": "36de8f99dac1e95f434d311afda27c53e022d1866f8d8308f6c170d9da3f9a21",
+      "description": "Full version of standard gpasswd utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 190993,
+      "file-size": 70136,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-gpasswd-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-groupadd",
+      "version": "4.20.2-r1",
+      "hashes": "aa941415e8c5ee78c4a1b0da0196bb4a36ffbe952a61a5cb14be10887f7cc43b",
+      "description": "Full version of standard groupadd utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 86699,
+      "file-size": 36712,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-groupadd-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-groupdel",
+      "version": "4.20.2-r1",
+      "hashes": "2ce2714911e0561fa10c973dfb572b60c19a3a32a5734f699c25ea53d20d26b1",
+      "description": "Full version of standard groupdel utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 78059,
+      "file-size": 32528,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-groupdel-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-groupmod",
+      "version": "4.20.2-r1",
+      "hashes": "33102f2412d80e078ef05334204e132f4448ce5ec4f9695610ada4a8aeab4bde",
+      "description": "Full version of standard groupmod utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 86443,
+      "file-size": 36381,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-groupmod-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-grpck",
+      "version": "4.20.2-r1",
+      "hashes": "b75f941c2b87bd69cfa905de245300269242f9ebb939f96206c7ba351cedb2f4",
+      "description": "Full version of standard grpck utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 48912,
+      "file-size": 22639,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-grpck-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-grpconv",
+      "version": "4.20.2-r1",
+      "hashes": "93c28525c6f332e6739c30734e3033a9b074fb5c05ebd1f4fa9d4431a70aa7a4",
+      "description": "Full version of standard grpconv utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 42290,
+      "file-size": 19369,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-grpconv-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-grpunconv",
+      "version": "4.20.2-r1",
+      "hashes": "ce1fde55576014cdf6de1eb2ea4af56c37dc13fd1fe77d6176c897ea4ecb0620",
+      "description": "Full version of standard grpunconv utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 42004,
+      "file-size": 19264,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-grpunconv-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-login",
+      "version": "4.20.2-r1",
+      "hashes": "1271aaa33ff5c0fa92e3f4a0014993310e38fc48bf0e6834c0d8335ecbbd04b6",
+      "description": "Full version of standard login utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 188759,
+      "file-size": 70836,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-login-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-newgidmap",
+      "version": "4.20.2-r1",
+      "hashes": "e8ae8a6186fa12c1020d2865a712027c6447368776ecc13860af2f42bb1439e7",
+      "description": "Full version of standard newgidmap utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 51563,
+      "file-size": 23439,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-newgidmap-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-newgrp",
+      "version": "4.20.2-r1",
+      "hashes": "0f155a407d4be2170d9405d64ebaa280b40029db4b3148bac309c814a6fa328a",
+      "description": "Full version of standard newgrp utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 161560,
+      "file-size": 57701,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-newgrp-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-newuidmap",
+      "version": "4.20.2-r1",
+      "hashes": "dcc04b3924c2d28e6447e3da30da55d7da990477a59a71ef2ab3b25ebc8809f9",
+      "description": "Full version of standard newuidmap utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 50603,
+      "file-size": 23026,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-newuidmap-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-newusers",
+      "version": "4.20.2-r1",
+      "hashes": "a52e161cc5bc00ab7f777efd331aba9ea3c495f8fc75cf2558ec95b04371c3be",
+      "description": "Full version of standard newusers utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 219435,
+      "file-size": 80106,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-newusers-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-nologin",
+      "version": "4.20.2-r1",
+      "hashes": "b4a80a2971d2e1c8da9c22f88e30af712602e928ea467df55a4644020a96a84d",
+      "description": "Full version of standard nologin utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 3162,
+      "file-size": 2119,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-nologin-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-passwd",
+      "version": "4.20.2-r1",
+      "hashes": "6c43427dc5cbffec33c1bb867dbf3fb7bbb839962d406bac6173f3aef97b005b",
+      "description": "Full version of standard passwd utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 224552,
+      "file-size": 82941,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-passwd-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-pwck",
+      "version": "4.20.2-r1",
+      "hashes": "d96b030426601b6ada91d6276ff8554c5856946a4d9cbe534a67dd0aacc0b1e4",
+      "description": "Full version of standard pwck utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 46895,
+      "file-size": 21339,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-pwck-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-pwconv",
+      "version": "4.20.2-r1",
+      "hashes": "113ba5a059d7d990ab4946e25a4ea7bf2fe42a25812b68a4dfe3de318d4c4be2",
+      "description": "Full version of standard pwconv utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 40881,
+      "file-size": 18474,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-pwconv-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-pwunconv",
+      "version": "4.20.2-r1",
+      "hashes": "63f92ba5f5baee8f048f632a014a8a0e91013e33b79c29c2b21540fa90ff6c2d",
+      "description": "Full version of standard pwunconv utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 39571,
+      "file-size": 17879,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-pwunconv-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-su",
+      "version": "4.20.2-r1",
+      "hashes": "57ea924d69e05901dfe00312a2cd2ea90ab941cc68ed5169f5905a625767fc6f",
+      "description": "Full version of standard su utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 182548,
+      "file-size": 67737,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-su-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-useradd",
+      "version": "4.20.2-r1",
+      "hashes": "bb992a780c1bf5c8055aec73eb95016c8b79105455045164432d5cc6eefcaae6",
+      "description": "Full version of standard useradd utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 121066,
+      "file-size": 51443,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-useradd-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-userdel",
+      "version": "4.20.2-r1",
+      "hashes": "9840be1e231d5b14448a7a824afa5fa589a4109154d3b5bbb3217eab45018ddc",
+      "description": "Full version of standard userdel utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 89194,
+      "file-size": 37688,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-userdel-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-usermod",
+      "version": "4.20.2-r1",
+      "hashes": "da028a3b2567ee3333cbb8c64d2f1d8a9838c41ffc9d5181980a8cf0d2e37cd8",
+      "description": "Full version of standard usermod utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 114890,
+      "file-size": 49426,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-usermod-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-utils",
+      "version": "4.20.2-r1",
+      "hashes": "4ecccc8f7dd87562265cc47a416109758e5458e89d9ae94006e9598e76a4f98d",
+      "description": "Full versions of standard shadow utilities. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient and much smaller.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 1,
+      "file-size": 874,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "shadow-utils-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "shadow-vipw",
+      "version": "4.20.2-r1",
+      "hashes": "c23d2f111a07891ee78910c1d6c86b2b31946c4b861509e29d36f821bee02ce7",
+      "description": "Full version of standard vipw utility. Normally, you would not use this package, since the functionality in BusyBox is more than sufficient.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/packages/feeds/packages/utils/shadow",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://github.com/shadow-maint/shadow",
+      "installed-size": 55151,
+      "file-size": 23881,
+      "depends": [
+        "libc",
+        "shadow-common"
+      ],
+      "provides": [
+        "shadow-vipw-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:debian:shadow"
+      ]
+    }, {
+      "name": "uwsgi",
+      "version": "2.0.30-r1",
+      "hashes": "85e59260d0ee3b76170153bf0eda825df3102dd5053a4d4bf49a3846cc90debd",
+      "description": "The uWSGI project (to be used together with nginx or nginx-ssl).",
+      "arch": "x86_64",
+      "license": "GPL-2.0-or-later",
+      "origin": "feeds/packages/feeds/packages/net/uwsgi",
+      "maintainer": "Christian Marangi <ansuelsmth@gmail.com>",
+      "url": "https://uwsgi-docs.readthedocs.io/en/latest/",
+      "installed-size": 1116525,
+      "file-size": 384994,
+      "depends": [
+        "libc",
+        "libcap",
+        "libpcre2",
+        "libuuid1"
+      ],
+      "provides": [
+        "uwsgi-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:unbit:uwsgi"
+      ]
+    }, {
+      "name": "uwsgi-cgi-plugin",
+      "version": "2.0.30-r1",
+      "hashes": "9e8a10739c008d324cd88134a14c8ce40f76deb44619724f3bbfd453b3710091",
+      "description": "The CGI plugin for the uWSGI project.",
+      "arch": "x86_64",
+      "license": "GPL-2.0-or-later",
+      "origin": "feeds/packages/feeds/packages/net/uwsgi",
+      "maintainer": "Christian Marangi <ansuelsmth@gmail.com>",
+      "installed-size": 23373,
+      "file-size": 11158,
+      "depends": [
+        "libc",
+        "uwsgi"
+      ],
+      "provides": [
+        "uwsgi-cgi-plugin-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:unbit:uwsgi"
+      ]
+    }, {
+      "name": "uwsgi-luci-support",
+      "version": "2.0.30-r1",
+      "hashes": "d86dd2a214770e47e5d7cd1c8c7d2ba4e9605badf6b0d73344e952204af00d8b",
+      "description": "Support files for LuCI on Nginx",
+      "arch": "x86_64",
+      "license": "GPL-2.0-or-later",
+      "origin": "feeds/packages/feeds/packages/net/uwsgi",
+      "maintainer": "Christian Marangi <ansuelsmth@gmail.com>",
+      "installed-size": 2577,
+      "file-size": 2072,
+      "depends": [
+        "libc",
+        "uwsgi",
+        "uwsgi-cgi-plugin",
+        "uwsgi-syslog-plugin"
+      ],
+      "provides": [
+        "uwsgi-luci-support-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:unbit:uwsgi"
+      ]
+    }, {
+      "name": "uwsgi-syslog-plugin",
+      "version": "2.0.30-r1",
+      "hashes": "cd1c2a3f7db793e622466889e5f8e51f52645084eab13ba8e14bcd70d35e9784",
+      "description": "The Syslog plugin for the uWSGI project.",
+      "arch": "x86_64",
+      "license": "GPL-2.0-or-later",
+      "origin": "feeds/packages/feeds/packages/net/uwsgi",
+      "maintainer": "Christian Marangi <ansuelsmth@gmail.com>",
+      "installed-size": 4320,
+      "file-size": 2335,
+      "depends": [
+        "libc",
+        "uwsgi"
+      ],
+      "provides": [
+        "uwsgi-syslog-plugin-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:unbit:uwsgi"
+      ]
+    }, {
+      "name": "wget-ssl",
+      "version": "1.25.0-r5",
+      "hashes": "ca2ae95a838bff9ffc2b88c4894da160e5a0aec59f643297a451a8c90799488c",
+      "description": "Wget is a network utility to retrieve files from the Web using http and ftp, the two most widely used Internet protocols. It works non-interactively, so it will work in the background, after having logged off. The program supports recursive retrieval of web-authoring pages as well as ftp sites -- you can use wget to make mirrors of archives and home pages or to travel the Web like a WWW robot. This package is built with SSL support.",
+      "arch": "x86_64",
+      "license": "GPL-3.0-or-later",
+      "origin": "feeds/packages/feeds/packages/net/wget",
+      "maintainer": "Alexandru Ardelean <ardeleanalex@gmail.com>",
+      "url": "https://www.gnu.org/software/wget/index.html",
+      "installed-size": 548090,
+      "file-size": 274059,
+      "depends": [
+        "libc",
+        "libopenssl3",
+        "libpcre2",
+        "librt",
+        "zlib"
+      ],
+      "provides": [
+        "wget=1.25.0-r5",
+        "wget-any",
+        "wget-ssl-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:gnu:wget"
+      ]
+    }, {
+      "name": "yq",
+      "version": "4.53.6-r1",
+      "hashes": "ee45691523cfd85dc731c96e5510b58e051cb3f6554e8c25e83e62d7b5410e83",
+      "description": "The aim of the project is to be the jq or sed of yaml files.",
+      "arch": "x86_64",
+      "license": "MIT",
+      "origin": "feeds/packages/feeds/packages/utils/yq",
+      "maintainer": "Tianling Shen <cnsztl@immortalwrt.org>",
+      "url": "https://mikefarah.gitbook.io/yq/",
+      "installed-size": 14191212,
+      "file-size": 5660860,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "yq-any"
+      ],
+      "tags": [
+        "openwrt:section=utils"
+      ]
+    }, {
+      "name": "zoneinfo-asia",
+      "version": "2026c-r1",
+      "hashes": "65468304788ecc66f58723332bb8e57a53a7a71abc2d3a178772bc52c1e652d3",
+      "description": "Zone Information (Asia)",
+      "arch": "x86_64",
+      "license": "Unlicense",
+      "origin": "feeds/packages/feeds/packages/utils/zoneinfo",
+      "maintainer": "Vladimir Ulrich <admin@evl.su>",
+      "installed-size": 92293,
+      "file-size": 33037,
+      "depends": [
+        "libc",
+        "zoneinfo-core"
+      ],
+      "provides": [
+        "zoneinfo-asia-any"
+      ],
+      "tags": [
+        "openwrt:section=utils"
+      ]
+    }, {
+      "name": "zoneinfo-core",
+      "version": "2026c-r1",
+      "hashes": "e5a260938b0a5d90a693fec15a0ec837378487864b89f4e9f73e4e4f3d9728e8",
+      "description": "Zone Information (core)",
+      "arch": "x86_64",
+      "license": "Unlicense",
+      "origin": "feeds/packages/feeds/packages/utils/zoneinfo",
+      "maintainer": "Vladimir Ulrich <admin@evl.su>",
+      "installed-size": 60036,
+      "file-size": 26444,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "zoneinfo-core-any"
+      ],
+      "tags": [
+        "openwrt:section=utils"
+      ]
+    }
+  ]
+}
