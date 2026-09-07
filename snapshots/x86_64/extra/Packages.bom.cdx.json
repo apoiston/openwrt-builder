@@ -1,0 +1,69 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:e2e8eeed-c5c5-4b58-9442-3c1a2b6cb218",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-09-08T07:22:24+08:00"
+  },
+  "components": [
+    {
+      "name": "caddy",
+      "version": "2.11.4-r1",
+      "type": "application",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "luci-app-nikki",
+      "version": "1.26.1-r1",
+      "type": "application"
+    },
+    {
+      "name": "luci-i18n-nikki-zh-cn",
+      "version": "26.248.33138~ca78588",
+      "type": "application"
+    },
+    {
+      "name": "mihomo-alpha",
+      "version": "2026.09.07~8f54283",
+      "type": "application",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL3.0+"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mihomo-meta",
+      "version": "1.19.30",
+      "type": "application",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL3.0+"
+          }
+        }
+      ]
+    },
+    {
+      "name": "nikki",
+      "version": "2026.04.08-r1",
+      "type": "application",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL3.0+"
+          }
+        }
+      ]
+    }
+  ]
+}
