@@ -1,0 +1,208 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:74d6deb7-9323-4da7-9002-f30c9cd36161",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-09-08T07:22:24+08:00"
+  },
+  "components": [
+    {
+      "name": "base-files",
+      "version": "1706~f36067d4e9",
+      "type": "application",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "block-mount",
+      "version": "2026.07.25~2aa16407-r1",
+      "type": "application",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dropbear",
+      "version": "2026.94-r2",
+      "cpe": "cpe:/a:dropbear_ssh_project:dropbear_ssh",
+      "type": "application",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "fstools",
+      "version": "2026.07.25~2aa16407-r1",
+      "type": "application",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "fwtool",
+      "version": "2025.10.03~04cd252e-r1",
+      "type": "application",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "grub2",
+      "version": "2.12-r1",
+      "cpe": "cpe:/a:gnu:grub2",
+      "type": "application",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-3.0-or-later"
+          }
+        }
+      ]
+    },
+    {
+      "name": "grub2-bios-setup",
+      "version": "2.12-r1",
+      "cpe": "cpe:/a:gnu:grub2",
+      "type": "application",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-3.0-or-later"
+          }
+        }
+      ]
+    },
+    {
+      "name": "grub2-efi",
+      "version": "2.12-r1",
+      "cpe": "cpe:/a:gnu:grub2",
+      "type": "application",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-3.0-or-later"
+          }
+        }
+      ]
+    },
+    {
+      "name": "kernel",
+      "version": "6.18.50~916f30a88fa86892393a4f4afda22f30-r1",
+      "cpe": "cpe:/o:linux:linux_kernel",
+      "type": "application",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2.0-only"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libatomic1",
+      "version": "16.2.0-r5",
+      "type": "library",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-3.0-with-GCC-exception"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libc",
+      "version": "1.2.6-r5",
+      "type": "library",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-3.0-with-GCC-exception"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libgcc1",
+      "version": "16.2.0-r5",
+      "type": "library",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-3.0-with-GCC-exception"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libpthread",
+      "version": "1.2.6-r5",
+      "type": "library",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-3.0-with-GCC-exception"
+          }
+        }
+      ]
+    },
+    {
+      "name": "librt",
+      "version": "1.2.6-r5",
+      "type": "library",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-3.0-with-GCC-exception"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libstdcpp6",
+      "version": "16.2.0-r5",
+      "type": "library",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-3.0-with-GCC-exception"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mtd",
+      "version": "28",
+      "type": "application",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2.0+"
+          }
+        }
+      ]
+    }
+  ]
+}
