@@ -1,0 +1,2425 @@
+{
+  "packages": [
+    {
+      "name": "apk-mbedtls",
+      "version": "3.0.5-r3",
+      "hashes": "65ca2c67c7de1c9281068bd25293dee83734a0f1b97b17e2afb3ce128ee89052",
+      "description": "apk package manager (mbedtls)",
+      "arch": "x86_64",
+      "license": "GPL-2.0-only",
+      "origin": "feeds/base/system/apk",
+      "maintainer": "Paul Spooren <mail@aparcar.org>",
+      "url": "https://gitlab.alpinelinux.org/alpine/apk-tools.git",
+      "installed-size": 305248,
+      "file-size": 163533,
+      "provider-priority": 100,
+      "depends": [
+        "libc",
+        "libmbedtls21",
+        "wget-any",
+        "zlib"
+      ],
+      "provides": [
+        "apk=3.0.5-r3",
+        "apk-mbedtls-any"
+      ],
+      "tags": [
+        "openwrt:section=base"
+      ]
+    }, {
+      "name": "blkid",
+      "version": "2.42.2-r1",
+      "hashes": "d7512de71b9c3b746c240e874b2e0c465b101a48c553a51bf099faaeed4a6ca2",
+      "description": "The blkid program is the command-line interface to working with the libblkid library.",
+      "arch": "x86_64",
+      "license": "LGPL-2.1-or-later",
+      "origin": "feeds/base/utils/util-linux",
+      "url": "https://www.kernel.org/pub/linux/utils/util-linux/",
+      "installed-size": 155012,
+      "file-size": 72066,
+      "depends": [
+        "libblkid1",
+        "libc",
+        "libuuid1"
+      ],
+      "provides": [
+        "blkid-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:kernel:util-linux"
+      ]
+    }, {
+      "name": "bnx2-firmware",
+      "version": "20260810-r1",
+      "hashes": "ce54e804bf425fb9c50a31a7da13b716be46af550e0c2f5ef57efdbf04cc5164",
+      "description": "Broadcom BCM5706/5708/5709/5716 firmware",
+      "arch": "x86_64",
+      "origin": "feeds/base/firmware/linux-firmware",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "url": "https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git",
+      "installed-size": 215355,
+      "file-size": 105684,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "bnx2-firmware-any"
+      ],
+      "tags": [
+        "openwrt:section=firmware"
+      ]
+    }, {
+      "name": "busybox",
+      "version": "1.38.0-r2",
+      "hashes": "459890a22165c4341dc2e12919371f0b3be2acc52a035a172d1c774053efaba6",
+      "description": "The Swiss Army Knife of embedded Linux. It slices, it dices, it makes Julian Fries.",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/utils/busybox",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "url": "https://busybox.net/",
+      "installed-size": 486089,
+      "file-size": 276084,
+      "provider-priority": 100,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "busybox-any"
+      ],
+      "tags": [
+        "openwrt:section=base",
+        "openwrt:cpe=cpe:/a:busybox:busybox"
+      ]
+    }, {
+      "name": "ca-bundle",
+      "version": "20260816-r1",
+      "hashes": "05a98fef46d5484e44f00ea92cb13c9a4b98eca6b5778c3e7dcd3256e5f56d30",
+      "description": "System CA certificates as a bundle",
+      "arch": "noarch",
+      "license": "GPL-2.0-or-later MPL-2.0",
+      "origin": "feeds/base/system/ca-certificates",
+      "installed-size": 181656,
+      "file-size": 107479,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "ca-bundle-any",
+        "ca-certificates-any",
+        "ca-certs"
+      ],
+      "tags": [
+        "openwrt:section=base"
+      ]
+    }, {
+      "name": "ca-certificates",
+      "version": "20260816-r1",
+      "hashes": "064b7541ec8065d0ec6e763731c56e3ebd628b0bdf6812054bdcb7cc74a1bc4f",
+      "description": "System CA certificates",
+      "arch": "noarch",
+      "license": "GPL-2.0-or-later MPL-2.0",
+      "origin": "feeds/base/system/ca-certificates",
+      "installed-size": 190394,
+      "file-size": 121227,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "ca-certificates-any",
+        "ca-certs"
+      ],
+      "tags": [
+        "openwrt:section=base"
+      ]
+    }, {
+      "name": "cfdisk",
+      "version": "2.42.2-r1",
+      "hashes": "b62fc155590dc138247ecb260fe81a127cdc09810655488b3e6c59afbad432e4",
+      "description": "cfdisk is a curses-based program for partitioning any hard disk drive",
+      "arch": "x86_64",
+      "license": "GPL-2.0-or-later",
+      "origin": "feeds/base/utils/util-linux",
+      "url": "https://www.kernel.org/pub/linux/utils/util-linux/",
+      "installed-size": 101685,
+      "file-size": 47039,
+      "depends": [
+        "libblkid1",
+        "libc",
+        "libfdisk1",
+        "libmount1",
+        "libncurses6",
+        "libsmartcols1"
+      ],
+      "provides": [
+        "cfdisk-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:kernel:util-linux"
+      ]
+    }, {
+      "name": "dnsmasq-full",
+      "version": "2.93-r2",
+      "hashes": "819c28f85c5865d917f92f7a89b66a3a5c726ee535dd065ef7a33fb6515bea88",
+      "description": "It is intended to provide coupled DNS and DHCP service to a LAN. This is a fully configurable variant with DHCPv4, DHCPv6, DNSSEC, Authoritative DNS and nftset, Conntrack support & NO_ID enabled by default.",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/network/services/dnsmasq",
+      "url": "http://www.thekelleys.org.uk/dnsmasq/",
+      "installed-size": 557634,
+      "file-size": 285883,
+      "depends": [
+        "libc",
+        "libnetfilter-conntrack3",
+        "libnettle8",
+        "libubus20260628",
+        "nftables-json"
+      ],
+      "provides": [
+        "dnsmasq=2.93-r2",
+        "dnsmasq-full-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:thekelleys:dnsmasq"
+      ]
+    }, {
+      "name": "e2fsprogs",
+      "version": "1.47.4-r1",
+      "hashes": "9b3901cc92a6b83a537be977c98c104350060f58b1fc629f87d3884753b17da5",
+      "description": "This package contains essential ext2 filesystem utilities which consists of e2fsck, mke2fs and most of the other core ext2 filesystem utilities.",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/utils/e2fsprogs",
+      "url": "https://e2fsprogs.sourceforge.net/",
+      "installed-size": 487666,
+      "file-size": 231602,
+      "depends": [
+        "libc",
+        "libe2p2",
+        "libext2fs2",
+        "libuuid1"
+      ],
+      "provides": [
+        "e2fsprogs-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:e2fsprogs_project:e2fsprogs"
+      ]
+    }, {
+      "name": "firewall4",
+      "version": "2025.03.17~b6e51575-r2",
+      "hashes": "16eeea4391dd7ce4762d6227790047ee7fc6cfdc28559175b2df55532da0a244",
+      "description": "This package provides an nftables-based implementation of the UCI firewall sharing the same configuration format.",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/network/config/firewall4",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "installed-size": 130657,
+      "file-size": 31057,
+      "provider-priority": 100,
+      "depends": [
+        "kmod-nft-core",
+        "kmod-nft-fib",
+        "kmod-nft-nat",
+        "kmod-nft-offload",
+        "libc",
+        "nftables-json",
+        "ucode>=2022.03.22",
+        "ucode-mod-fs",
+        "ucode-mod-ubus",
+        "ucode-mod-uci"
+      ],
+      "provides": [
+        "firewall4-any",
+        "uci-firewall=2025.03.17~b6e51575-r2"
+      ],
+      "tags": [
+        "openwrt:section=net"
+      ]
+    }, {
+      "name": "getrandom",
+      "version": "2025.10.30~6f78fa49-r1",
+      "hashes": "e31d6a54c34fdcc7ae3af22d63f7f5f60f215756da86e59e2980293331114ebd",
+      "description": "OpenWrt getrandom system helper",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/system/ubox",
+      "maintainer": "John Crispin <john@phrozen.org>",
+      "installed-size": 3267,
+      "file-size": 2073,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "getrandom-any"
+      ],
+      "tags": [
+        "openwrt:section=base"
+      ]
+    }, {
+      "name": "i915-firmware-dmc",
+      "version": "20260810-r1",
+      "hashes": "2049c670a33763b0d77915e3ab093279831695cd5c049469ee48058684d294f1",
+      "description": "Intel I915 DMC firmware",
+      "arch": "x86_64",
+      "origin": "feeds/base/firmware/linux-firmware",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "url": "https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git",
+      "installed-size": 1049664,
+      "file-size": 258944,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "i915-firmware-dmc-any"
+      ],
+      "tags": [
+        "openwrt:section=firmware"
+      ]
+    }, {
+      "name": "ip-full",
+      "version": "6.18.0-r2",
+      "hashes": "f328014988a5c13e29c0fa1f79494567dde06f4f09e55ad03e63876ad561c932",
+      "description": "Routing control utility (full)",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/network/utils/iproute2",
+      "maintainer": "Russell Senior <russell@personaltelco.net>",
+      "url": "https://wiki.linuxfoundation.org/networking/iproute2",
+      "installed-size": 686014,
+      "file-size": 318156,
+      "depends": [
+        "libbpf1",
+        "libc",
+        "libnl-tiny1"
+      ],
+      "provides": [
+        "ip=6.18.0-r2",
+        "ip-full-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:iproute2_project:iproute2"
+      ]
+    }, {
+      "name": "jansson4",
+      "version": "2.15.0-r1",
+      "hashes": "2cebf6d86edcea1d4d81de0c9b6098efa7d983db416b42660987b4209f57ff2e",
+      "description": "Jansson is a C library for encoding, decoding and manipulating JSON data",
+      "arch": "x86_64",
+      "license": "MIT",
+      "origin": "feeds/base/libs/jansson",
+      "url": "https://github.com/akheron/jansson",
+      "installed-size": 105791,
+      "file-size": 59024,
+      "provider-priority": 10,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "jansson",
+        "jansson-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=4",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:jansson_project:jansson"
+      ]
+    }, {
+      "name": "jshn",
+      "version": "2026.07.21~e7608b69-r1",
+      "hashes": "d5402e84a3d21424c5a9ea716ad44eace9d8aa9a996d95e507cedaf56d84b05a",
+      "description": "Library for parsing and generating JSON from shell scripts",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/libs/libubox",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "installed-size": 18290,
+      "file-size": 7200,
+      "depends": [
+        "libblobmsg-json20260721",
+        "libc",
+        "libjson-c5",
+        "libubox20260721"
+      ],
+      "provides": [
+        "jshn-any"
+      ],
+      "tags": [
+        "openwrt:section=utils"
+      ]
+    }, {
+      "name": "jsonfilter",
+      "version": "2026.03.16~b9034210-r1",
+      "hashes": "97ba35dfa0197976c56c4beca697842477a1c5df6cacb3d84ba8bfb97249d8bc",
+      "description": "OpenWrt JSON filter utility",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/utils/jsonfilter",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "url": "https://git.openwrt.org/project/jsonpath.git",
+      "installed-size": 20444,
+      "file-size": 10488,
+      "depends": [
+        "libc",
+        "libjson-c5",
+        "libubox20260721"
+      ],
+      "provides": [
+        "jsonfilter-any"
+      ],
+      "tags": [
+        "openwrt:section=base"
+      ]
+    }, {
+      "name": "libblkid1",
+      "version": "2.42.2-r1",
+      "hashes": "e5736a017a563831487bc4e24f57657e658397e97f8df1f2d6280238e8c6b8e9",
+      "description": "The libblkid library is used to identify block devices (disks) as to their content (e.g. filesystem type, partitions) as well as extracting additional information such as filesystem labels/volume names, partitions, unique identifiers/serial numbers...",
+      "arch": "x86_64",
+      "license": "LGPL-2.1-or-later",
+      "origin": "feeds/base/utils/util-linux",
+      "url": "https://www.kernel.org/pub/linux/utils/util-linux/",
+      "installed-size": 383882,
+      "file-size": 179606,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libuuid1"
+      ],
+      "provides": [
+        "libblkid",
+        "libblkid-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=1",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:kernel:util-linux"
+      ]
+    }, {
+      "name": "libblobmsg-json20260721",
+      "version": "2026.07.21~e7608b69-r1",
+      "hashes": "e6c9ebd056d9c09faf1aa8fb8f3e1d2060b540fc4c174f162f9cd5b4b601dbed",
+      "description": "blobmsg <-> json conversion library",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/libs/libubox",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "installed-size": 7977,
+      "file-size": 4391,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libjson-c5",
+        "libubox20260721"
+      ],
+      "provides": [
+        "libblobmsg-json",
+        "libblobmsg-json-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=20260721",
+        "openwrt:section=libs"
+      ]
+    }, {
+      "name": "libbpf1",
+      "version": "1.7.0-r1",
+      "hashes": "4e9931f090c48aa87b1652e818760958976e5265d9a4e8d779eeed1d34aead11",
+      "description": "libbpf is a library for loading eBPF programs and reading and manipulating eBPF objects from user-space.",
+      "arch": "x86_64",
+      "license": "LGPL-2.1 OR BSD-2-Clause",
+      "origin": "feeds/base/libs/libbpf",
+      "maintainer": "Tony Ambardar <itugrok@yahoo.com>",
+      "url": "https://www.kernel.org",
+      "installed-size": 451918,
+      "file-size": 215060,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libelf1"
+      ],
+      "provides": [
+        "libbpf",
+        "libbpf-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=1",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:libbpf_project:libbpf"
+      ]
+    }, {
+      "name": "libcap",
+      "version": "2.69-r1",
+      "hashes": "2b54e56cd8f79d013a11d8e12777a9de5b378379eff90e6edb8c976842e476e7",
+      "description": "Linux capabilities library library",
+      "arch": "x86_64",
+      "license": "GPL-2.0-only",
+      "origin": "feeds/base/libs/libcap",
+      "maintainer": "Paul Wassi <p.wassi@gmx.at>",
+      "url": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/",
+      "installed-size": 37648,
+      "file-size": 19085,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libcap-any"
+      ],
+      "tags": [
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:libcap_project:libcap"
+      ]
+    }, {
+      "name": "libcomerr0",
+      "version": "1.47.4-r1",
+      "hashes": "aad6dff40b16b0c701b086873a895df59395c6cc355b1ce7faec32a43967858a",
+      "description": "This package contains libcom_err, the common error description library bundled with e2fsprogs.",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/utils/e2fsprogs",
+      "url": "https://e2fsprogs.sourceforge.net/",
+      "installed-size": 9764,
+      "file-size": 5134,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libuuid1"
+      ],
+      "provides": [
+        "libcomerr",
+        "libcomerr-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=0",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:e2fsprogs_project:e2fsprogs"
+      ]
+    }, {
+      "name": "libe2p2",
+      "version": "1.47.4-r1",
+      "hashes": "5a1eb65d34d7aeab1a79ec68ade6a8bb3496cd4921a85924751a900f86e441ad",
+      "description": "This package contains libe2p, ext2fs userspace programs utility library bundled with e2fsprogs.",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/utils/e2fsprogs",
+      "url": "https://e2fsprogs.sourceforge.net/",
+      "installed-size": 31900,
+      "file-size": 15347,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libuuid1"
+      ],
+      "provides": [
+        "libe2p",
+        "libe2p-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=2",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:e2fsprogs_project:e2fsprogs"
+      ]
+    }, {
+      "name": "libelf1",
+      "version": "0.195-r2",
+      "hashes": "8b996417677c33429fd118d60f40ae8767cb0fa2b4a1cdf8d862a9ab348e7d50",
+      "description": "ELF manipulation libraries (libelf)",
+      "arch": "x86_64",
+      "license": "GPL-2.0-or-later LGPL-3.0-or-later",
+      "origin": "feeds/base/libs/elfutils",
+      "maintainer": "Luiz Angelo Daros de Luca <luizluca@gmail.com>",
+      "url": "https://fedorahosted.org/elfutils/",
+      "installed-size": 109158,
+      "file-size": 51754,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "zlib"
+      ],
+      "provides": [
+        "libelf",
+        "libelf-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=1",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:elfutils_project:elfutils"
+      ]
+    }, {
+      "name": "libevent2-core7",
+      "version": "2.1.12-r2",
+      "hashes": "e0ba74033f553b367e8ec4481104212189a29a0c87808a0f5faa484f7c741086",
+      "description": "The libevent API provides a mechanism to execute a callback function when a specific event occurs on a file descriptor or after a timeout has been reached. Furthermore, libevent also support callbacks due to signals or regular timeouts. libevent is meant to replace the event loop found in event driven network servers. An application just needs to call event_dispatch() and then add or remove events dynamically without having to change the event loop. This package contains the libevent core shared library for the event, buffer & utility functions.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/base/libs/libevent2",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "url": "https://libevent.org",
+      "installed-size": 151092,
+      "file-size": 72622,
+      "provider-priority": 10,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libevent2-core",
+        "libevent2-core-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=7",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:libevent_project:libevent"
+      ]
+    }, {
+      "name": "libext2fs2",
+      "version": "1.47.4-r1",
+      "hashes": "d6a1074c4209a2476ceecaab1975dec76adb6706d9edc442822e13ff848e28bc",
+      "description": "libext2fs is a library which can access ext2, ext3 and ext4 filesystems.",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/utils/e2fsprogs",
+      "url": "https://e2fsprogs.sourceforge.net/",
+      "installed-size": 450530,
+      "file-size": 219251,
+      "provider-priority": 10,
+      "depends": [
+        "libblkid1",
+        "libc",
+        "libcomerr0",
+        "libss2",
+        "libuuid1"
+      ],
+      "provides": [
+        "libext2fs",
+        "libext2fs-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=2",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:e2fsprogs_project:e2fsprogs"
+      ]
+    }, {
+      "name": "libf2fs6",
+      "version": "1.16.0-r4",
+      "hashes": "f438b72e20c98486b5cad1e132af904cff31150a5b3dbb4bdebe825bc748495f",
+      "description": "Library for Flash-Friendly File System (F2FS) tools",
+      "arch": "x86_64",
+      "license": "GPL-2.0-only",
+      "origin": "feeds/base/utils/f2fs-tools",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "installed-size": 103922,
+      "file-size": 46969,
+      "provider-priority": 100,
+      "depends": [
+        "libc",
+        "libuuid1"
+      ],
+      "provides": [
+        "libf2fs",
+        "libf2fs-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=6",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:f2fs-tools_project:f2fs-tools"
+      ]
+    }, {
+      "name": "libfdisk1",
+      "version": "2.42.2-r1",
+      "hashes": "0701be4f38ddde4b3d272132f0f565e3133b5277960c5c74641ba4e9ffcc574b",
+      "description": "The libfdisk library is used for manipulating with partition tables.",
+      "arch": "x86_64",
+      "license": "LGPL-2.1-or-later",
+      "origin": "feeds/base/utils/util-linux",
+      "url": "https://www.kernel.org/pub/linux/utils/util-linux/",
+      "installed-size": 411086,
+      "file-size": 191187,
+      "provider-priority": 10,
+      "depends": [
+        "libblkid1",
+        "libc",
+        "libuuid1"
+      ],
+      "provides": [
+        "libfdisk",
+        "libfdisk-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=1",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:kernel:util-linux"
+      ]
+    }, {
+      "name": "libgmp10",
+      "version": "6.3.0-r2",
+      "hashes": "0275d4224f18265010b9a9eca43797866855abdbe62e341ba26e02e758b4d132",
+      "description": "GMP is a free library for arbitrary precision arithmetic, operating on signed integers, rational numbers, and floating point numbers.",
+      "arch": "x86_64",
+      "license": "GPL-2.0-or-later",
+      "origin": "feeds/base/libs/gmp",
+      "url": "https://gmplib.org/",
+      "installed-size": 496776,
+      "file-size": 256662,
+      "provider-priority": 10,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libgmp",
+        "libgmp-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=10",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:gmplib:gmp"
+      ]
+    }, {
+      "name": "libiwinfo-data",
+      "version": "2026.05.26~66bdd1a0-r1",
+      "hashes": "ca116fded963b558be0707184c2e9079df98c1117082b62a7020e0aa39016edd",
+      "description": "libiwinfo Lua binding",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/network/utils/iwinfo",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "installed-size": 18264,
+      "file-size": 3922,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libiwinfo-data-any"
+      ],
+      "tags": [
+        "openwrt:section=opt"
+      ]
+    }, {
+      "name": "libiwinfo20230701",
+      "version": "2026.05.26~66bdd1a0-r1",
+      "hashes": "e15c3ba3e0dae8c219ba934cd849f02fefa45500821494ed41e7191957a0e87d",
+      "description": "Wireless information library with simplified API for nl80211 and wext driver interfaces.",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/network/utils/iwinfo",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "installed-size": 75478,
+      "file-size": 35416,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libiwinfo-data",
+        "libnl-tiny1",
+        "libubus20260628",
+        "libuci20250120"
+      ],
+      "provides": [
+        "libiwinfo",
+        "libiwinfo-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=20230701",
+        "openwrt:section=libs"
+      ]
+    }, {
+      "name": "libjson-c5",
+      "version": "0.18-r1",
+      "hashes": "39e1d5516907d935a5222d98ef781123d30f4a51b32ac5fea8ed01df1b68bc18",
+      "description": "This package contains a library for javascript object notation backends.",
+      "arch": "x86_64",
+      "license": "MIT",
+      "origin": "feeds/base/libs/libjson-c",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "url": "https://json-c.github.io/json-c/",
+      "installed-size": 68916,
+      "file-size": 33756,
+      "provider-priority": 10,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libjson-c",
+        "libjson-c-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=5",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:json-c:json-c"
+      ]
+    }, {
+      "name": "libjson-script20260721",
+      "version": "2026.07.21~e7608b69-r1",
+      "hashes": "1ad758f2920e3408e8858ec8c121ba70f528375af2b2a1a8b8d1f4ea654feada",
+      "description": "Minimalistic JSON based scripting engine",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/libs/libubox",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "installed-size": 10448,
+      "file-size": 5702,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libubox20260721"
+      ],
+      "provides": [
+        "libjson-script",
+        "libjson-script-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=20260721",
+        "openwrt:section=utils"
+      ]
+    }, {
+      "name": "liblua5.1.5",
+      "version": "5.1.5-r11",
+      "hashes": "e23be2e9583dc0d73900206d62e66f6d83a4bd48d35c3e36a542e3f4dae56e6e",
+      "description": "Lua is a powerful light-weight programming language designed for extending applications. Lua is also frequently used as a general-purpose, stand-alone language. Lua is free software. This package contains the Lua shared libraries, needed by other programs.",
+      "arch": "x86_64",
+      "license": "MIT",
+      "origin": "feeds/base/utils/lua",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "url": "https://www.lua.org/",
+      "installed-size": 192065,
+      "file-size": 93029,
+      "provider-priority": 10,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "liblua",
+        "liblua-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=5.1.5",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:lua:lua"
+      ]
+    }, {
+      "name": "libmbedtls21",
+      "version": "3.6.7-r1",
+      "hashes": "613ed0b7d01dde2bd658867e4165f42cdcdb76111486019243d4513d132c1309",
+      "description": "The aim of the mbedtls project is to provide a quality, open-source cryptographic library written in C and targeted at embedded systems. This package contains the mbedtls library.",
+      "arch": "x86_64",
+      "license": "GPL-2.0-or-later",
+      "origin": "feeds/base/libs/mbedtls",
+      "url": "https://www.trustedfirmware.org/projects/mbed-tls/",
+      "installed-size": 774156,
+      "file-size": 376965,
+      "provider-priority": 10,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libmbedtls",
+        "libmbedtls-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=21",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:arm:mbed_tls"
+      ]
+    }, {
+      "name": "libmnl0",
+      "version": "1.0.5-r2",
+      "hashes": "b62577957dd1ec28c1362e32141942d485556c11916bc417d76b17fa0825dc8f",
+      "description": "libmnl is a minimalistic user-space library oriented to Netlink developers. There are a lot of common tasks in parsing, validating, constructing of both the Netlink header and TLVs that are repetitive and easy to get wrong. This library aims to provide simple helpers that allows you to re-use code and to avoid re-inventing the wheel. The main features of this library are: . * Small: the shared library requires around 30KB for an x86-based computer. . * Simple: this library avoids complexity and elaborated abstractions that tend to hide Netlink details. . * Easy to use: the library simplifies the work for Netlink-wise developers. It provides functions to make socket handling, message building, validating, parsing and sequence tracking, easier. . * Easy to re-use: you can use the library to build your own abstraction layer on top of this library. . * Decoupling: the interdependency of the main bricks that compose the library is reduced, i.e. the library provides many helpers, but the programmer is not forced to use them.",
+      "arch": "x86_64",
+      "license": "LGPL-2.1+",
+      "origin": "feeds/base/libs/libmnl",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "url": "http://www.netfilter.org/projects/libmnl/",
+      "installed-size": 16726,
+      "file-size": 8502,
+      "provider-priority": 10,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libmnl",
+        "libmnl-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=0",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:netfilter:libmnl"
+      ]
+    }, {
+      "name": "libmount1",
+      "version": "2.42.2-r1",
+      "hashes": "9251035872625ddf026795b7182a3ae102afd05aadca2e26d67ee42012603390",
+      "description": "The libmount library is used to parse /etc/fstab, /etc/mtab and /proc/self/mountinfo files, manage the mtab file, evaluate mount options...",
+      "arch": "x86_64",
+      "license": "LGPL-2.1-or-later",
+      "origin": "feeds/base/utils/util-linux",
+      "url": "https://www.kernel.org/pub/linux/utils/util-linux/",
+      "installed-size": 438826,
+      "file-size": 202863,
+      "provider-priority": 10,
+      "depends": [
+        "libblkid1",
+        "libc"
+      ],
+      "provides": [
+        "libmount",
+        "libmount-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=1",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:kernel:util-linux"
+      ]
+    }, {
+      "name": "libncurses6",
+      "version": "6.6.20260801-r1",
+      "hashes": "323498eef8a6aa09e2af6c9b84690ded2a622d32fe3a68285205710379e1f334",
+      "description": "Terminal handling library (Unicode)",
+      "arch": "x86_64",
+      "license": "MIT",
+      "origin": "feeds/base/libs/ncurses",
+      "url": "https://www.gnu.org/software/ncurses/",
+      "installed-size": 512004,
+      "file-size": 235809,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "terminfo"
+      ],
+      "provides": [
+        "libncurses",
+        "libncurses-any",
+        "libncursesw",
+        "libncursesw6=6.6.20260801-r1"
+      ],
+      "tags": [
+        "openwrt:abiversion=6",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:gnu:ncurses"
+      ]
+    }, {
+      "name": "libnetfilter-conntrack3",
+      "version": "1.1.0-r1",
+      "hashes": "5f3232c842f11d78a74238f5eff5d27f2ca5e42c1d15f1169f9dd9cfa898520a",
+      "description": "libnetfilter_conntrack is a userspace library providing a programming interface (API) to the in-kernel connection tracking state table. The library libnetfilter_conntrack has been previously known as libnfnetlink_conntrack and libctnetlink. This library is currently used by conntrack-tools among many other applications.",
+      "arch": "x86_64",
+      "license": "GPL-2.0-or-later",
+      "origin": "feeds/base/libs/libnetfilter-conntrack",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "url": "http://www.netfilter.org/projects/libnetfilter_conntrack/",
+      "installed-size": 115262,
+      "file-size": 49084,
+      "provider-priority": 10,
+      "depends": [
+        "kmod-nf-conntrack-netlink",
+        "libc",
+        "libmnl0",
+        "libnfnetlink0"
+      ],
+      "provides": [
+        "libnetfilter-conntrack",
+        "libnetfilter-conntrack-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=3",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:netfilter:libnetfilter_conntrack"
+      ]
+    }, {
+      "name": "libnettle8",
+      "version": "3.10.2-r1",
+      "hashes": "119028448d24ddf0b8904ed1a5c41eb274dd128641964f42979b96ff41ee919e",
+      "description": "GNU crypto library",
+      "arch": "x86_64",
+      "license": "GPL-2.0-or-later",
+      "origin": "feeds/base/libs/nettle",
+      "url": "https://www.lysator.liu.se/~nisse/nettle/",
+      "installed-size": 643464,
+      "file-size": 368847,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libgmp10"
+      ],
+      "provides": [
+        "libnettle",
+        "libnettle-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=8",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:nettle_project:nettle"
+      ]
+    }, {
+      "name": "libnfnetlink0",
+      "version": "1.0.2-r1",
+      "hashes": "553ff3475fefd194acaf4be2f9942cd6f7068e369c08f04fd6107e1c306bdb81",
+      "description": "libnfnetlink is is the low-level library for netfilter related kernel/userspace communication. It provides a generic messaging infrastructure for in-kernel netfilter subsystems (such as nfnetlink_log, nfnetlink_queue, nfnetlink_conntrack) and their respective users and/or management tools in userspace.",
+      "arch": "x86_64",
+      "license": "GPL-2.0+",
+      "origin": "feeds/base/libs/libnfnetlink",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "url": "http://netfilter.org/projects/libnfnetlink/",
+      "installed-size": 24842,
+      "file-size": 13156,
+      "provider-priority": 10,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libnfnetlink",
+        "libnfnetlink-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=0",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:netfilter:libnfnetlink"
+      ]
+    }, {
+      "name": "libnftnl11",
+      "version": "1.3.1-r1",
+      "hashes": "d12a36a219c99aa267ca878269edf5275acf62dd8cd79fbae0b3384e60c0ca42",
+      "description": "libnftnl is a userspace library providing a low-level netlink programming interface (API) to the in-kernel nf_tables subsystem.",
+      "arch": "x86_64",
+      "license": "GPL-2.0-or-later",
+      "origin": "feeds/base/libs/libnftnl",
+      "maintainer": "Steven Barth <steven@midlink.org>",
+      "url": "http://www.netfilter.org/projects/libnftnl",
+      "installed-size": 210212,
+      "file-size": 81077,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libmnl0"
+      ],
+      "provides": [
+        "libnftnl",
+        "libnftnl-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=11",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:netfilter:libnftnl"
+      ]
+    }, {
+      "name": "libnl-cli200",
+      "version": "3.12.0-r2",
+      "hashes": "084328675689fddee624a80ad69c64c5100a6c16297e2873368c058806cf6f43",
+      "description": "CLI Netlink Library Functions",
+      "arch": "x86_64",
+      "license": "LGPL-2.1",
+      "origin": "feeds/base/libs/libnl",
+      "url": "https://www.infradead.org/~tgr/libnl/",
+      "installed-size": 39853,
+      "file-size": 13673,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libnl-genl200",
+        "libnl-nf200"
+      ],
+      "provides": [
+        "libnl-cli",
+        "libnl-cli-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=200",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:libnl_project:libnl"
+      ]
+    }, {
+      "name": "libnl-core200",
+      "version": "3.12.0-r2",
+      "hashes": "83ca148ca7accda3dd42620720eb7797917a80ad8352ae8f97c1a3c1763903ff",
+      "description": "Common code for all netlink libraries",
+      "arch": "x86_64",
+      "license": "LGPL-2.1",
+      "origin": "feeds/base/libs/libnl",
+      "url": "https://www.infradead.org/~tgr/libnl/",
+      "installed-size": 109349,
+      "file-size": 50279,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libpthread"
+      ],
+      "provides": [
+        "libnl-core",
+        "libnl-core-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=200",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:libnl_project:libnl"
+      ]
+    }, {
+      "name": "libnl-genl200",
+      "version": "3.12.0-r2",
+      "hashes": "19c5a4079790bdab9b917bdcd87e5a926a26492f4e68775b62309d107fac0385",
+      "description": "Generic Netlink Library Functions",
+      "arch": "x86_64",
+      "license": "LGPL-2.1",
+      "origin": "feeds/base/libs/libnl",
+      "url": "https://www.infradead.org/~tgr/libnl/",
+      "installed-size": 20095,
+      "file-size": 9293,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libnl-core200"
+      ],
+      "provides": [
+        "libnl-genl",
+        "libnl-genl-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=200",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:libnl_project:libnl"
+      ]
+    }, {
+      "name": "libnl-nf200",
+      "version": "3.12.0-r2",
+      "hashes": "5c1881080e15e84d0b35f6ccb865f74ae1a2c633d02e629dccfa6535148da2c7",
+      "description": "Netfilter Netlink Library Functions",
+      "arch": "x86_64",
+      "license": "LGPL-2.1",
+      "origin": "feeds/base/libs/libnl",
+      "url": "https://www.infradead.org/~tgr/libnl/",
+      "installed-size": 97163,
+      "file-size": 35277,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libnl-route200"
+      ],
+      "provides": [
+        "libnl-nf",
+        "libnl-nf-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=200",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:libnl_project:libnl"
+      ]
+    }, {
+      "name": "libnl-route200",
+      "version": "3.12.0-r2",
+      "hashes": "e49b931094804a56a844ae3ab82eaee6c6d1c824d4caba202f3dd9f8eb90173f",
+      "description": "Routing Netlink Library Functions",
+      "arch": "x86_64",
+      "license": "LGPL-2.1",
+      "origin": "feeds/base/libs/libnl",
+      "url": "https://www.infradead.org/~tgr/libnl/",
+      "installed-size": 581095,
+      "file-size": 235666,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libnl-core200"
+      ],
+      "provides": [
+        "libnl-route",
+        "libnl-route-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=200",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:libnl_project:libnl"
+      ]
+    }, {
+      "name": "libnl-tiny1",
+      "version": "2025.12.02~40493a65-r1",
+      "hashes": "8892d9cdb76af4e2a8b1c9d36fd3000c6e4e8777e53d36d4a2a4982efef121c9",
+      "description": "This package contains a stripped down version of libnl",
+      "arch": "x86_64",
+      "license": "LGPL-2.1",
+      "origin": "feeds/base/libs/libnl-tiny",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "installed-size": 35185,
+      "file-size": 17975,
+      "provider-priority": 10,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libnl-tiny",
+        "libnl-tiny-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=1",
+        "openwrt:section=libs"
+      ]
+    }, {
+      "name": "libnl200",
+      "version": "3.12.0-r2",
+      "hashes": "336ce580c209105363f9c5463d26a27cf72d074333b1f71306acd1b580f35db6",
+      "description": "Socket handling, connection management, sending and receiving of data, message construction and parsing, object caching system, etc.",
+      "arch": "x86_64",
+      "license": "LGPL-2.1",
+      "origin": "feeds/base/libs/libnl",
+      "url": "https://www.infradead.org/~tgr/libnl/",
+      "installed-size": 1,
+      "file-size": 904,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libnl-cli200",
+        "libnl-genl200",
+        "libnl-nf200",
+        "libnl-route200"
+      ],
+      "provides": [
+        "libnl",
+        "libnl-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=200",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:libnl_project:libnl"
+      ]
+    }, {
+      "name": "libopenssl3",
+      "version": "3.5.8-r1",
+      "hashes": "4ef1d4764bd2dfd35324252e9f91cddfa85733cdf7349253a36020432f7b9227",
+      "description": "The OpenSSL Project is a collaborative effort to develop a robust, commercial-grade, full-featured, and Open Source toolkit implementing the Transport Layer Security (TLS) protocol as well as a full-strength general-purpose cryptography library. This package contains the OpenSSL shared libraries, needed by other programs.",
+      "arch": "x86_64",
+      "license": "Apache-2.0",
+      "origin": "feeds/base/libs/openssl",
+      "maintainer": "Eneas U de Queiroz <cotequeiroz@gmail.com>",
+      "url": "https://www.openssl.org/",
+      "installed-size": 6927473,
+      "file-size": 2746876,
+      "provider-priority": 10,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libopenssl",
+        "libopenssl-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=3",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:openssl:openssl"
+      ]
+    }, {
+      "name": "libpcre2",
+      "version": "10.47-r1",
+      "hashes": "da7d683f3fc376ec1d0b9e98914f7bd6eb75dfdadaeb18204ed5f725e4c3971d",
+      "description": "A Perl Compatible Regular Expression library",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/base/libs/pcre2",
+      "maintainer": "Shane Peelar <lookatyouhacker@gmail.com>",
+      "url": "https://www.pcre.org/",
+      "installed-size": 719423,
+      "file-size": 288700,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libpcre2-any"
+      ],
+      "tags": [
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:pcre:pcre2"
+      ]
+    }, {
+      "name": "libpopt0",
+      "version": "1.19-r1",
+      "hashes": "413318de23afb4a2c06c4eb5c30ab0cf18689a47cc2733e41cd9573f3d5e762a",
+      "description": "A command line option parsing library",
+      "arch": "x86_64",
+      "license": "MIT",
+      "origin": "feeds/base/libs/popt",
+      "url": "https://github.com/rpm-software-management/popt",
+      "installed-size": 45232,
+      "file-size": 23669,
+      "provider-priority": 10,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libpopt",
+        "libpopt-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=0",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:popt_project:popt"
+      ]
+    }, {
+      "name": "libreadline8",
+      "version": "8.3-r1",
+      "hashes": "06020e11b6e3ca56ed41b9ce52ff3c98dd5041a67886b8612e02101e578c81f3",
+      "description": "The Readline library provides a set of functions for use by applications that allow users to edit command lines as they are typed in. Both Emacs and vi editing modes are available. The Readline library includes additional functions to maintain a list of previously-entered command lines, to recall and perhaps reedit those lines, and perform csh-like history expansion on previous commands.",
+      "arch": "x86_64",
+      "license": "GPL-3.0-or-later",
+      "origin": "feeds/base/libs/readline",
+      "url": "https://tiswww.case.edu/php/chet/readline/rltop.html",
+      "installed-size": 408181,
+      "file-size": 183509,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libncursesw6"
+      ],
+      "provides": [
+        "libreadline",
+        "libreadline-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=8",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:gnu:readline"
+      ]
+    }, {
+      "name": "libsmartcols1",
+      "version": "2.42.2-r1",
+      "hashes": "eecd8eb172a80c1a2208e5e26ba72d5bc06da4191ef5010c0c43c66961b1f09f",
+      "description": "The smartcols library is used to print tables and trees in a pretty way.",
+      "arch": "x86_64",
+      "license": "LGPL-2.1-or-later",
+      "origin": "feeds/base/utils/util-linux",
+      "url": "https://www.kernel.org/pub/linux/utils/util-linux/",
+      "installed-size": 169430,
+      "file-size": 79181,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "librt"
+      ],
+      "provides": [
+        "libsmartcols",
+        "libsmartcols-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=1",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:kernel:util-linux"
+      ]
+    }, {
+      "name": "libss2",
+      "version": "1.47.4-r1",
+      "hashes": "dd752a9d267c9eb4d577fa930719045d5a697beed91e233d9b5636275b3f1205",
+      "description": "This pacakge contains libss, a command-line interface parsing library bundled with e2fsprogs.",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/utils/e2fsprogs",
+      "url": "https://e2fsprogs.sourceforge.net/",
+      "installed-size": 21671,
+      "file-size": 10342,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libcomerr0"
+      ],
+      "provides": [
+        "libss",
+        "libss-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=2",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:e2fsprogs_project:e2fsprogs"
+      ]
+    }, {
+      "name": "libubox20260721",
+      "version": "2026.07.21~e7608b69-r1",
+      "hashes": "6c37ff189286df53e1cbd5b423a21b5c89ab96e8d162eea22ab32df23a06bd4a",
+      "description": "Basic utility library",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/libs/libubox",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "installed-size": 56357,
+      "file-size": 30226,
+      "provider-priority": 10,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "libubox",
+        "libubox-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=20260721",
+        "openwrt:section=libs"
+      ]
+    }, {
+      "name": "libubus20260628",
+      "version": "2026.06.28~24864e78-r1",
+      "hashes": "8b11c58fa23b86b4faf3e19db2b16db35b14feb7eb4015266e79200a544d0c8c",
+      "description": "OpenWrt RPC client library",
+      "arch": "x86_64",
+      "license": "LGPL-2.1",
+      "origin": "feeds/base/system/ubus",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "installed-size": 23145,
+      "file-size": 12290,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libubox20260721"
+      ],
+      "provides": [
+        "libubus",
+        "libubus-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=20260628",
+        "openwrt:section=libs"
+      ]
+    }, {
+      "name": "libuci20250120",
+      "version": "2025.12.02~66127cd7-r1",
+      "hashes": "caa9929e3018e44e921e7404b154251d32522de98e6c8a24b103ca836cf81994",
+      "description": "C library for the Unified Configuration Interface (UCI)",
+      "arch": "x86_64",
+      "license": "LGPL-2.1",
+      "origin": "feeds/base/system/uci",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "installed-size": 37920,
+      "file-size": 19060,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libubox20260721"
+      ],
+      "provides": [
+        "libuci",
+        "libuci-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=20250120",
+        "openwrt:section=libs"
+      ]
+    }, {
+      "name": "libuclient20201210",
+      "version": "2026.06.07~daad21fa-r1",
+      "hashes": "04801e97f80b0ce0d1e05f62325b9bb7fe4994051ce78c167a979b3cbd5ee47d",
+      "description": "HTTP/1.1 client library",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/libs/uclient",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "installed-size": 22311,
+      "file-size": 11885,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libubox20260721"
+      ],
+      "provides": [
+        "libuclient",
+        "libuclient-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=20201210",
+        "openwrt:section=libs"
+      ]
+    }, {
+      "name": "libucode20230711",
+      "version": "2026.07.09~b885dd0f-r1",
+      "hashes": "69e18751a8c310789fb7866ec4681180541ae9d62be0f9edbd4a233631afcb11",
+      "description": "The libucode package provides the shared runtime library for the ucode interpreter.",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/utils/ucode",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "installed-size": 156934,
+      "file-size": 78100,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libjson-c5"
+      ],
+      "provides": [
+        "libucode",
+        "libucode-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=20230711",
+        "openwrt:section=libs"
+      ]
+    }, {
+      "name": "libudebug",
+      "version": "2026.07.08~75843a1b",
+      "hashes": "39d9dbb7c5a66e8390cc1f1e201129f64040d2ed2debaef27443f676ef0cba5b",
+      "description": "udebug client library",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/libs/udebug",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "installed-size": 9094,
+      "file-size": 4954,
+      "depends": [
+        "libc",
+        "libubox20260721",
+        "libubus20260628"
+      ],
+      "provides": [
+        "libudebug-any"
+      ],
+      "tags": [
+        "openwrt:section=libs"
+      ]
+    }, {
+      "name": "libustream-mbedtls20201210",
+      "version": "2026.03.01~99f1c0db-r1",
+      "hashes": "e388c3b2a69895ee214d02dddbfce5fe5615401acb33396e294b883c1c577cad",
+      "description": "ustream SSL Library (mbedtls)",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/libs/ustream-ssl",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "installed-size": 16415,
+      "file-size": 6141,
+      "provider-priority": 100,
+      "depends": [
+        "libc",
+        "libmbedtls21",
+        "libubox20260721"
+      ],
+      "provides": [
+        "libustream-mbedtls",
+        "libustream-mbedtls-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=20201210",
+        "openwrt:section=libs"
+      ]
+    }, {
+      "name": "libuuid1",
+      "version": "2.42.2-r1",
+      "hashes": "c8290dfea8de5498ebb701381470aa6a682651e0bad3e24d81350306034a3c33",
+      "description": "The UUID library is used to generate unique identifiers for objects that may be accessible beyond the local system. This library generates UUIDs compatible with those created by the Open Software Foundation (OSF) Distributed Computing Environment (DCE) utility.",
+      "arch": "x86_64",
+      "license": "BSD-3-Clause",
+      "origin": "feeds/base/utils/util-linux",
+      "url": "https://www.kernel.org/pub/linux/utils/util-linux/",
+      "installed-size": 29464,
+      "file-size": 16933,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "librt"
+      ],
+      "provides": [
+        "libuuid",
+        "libuuid-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=1",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:kernel:util-linux"
+      ]
+    }, {
+      "name": "libxml2-16",
+      "version": "2.15.3-r1",
+      "hashes": "8f95c01183d3fd573c53fd3e015c47b500101728b0ad52f85cbf3befabedb859",
+      "description": "A library for manipulating XML and HTML resources.",
+      "arch": "x86_64",
+      "license": "MIT",
+      "origin": "feeds/base/libs/libxml2",
+      "url": "https://gitlab.gnome.org/GNOME/libxml2",
+      "installed-size": 1290590,
+      "file-size": 609055,
+      "provider-priority": 10,
+      "depends": [
+        "libc",
+        "libpthread",
+        "zlib"
+      ],
+      "provides": [
+        "libxml2",
+        "libxml2-any"
+      ],
+      "tags": [
+        "openwrt:abiversion=-16",
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:xmlsoft:libxml2"
+      ]
+    }, {
+      "name": "logd",
+      "version": "2025.10.30~6f78fa49-r1",
+      "hashes": "733da93858354fe93e541b45a009e7a4ee72ffd76e8a8a5f154cd4e743133efb",
+      "description": "OpenWrt system log implementation",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/system/ubox",
+      "maintainer": "John Crispin <john@phrozen.org>",
+      "installed-size": 28685,
+      "file-size": 12064,
+      "depends": [
+        "libblobmsg-json20260721",
+        "libc",
+        "libubox20260721",
+        "libubus20260628",
+        "libudebug"
+      ],
+      "provides": [
+        "logd-any"
+      ],
+      "tags": [
+        "openwrt:section=base"
+      ]
+    }, {
+      "name": "lsblk",
+      "version": "2.42.2-r1",
+      "hashes": "fee62322b3c06f10e2538c8d58b8dd101e26d68f2fb033ffcfa044016be33216",
+      "description": "lsblk lists information about all or the specified block devices",
+      "arch": "x86_64",
+      "license": "GPL-2.0-or-later",
+      "origin": "feeds/base/utils/util-linux",
+      "url": "https://www.kernel.org/pub/linux/utils/util-linux/",
+      "installed-size": 236807,
+      "file-size": 107939,
+      "depends": [
+        "libblkid1",
+        "libc",
+        "libmount1",
+        "libncurses6",
+        "libsmartcols1"
+      ],
+      "provides": [
+        "lsblk-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:kernel:util-linux"
+      ]
+    }, {
+      "name": "mkf2fs",
+      "version": "1.16.0-r4",
+      "hashes": "538c06bab1df231f3ef2d07da9c5f2f0db2195039ee6696463b517d726dd9388",
+      "description": "Utility for creating a Flash-Friendly File System (F2FS)",
+      "arch": "x86_64",
+      "license": "GPL-2.0-only",
+      "origin": "feeds/base/utils/f2fs-tools",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "url": "https://git.kernel.org/pub/scm/linux/kernel/git/jaegeuk/f2fs-tools.git",
+      "installed-size": 38116,
+      "file-size": 19781,
+      "provider-priority": 100,
+      "depends": [
+        "libc",
+        "libf2fs6"
+      ],
+      "provides": [
+        "mkf2fs-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:f2fs-tools_project:f2fs-tools"
+      ]
+    }, {
+      "name": "netifd",
+      "version": "2026.07.08~6088f7b3-r3",
+      "hashes": "98a6d4e0b8d56cfc41e13b47159898677ad6e3024db0766537ed39e42ebaf668",
+      "description": "OpenWrt Network Interface Configuration Daemon",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/network/config/netifd",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "installed-size": 277816,
+      "file-size": 125143,
+      "depends": [
+        "jshn",
+        "libc",
+        "libnl-tiny1",
+        "libubox20260721",
+        "libubus20260628",
+        "libuci20250120",
+        "libudebug",
+        "ubus",
+        "ubusd",
+        "ucode",
+        "ucode-mod-fs",
+        "ucode-mod-ubus",
+        "ucode-mod-uci",
+        "ucode-mod-uloop"
+      ],
+      "provides": [
+        "netifd-any"
+      ],
+      "tags": [
+        "openwrt:section=base"
+      ]
+    }, {
+      "name": "nftables-json",
+      "version": "1.1.6-r4",
+      "hashes": "9f9d4b39680b85bb6a7761de657e2857d0fbda8f4f0b5c8deee0507f7c0bc3fe",
+      "description": "nftables userspace utility with JSON support",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/network/utils/nftables",
+      "url": "http://netfilter.org/projects/nftables/",
+      "installed-size": 985878,
+      "file-size": 416857,
+      "depends": [
+        "jansson4",
+        "kmod-nft-core",
+        "libc",
+        "libnftnl11"
+      ],
+      "provides": [
+        "nftables=1.1.6-r4",
+        "nftables-json-any"
+      ],
+      "tags": [
+        "openwrt:section=net"
+      ]
+    }, {
+      "name": "odhcp6c",
+      "version": "2026.06.27~10a52220-r3",
+      "hashes": "804cbbb23e4006f5fe901b7ef27db7db23ea8c374fcdb3794340dd9b6de67151",
+      "description": "Embedded DHCPv6-client for OpenWrt",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/network/ipv6/odhcp6c",
+      "maintainer": "Álvaro Fernández Rojas <noltari@gmail.com>",
+      "installed-size": 85548,
+      "file-size": 40247,
+      "depends": [
+        "libc",
+        "libubox20260721",
+        "libubus20260628"
+      ],
+      "provides": [
+        "odhcp6c-any"
+      ],
+      "tags": [
+        "openwrt:section=net"
+      ]
+    }, {
+      "name": "odhcpd-ipv6only",
+      "version": "2026.06.28~68f38269-r1",
+      "hashes": "e4f8820ecfc4a13c7c4204a6f47789130e62f7ab390d7a3044eb396543672b19",
+      "description": "odhcpd is a daemon for serving and relaying IP management protocols to configure clients and downstream routers. It tries to follow the RFC 6204 requirements for IPv6 home routers. This is a variant with support for RA and DHCPv6. It can also be used to relay RA, DHCPv6 and NDP messages between routed (non-bridged) interfaces in case no delegated prefixes are available.",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/network/services/odhcpd",
+      "maintainer": "Álvaro Fernández Rojas <noltari@gmail.com>",
+      "installed-size": 104062,
+      "file-size": 53313,
+      "depends": [
+        "libc",
+        "libjson-c5",
+        "libnl-tiny1",
+        "libubox20260721",
+        "libubus20260628",
+        "libuci20250120"
+      ],
+      "provides": [
+        "odhcpd-ipv6only-any"
+      ],
+      "tags": [
+        "openwrt:section=net"
+      ]
+    }, {
+      "name": "openwrt-keyring",
+      "version": "2025.12.10~f0670054-r1",
+      "hashes": "bd889bc859a05d53c9ab61a5577ac25c0a8d9694e4adde45123590e5e5b0a59c",
+      "description": "The keyring of with the developer using and gpg public keys.",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/system/openwrt-keyring",
+      "maintainer": "John Crispin <john@phrozen.org>",
+      "url": "https://openwrt.org/docs/guide-user/security/signatures",
+      "installed-size": 214,
+      "file-size": 1094,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "lede-keyring=2025.12.10~f0670054-r1",
+        "openwrt-keyring-any"
+      ],
+      "tags": [
+        "openwrt:section=base"
+      ]
+    }, {
+      "name": "partx-utils",
+      "version": "2.42.2-r1",
+      "hashes": "e3aeed30132335d41f2034d18a97a4a65472f51252928779caf1fd064d28bdc3",
+      "description": "contains partx, addpart, delpart",
+      "arch": "x86_64",
+      "license": "GPL-2.0-or-later",
+      "origin": "feeds/base/utils/util-linux",
+      "url": "https://www.kernel.org/pub/linux/utils/util-linux/",
+      "installed-size": 187572,
+      "file-size": 79298,
+      "depends": [
+        "libblkid1",
+        "libc",
+        "libsmartcols1"
+      ],
+      "provides": [
+        "partx-utils-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:kernel:util-linux"
+      ]
+    }, {
+      "name": "ppp",
+      "version": "2.5.3-r2",
+      "hashes": "bda5241c6214d51a2b3a01d74d6c2ddf3671972354884bf5b057be5101b0cb4a",
+      "description": "This package contains the PPP (Point-to-Point Protocol) daemon.",
+      "arch": "x86_64",
+      "license": "BSD-4-Clause",
+      "origin": "feeds/base/network/services/ppp",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "url": "https://ppp.samba.org/",
+      "installed-size": 368076,
+      "file-size": 177158,
+      "depends": [
+        "kmod-ppp",
+        "libc"
+      ],
+      "provides": [
+        "ppp-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:point-to-point_protocol_project:point-to-point_protocol"
+      ]
+    }, {
+      "name": "ppp-mod-pppoe",
+      "version": "2.5.3-r2",
+      "hashes": "320e2a3f7bd844c7b1630583218c6da3e914f07186c6c112fa4bba2af6a2d681",
+      "description": "This package contains a PPPoE (PPP over Ethernet) plugin for ppp.",
+      "arch": "x86_64",
+      "license": "BSD-4-Clause",
+      "origin": "feeds/base/network/services/ppp",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "url": "https://ppp.samba.org/",
+      "installed-size": 31509,
+      "file-size": 15171,
+      "depends": [
+        "kmod-pppoe",
+        "libc"
+      ],
+      "provides": [
+        "ppp-mod-pppoe-any"
+      ],
+      "tags": [
+        "openwrt:section=net",
+        "openwrt:cpe=cpe:/a:point-to-point_protocol_project:point-to-point_protocol"
+      ]
+    }, {
+      "name": "procd",
+      "version": "2026.06.17~60fdbf00-r1",
+      "hashes": "5a89e23d46e582dc3c6a16bb56ac9ff750387d0ee50cfef5efdc1df3219247dd",
+      "description": "OpenWrt system process manager",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/system/procd",
+      "maintainer": "John Crispin <john@phrozen.org>",
+      "installed-size": 138165,
+      "file-size": 57674,
+      "provider-priority": 100,
+      "depends": [
+        "jshn",
+        "libblobmsg-json20260721",
+        "libc",
+        "libjson-c5",
+        "libjson-script20260721",
+        "libubox20260721",
+        "libubus20260628",
+        "libudebug",
+        "ubox",
+        "ubus",
+        "ubusd"
+      ],
+      "provides": [
+        "procd-any"
+      ],
+      "tags": [
+        "openwrt:section=base"
+      ]
+    }, {
+      "name": "procd-seccomp",
+      "version": "2026.06.17~60fdbf00-r1",
+      "hashes": "deeb9421abe422ab4a4a0d94ea4012875789019b31949da9a78f9ee35f925ff6",
+      "description": "OpenWrt process seccomp helper + utrace",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/system/procd",
+      "maintainer": "John Crispin <john@phrozen.org>",
+      "installed-size": 39829,
+      "file-size": 15023,
+      "depends": [
+        "libblobmsg-json20260721",
+        "libc",
+        "libubox20260721"
+      ],
+      "provides": [
+        "procd-seccomp-any"
+      ],
+      "tags": [
+        "openwrt:section=base"
+      ]
+    }, {
+      "name": "procd-ujail",
+      "version": "2026.06.17~60fdbf00-r1",
+      "hashes": "63297e1ef7cc6ba77f85438741f36cfdc1786b13397563ac402e89caa135b5da",
+      "description": "OpenWrt process jail helper",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/system/procd",
+      "maintainer": "John Crispin <john@phrozen.org>",
+      "installed-size": 89132,
+      "file-size": 42784,
+      "depends": [
+        "libblobmsg-json20260721",
+        "libc",
+        "libubox20260721",
+        "libubus20260628",
+        "libuci20250120"
+      ],
+      "provides": [
+        "procd-ujail-any"
+      ],
+      "tags": [
+        "openwrt:section=base"
+      ]
+    }, {
+      "name": "r8169-firmware",
+      "version": "20260810-r1",
+      "hashes": "d52c7071e8439d99fde9232b80b3dd5577f5344a306f8a40d45f8d57960280eb",
+      "description": "RealTek RTL8169 firmware",
+      "arch": "x86_64",
+      "origin": "feeds/base/firmware/linux-firmware",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "url": "https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git",
+      "installed-size": 149528,
+      "file-size": 50880,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "r8169-firmware-any"
+      ],
+      "tags": [
+        "openwrt:section=firmware"
+      ]
+    }, {
+      "name": "rpcd",
+      "version": "2026.07.19~e37ed9d8-r1",
+      "hashes": "11e1ed947fe767abb50e673097f58a1a0eef2890a0ba0015a7e3dba8a664730a",
+      "description": "This package provides the UBUS RPC backend server to expose various functionality to frontend programs via JSON-RPC.",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/system/rpcd",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "installed-size": 52991,
+      "file-size": 25475,
+      "depends": [
+        "libblobmsg-json20260721",
+        "libc",
+        "libjson-c5",
+        "libubox20260721",
+        "libubus20260628",
+        "libuci20250120"
+      ],
+      "provides": [
+        "rpcd-any"
+      ],
+      "tags": [
+        "openwrt:section=utils"
+      ]
+    }, {
+      "name": "rpcd-mod-file",
+      "version": "2026.07.19~e37ed9d8-r1",
+      "hashes": "b178377bde35d45280d67c9ab45aa7b540d391f4e8d9da028c13cd71c868232b",
+      "description": "Provides ubus calls for file and directory operations.",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/system/rpcd",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "installed-size": 17102,
+      "file-size": 8509,
+      "depends": [
+        "libc",
+        "libubox20260721",
+        "libubus20260628",
+        "rpcd"
+      ],
+      "provides": [
+        "rpcd-mod-file-any"
+      ],
+      "tags": [
+        "openwrt:section=utils"
+      ]
+    }, {
+      "name": "rpcd-mod-iwinfo",
+      "version": "2026.07.19~e37ed9d8-r1",
+      "hashes": "1ebf399636eb1414bde752c217be96fb8294a498424bac866d18b33386e0f166",
+      "description": "Provides ubus calls for accessing iwinfo data.",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/system/rpcd",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "installed-size": 16016,
+      "file-size": 8041,
+      "depends": [
+        "libc",
+        "libiwinfo20230701>=2023.01.21",
+        "libubox20260721",
+        "libubus20260628",
+        "rpcd"
+      ],
+      "provides": [
+        "rpcd-mod-iwinfo-any"
+      ],
+      "tags": [
+        "openwrt:section=utils"
+      ]
+    }, {
+      "name": "rpcd-mod-rpcsys",
+      "version": "2026.07.19~e37ed9d8-r1",
+      "hashes": "969adca364ab73f4067d14d91c23baff33baa12a7723c58fa8700cfc587f785e",
+      "description": "Provides ubus calls for sysupgrade and password changing.",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/system/rpcd",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "installed-size": 9200,
+      "file-size": 4613,
+      "depends": [
+        "libc",
+        "libubox20260721",
+        "libubus20260628",
+        "rpcd"
+      ],
+      "provides": [
+        "rpcd-mod-rpcsys-any"
+      ],
+      "tags": [
+        "openwrt:section=utils"
+      ]
+    }, {
+      "name": "rpcd-mod-ucode",
+      "version": "2026.07.19~e37ed9d8-r1",
+      "hashes": "c0fb7de26fe3b3ce2729f029e8d824b2d2575de7546cca5e7f8313ea15661e69",
+      "description": "Allows implementing plugins using ucode scripts.",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/system/rpcd",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "installed-size": 18311,
+      "file-size": 8505,
+      "depends": [
+        "libc",
+        "libubox20260721",
+        "libubus20260628",
+        "libucode20230711",
+        "rpcd"
+      ],
+      "provides": [
+        "rpcd-mod-ucode-any"
+      ],
+      "tags": [
+        "openwrt:section=utils"
+      ]
+    }, {
+      "name": "swap-utils",
+      "version": "2.42.2-r1",
+      "hashes": "364e6e45c96393f3fa95e7aa1fc1e32921df027b6589184732672dae074792ee",
+      "description": "contains: mkswap, swaplabel",
+      "arch": "x86_64",
+      "license": "GPL-2.0-or-later",
+      "origin": "feeds/base/utils/util-linux",
+      "url": "https://www.kernel.org/pub/linux/utils/util-linux/",
+      "installed-size": 153741,
+      "file-size": 70777,
+      "depends": [
+        "libblkid1",
+        "libc",
+        "librt"
+      ],
+      "provides": [
+        "swap-utils-any"
+      ],
+      "tags": [
+        "openwrt:section=utils",
+        "openwrt:cpe=cpe:/a:kernel:util-linux"
+      ]
+    }, {
+      "name": "terminfo",
+      "version": "6.6.20260801-r1",
+      "hashes": "70258dc418fffbdd14ac817d325e1fcfd940e3062f567bc72e1d78ddb0534a4e",
+      "description": "Terminal Info Database (ncurses)",
+      "arch": "x86_64",
+      "license": "MIT",
+      "origin": "feeds/base/libs/ncurses",
+      "url": "https://www.gnu.org/software/ncurses/",
+      "installed-size": 36611,
+      "file-size": 9536,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "terminfo-any"
+      ],
+      "tags": [
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:gnu:ncurses"
+      ]
+    }, {
+      "name": "ubox",
+      "version": "2025.10.30~6f78fa49-r1",
+      "hashes": "f5be05536d1351a4b1f14afbd8dfff23c9aa13ca7aeb8c87c404e667585a2701",
+      "description": "OpenWrt system helper toolbox",
+      "arch": "x86_64",
+      "license": "GPL-2.0",
+      "origin": "feeds/base/system/ubox",
+      "maintainer": "John Crispin <john@phrozen.org>",
+      "installed-size": 37126,
+      "file-size": 17864,
+      "depends": [
+        "libc",
+        "libubox20260721",
+        "libubus20260628",
+        "libuci20250120",
+        "ubus",
+        "ubusd"
+      ],
+      "provides": [
+        "ubox-any"
+      ],
+      "tags": [
+        "openwrt:section=base"
+      ]
+    }, {
+      "name": "ubus",
+      "version": "2026.06.28~24864e78-r1",
+      "hashes": "274ca202348d1c323038f25d6a01182af342e4f6e4967f21619b595c4c51518f",
+      "description": "OpenWrt RPC client utility",
+      "arch": "x86_64",
+      "license": "LGPL-2.1",
+      "origin": "feeds/base/system/ubus",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "installed-size": 12738,
+      "file-size": 6448,
+      "depends": [
+        "libblobmsg-json20260721",
+        "libc",
+        "libubus20260628",
+        "ubusd"
+      ],
+      "provides": [
+        "ubus-any"
+      ],
+      "tags": [
+        "openwrt:section=base"
+      ]
+    }, {
+      "name": "ubusd",
+      "version": "2026.06.28~24864e78-r1",
+      "hashes": "95d88bce29cfbdc73d8d2a4abac3edd60d506d55e803ebcb74dd01400cb387ca",
+      "description": "OpenWrt RPC daemon",
+      "arch": "x86_64",
+      "license": "LGPL-2.1",
+      "origin": "feeds/base/system/ubus",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "installed-size": 26843,
+      "file-size": 14061,
+      "depends": [
+        "libblobmsg-json20260721",
+        "libc",
+        "libubox20260721"
+      ],
+      "provides": [
+        "ubusd-any"
+      ],
+      "tags": [
+        "openwrt:section=base"
+      ]
+    }, {
+      "name": "uci",
+      "version": "2025.12.02~66127cd7-r1",
+      "hashes": "9095144b1bd9f4783e03454b4f581e08b23ce59df130b303c5b8b1692e5b6ee5",
+      "description": "Utility for the Unified Configuration Interface (UCI)",
+      "arch": "x86_64",
+      "license": "LGPL-2.1",
+      "origin": "feeds/base/system/uci",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "installed-size": 17359,
+      "file-size": 7608,
+      "depends": [
+        "libc",
+        "libuci20250120"
+      ],
+      "provides": [
+        "uci-any"
+      ],
+      "tags": [
+        "openwrt:section=base"
+      ]
+    }, {
+      "name": "uclient-fetch",
+      "version": "2026.06.07~daad21fa-r1",
+      "hashes": "d26a4ff8a384174a09d80b30cb41ab2ce9825f08f7fd0bafb110be1c7f5e0837",
+      "description": "Tiny wget replacement using libuclient",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/libs/uclient",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "installed-size": 17717,
+      "file-size": 8837,
+      "provider-priority": 100,
+      "depends": [
+        "libc",
+        "libuclient20201210"
+      ],
+      "provides": [
+        "uclient-fetch-any",
+        "wget-any"
+      ],
+      "tags": [
+        "openwrt:section=net"
+      ]
+    }, {
+      "name": "ucode",
+      "version": "2026.07.09~b885dd0f-r1",
+      "hashes": "079e2fa574b1a4fefca7e191e3f087893f4bc4b1d6b6af8474789f3bfa188797",
+      "description": "ucode is a tiny script interpreter featuring an ECMAScript oriented script language and Jinja-inspired templating.",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/utils/ucode",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "installed-size": 14842,
+      "file-size": 7184,
+      "depends": [
+        "libc",
+        "libucode20230711"
+      ],
+      "provides": [
+        "ucode-any"
+      ],
+      "tags": [
+        "openwrt:section=lang"
+      ]
+    }, {
+      "name": "ucode-mod-digest",
+      "version": "2026.07.09~b885dd0f-r1",
+      "hashes": "01f7163b694c21927511a21bc6bd80be93f712ad167d1cb792774f2b6d5367fe",
+      "description": "The digest module allows ucode scripts to use libmd digests.",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/utils/ucode",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "installed-size": 47385,
+      "file-size": 23105,
+      "depends": [
+        "libc",
+        "ucode"
+      ],
+      "provides": [
+        "ucode-mod-digest-any"
+      ],
+      "tags": [
+        "openwrt:section=lang"
+      ]
+    }, {
+      "name": "ucode-mod-fs",
+      "version": "2026.07.09~b885dd0f-r1",
+      "hashes": "8c5a64ee11b3dbaae5672e5cf07152539cae8024b9cf442c0c7885b7a5dc4396",
+      "description": "The filesystem plugin module allows interaction with the local file system.",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/utils/ucode",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "installed-size": 29365,
+      "file-size": 12897,
+      "depends": [
+        "libc",
+        "ucode"
+      ],
+      "provides": [
+        "ucode-mod-fs-any"
+      ],
+      "tags": [
+        "openwrt:section=lang"
+      ]
+    }, {
+      "name": "ucode-mod-log",
+      "version": "2026.07.09~b885dd0f-r1",
+      "hashes": "4afca422a292246a33d828437310160398217252d21c4785f4150e4166758c98",
+      "description": "The log plugin module provides access to the syslog and libubox ulog APIs.",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/utils/ucode",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "installed-size": 9558,
+      "file-size": 4748,
+      "depends": [
+        "libc",
+        "libubox20260721",
+        "ucode"
+      ],
+      "provides": [
+        "ucode-mod-log-any"
+      ],
+      "tags": [
+        "openwrt:section=lang"
+      ]
+    }, {
+      "name": "ucode-mod-ubus",
+      "version": "2026.07.09~b885dd0f-r1",
+      "hashes": "f92eaf703dc18491da81681059bf54f9dcc0d70ca0c4fcfa08a99b9bf75913c8",
+      "description": "The ubus module allows ucode template scripts to enumerate and invoke ubus procedures.",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/utils/ucode",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "installed-size": 39023,
+      "file-size": 18338,
+      "depends": [
+        "libblobmsg-json20260721",
+        "libc",
+        "libubus20260628",
+        "ucode"
+      ],
+      "provides": [
+        "ucode-mod-ubus-any"
+      ],
+      "tags": [
+        "openwrt:section=lang"
+      ]
+    }, {
+      "name": "ucode-mod-uci",
+      "version": "2026.07.09~b885dd0f-r1",
+      "hashes": "1a36b16ef4258816dfc5d1772b8d51a52348192d2d6a004049290d4befd941bd",
+      "description": "The uci module allows templates to read and modify uci configuration.",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/utils/ucode",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "installed-size": 17806,
+      "file-size": 8416,
+      "depends": [
+        "libc",
+        "libuci20250120",
+        "ucode"
+      ],
+      "provides": [
+        "ucode-mod-uci-any"
+      ],
+      "tags": [
+        "openwrt:section=lang"
+      ]
+    }, {
+      "name": "ucode-mod-uloop",
+      "version": "2026.07.09~b885dd0f-r1",
+      "hashes": "f344cca786b58a495fc04b5799fa5553af25a131275e8e183028ba3273ae0bb4",
+      "description": "The uloop module allows ucode scripts to interact with OpenWrt uloop event loop implementation.",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/utils/ucode",
+      "maintainer": "Jo-Philipp Wich <jo@mein.io>",
+      "installed-size": 21552,
+      "file-size": 9707,
+      "depends": [
+        "libc",
+        "libubox20260721",
+        "ucode"
+      ],
+      "provides": [
+        "ucode-mod-uloop-any"
+      ],
+      "tags": [
+        "openwrt:section=lang"
+      ]
+    }, {
+      "name": "urandom-seed",
+      "version": "3",
+      "hashes": "64c16082c2e4b5cab143b5bafdc2e401b4f372323d355cf89a92cb7292644a56",
+      "description": "/etc/urandom.seed handling for OpenWrt",
+      "arch": "x86_64",
+      "license": "GPL-2.0-only",
+      "origin": "feeds/base/system/urandom-seed",
+      "url": "https://openwrt.org/",
+      "installed-size": 1400,
+      "file-size": 1525,
+      "depends": [
+        "getrandom",
+        "libc"
+      ],
+      "provides": [
+        "urandom-seed-any"
+      ],
+      "tags": [
+        "openwrt:section=base"
+      ]
+    }, {
+      "name": "urngd",
+      "version": "2025.10.03~f17e33d9-r1",
+      "hashes": "09a85424443328663a64b1448eb209eef6a6c30e965c673ad9d287b6e7e3f37f",
+      "description": "urngd is OpenWrt's micro non-physical true random number generator based on timing jitter. Using the Jitter RNG core, the rngd provides an entropy source that feeds into the Linux /dev/random device if its entropy runs low. It updates the /dev/random entropy estimator such that the newly provided entropy unblocks /dev/random. The seeding of /dev/random also ensures that /dev/urandom benefits from entropy. Especially during boot time, when the entropy of Linux is low, the Jitter RNGd provides a source of sufficient entropy.",
+      "arch": "x86_64",
+      "license": "GPL-2.0 BSD-3-Clause",
+      "origin": "feeds/base/system/urngd",
+      "installed-size": 18010,
+      "file-size": 8367,
+      "depends": [
+        "libc",
+        "libubox20260721"
+      ],
+      "provides": [
+        "urngd-any"
+      ],
+      "tags": [
+        "openwrt:section=utils"
+      ]
+    }, {
+      "name": "usign",
+      "version": "2025.10.03~c4c72b1b-r1",
+      "hashes": "4e00aa8a742f2431a63260359d2c55748cbac3ee21b9ee0f31e1c9726a0979c0",
+      "description": "OpenWrt signature verification utility",
+      "arch": "x86_64",
+      "license": "ISC",
+      "origin": "feeds/base/system/usign",
+      "maintainer": "Felix Fietkau <nbd@nbd.name>",
+      "installed-size": 21360,
+      "file-size": 11659,
+      "depends": [
+        "libc",
+        "libubox20260721"
+      ],
+      "provides": [
+        "usign-any"
+      ],
+      "tags": [
+        "openwrt:section=base"
+      ]
+    }, {
+      "name": "zlib",
+      "version": "1.3.2-r1",
+      "hashes": "662a9f4cc3c223f352db44fea8acf1ef685f640073d29587f0e6376a426559c4",
+      "description": "zlib is a lossless data-compression library. This package includes the shared library.",
+      "arch": "x86_64",
+      "license": "Zlib",
+      "origin": "feeds/base/libs/zlib",
+      "url": "https://www.zlib.net/",
+      "installed-size": 95771,
+      "file-size": 54801,
+      "depends": [
+        "libc"
+      ],
+      "provides": [
+        "zlib-any"
+      ],
+      "tags": [
+        "openwrt:section=libs",
+        "openwrt:cpe=cpe:/a:zlib:zlib"
+      ]
+    }
+  ]
+}
